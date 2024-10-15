@@ -3,20 +3,10 @@
 
 
   public interface Crime {
-     private boolean caught;
-     private String type;     
-     public boolean isCaught (){
-        return caught;
-     }
-
-     public String getType() {
-        return type;
-     
-     }
-
+     boolean isCaught();
+     String getType();
      void commitCrime();
      void getCaught();
-
   }
 
 

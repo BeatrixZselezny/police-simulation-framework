@@ -58,15 +58,6 @@ public class PoliceOfficersClass {
 		 System.out.println("I'm, Police officer Alan!");
 	 }
 
-	 public void catchCriminal(Crime crime) {
-	    if (!crime.isCaught()) {
-	       crime.getCaught();
-            } else {
-	        System.out.println("Criminal already caught for crime: " + crime.getType());
-
-	    }
-	 }
-
 
 
 

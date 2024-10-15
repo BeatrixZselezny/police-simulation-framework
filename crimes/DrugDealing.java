@@ -11,6 +11,15 @@
      @Override
 
      public void commitCrime() {
-        System.out.println("Committing drug dealing...");
+        System.out.println(getType() + " committed!");
+	setCaught(true);
+     }
+
+     @Override
+
+     public void getCaught() {
+        System.out.println(getType() + " caught!");
+	setCaught(true);
+
      }
   }

@@ -13,4 +13,11 @@
      public void commitCrime() {
         System.out.println("Committing robbery...");
      }
+
+     @Override
+
+     public void getCaught() {
+        System.out.println(" Caughte:wq!");
+
+     }
   }
