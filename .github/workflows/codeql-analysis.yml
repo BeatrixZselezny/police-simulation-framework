@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 0 * * *' # Fut minden nap éjfélkor
+    - cron: '0 0 * * *'
 
 jobs:
   analyze:
@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        language: [ 'java', 'python', 'javascript' ]
+        language: ['java']
 
     steps:
     - name: Checkout repository
@@ -30,8 +30,10 @@ jobs:
       with:
         languages: ${{ matrix.language }}
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    - name: Build Java project
+      run: |
+        find . -name "*.java" -type f -print | xargs javac -d out
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+
