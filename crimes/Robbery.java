@@ -17,7 +17,7 @@
      @Override
 
      public void getCaught() {
-        System.out.println(" Caughte:wq!");
+        System.out.println(" Caught!");
 
      }
   }
