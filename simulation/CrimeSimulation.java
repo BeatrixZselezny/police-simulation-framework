@@ -10,7 +10,7 @@
 
   public class CrimeSimulation {
      public static void main(String[] args) {
-        Victim victim = new Victim("Anna", 22, "famale", "brown", 30);
+        Victim victim = new Victim("Anna", 22, "female", "brown", 30);
 	HumanTrafficker alice = new HumanTrafficker("Alice", 30, 50, 40);
 
         Bar bar = new Bar();

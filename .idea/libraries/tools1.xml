@@ -1,0 +1,41 @@
+<component name="libraryTable">
+  <library name="tools1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-2.0.0-RC1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-2.1.0-Beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/autobuild-fat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.9.0-Beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.9.20-Beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.5.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.5.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/java-buildless-maven-plugin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-2.0.0-RC1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.6.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.5.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.7.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.7.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.6.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.9.0-Beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/lombok-javac-extend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/semmle-extractor-java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.5.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-2.0.20-Beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.5.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-2.1.0-Beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.5.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-java-agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-1.9.20-Beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-standalone-2.0.20-Beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/java/tools/codeql-extractor-kotlin-embeddable-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

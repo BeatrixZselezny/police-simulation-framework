@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tokenizer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/go/tools/tokenizer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="html-extractor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/html/tools/html-extractor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

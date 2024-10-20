@@ -1,0 +1,10 @@
+[2024-10-18 00:55:59] [javac-output-1631] error: file not found: src_codeql/*.java
+[2024-10-18 00:55:59] [javac-output-1631] Usage: javac <options> <source files>
+[2024-10-18 00:55:59] [javac-output-1631] use --help for a list of possible options
+[2024-10-18 00:55:59] [javac-output-1631] Note: Annotation processing is enabled because one or more processors were found
+[2024-10-18 00:55:59] [javac-output-1631]   on the class path. A future release of javac may disable annotation processing
+[2024-10-18 00:55:59] [javac-output-1631]   unless at least one processor is specified by name (-processor), or a search
+[2024-10-18 00:55:59] [javac-output-1631]   path is specified (--processor-path, --processor-module-path), or annotation
+[2024-10-18 00:55:59] [javac-output-1631]   processing is enabled explicitly (-proc:only, -proc:full).
+[2024-10-18 00:55:59] [javac-output-1631]   Use -Xlint:-options to suppress this message.
+[2024-10-18 00:55:59] [javac-output-1631]   Use -proc:none to disable annotation processing.

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tools">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/cpp/tools/deptrace-db-ubuntu-focal.zip!/" />
+      <root url="jar://$PROJECT_DIR$/codeql/cpp/tools/deptrace-db-ubuntu-jammy.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

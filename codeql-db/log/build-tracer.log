@@ -1,0 +1,417 @@
+[T 22:29:25 594] CodeQL CLI version 2.19.1
+[T 22:29:25 594] Initializing tracer.
+[T 22:29:25 594] Initializing tags.
+[T 22:29:25 594] ID set to 0000000000000252_0000000000000001 (parent root)
+[T 22:29:25 594] Initializing tracer.
+[T 22:29:25 594] Initializing tags.
+[T 22:29:25 594] ID set to 0000000000000252_0000000000000002 (parent root)
+[T 22:29:25 594] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:29:25 594] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:29:25 594] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:29:25 594] Executing the following tracer actions:
+[T 22:29:25 594] Tracer actions:
+[T 22:29:25 594] pre_invocations(0)
+[T 22:29:25 594] post_invocations(0)
+[T 22:29:25 594] trace_languages(1): [java]
+[T 22:29:25 594] Initializing tracer.
+[T 22:29:25 594] Initializing tags.
+[T 22:29:25 594] ID set to 0000000000000252_0000000000000003 (parent 0000000000000252_0000000000000002)
+[T 22:29:25 594] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 22:29:25 594] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 22:29:25 594] Executing the following tracer actions:
+[T 22:29:25 594] Tracer actions:
+[T 22:29:25 594] pre_invocations(0)
+[T 22:29:25 594] post_invocations(0)
+[T 22:29:25 594] trace_languages(1): [java]
+[T 22:29:25 597] Initializing tracer.
+[T 22:29:25 597] Initializing tags.
+[T 22:29:25 597] ID set to 0000000000000255_0000000000000001 (parent 0000000000000252_0000000000000003)
+[T 22:29:25 597] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 22:29:25 597] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 22:29:25 597] Executing the following tracer actions:
+[T 22:29:25 597] Tracer actions:
+[T 22:29:25 597] pre_invocations(0)
+[T 22:29:25 597] post_invocations(0)
+[T 22:29:25 597] trace_languages(1): [java]
+[T 22:29:25 597] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 22:29:25 597] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 22:29:25 597] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 22:38:46 835] CodeQL CLI version 2.19.1
+[T 22:38:46 835] Initializing tracer.
+[T 22:38:46 835] Initializing tags.
+[T 22:38:46 835] ID set to 0000000000000343_0000000000000001 (parent root)
+[T 22:38:46 835] Initializing tracer.
+[T 22:38:46 835] Initializing tags.
+[T 22:38:46 835] ID set to 0000000000000343_0000000000000002 (parent root)
+[T 22:38:46 835] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:38:46 835] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:38:46 835] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:38:46 835] Executing the following tracer actions:
+[T 22:38:46 835] Tracer actions:
+[T 22:38:46 835] pre_invocations(0)
+[T 22:38:46 835] post_invocations(0)
+[T 22:38:46 835] trace_languages(1): [java]
+[T 22:38:46 835] Initializing tracer.
+[T 22:38:46 835] Initializing tags.
+[T 22:38:46 835] ID set to 0000000000000343_0000000000000003 (parent 0000000000000343_0000000000000002)
+[T 22:38:46 835] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 22:38:46 835] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 22:38:46 835] Executing the following tracer actions:
+[T 22:38:46 835] Tracer actions:
+[T 22:38:46 835] pre_invocations(0)
+[T 22:38:46 835] post_invocations(0)
+[T 22:38:46 835] trace_languages(1): [java]
+[T 22:38:46 838] Initializing tracer.
+[T 22:38:46 838] Initializing tags.
+[T 22:38:46 838] ID set to 0000000000000346_0000000000000001 (parent 0000000000000343_0000000000000003)
+[T 22:38:46 838] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 22:38:46 838] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 22:38:46 838] Executing the following tracer actions:
+[T 22:38:46 838] Tracer actions:
+[T 22:38:46 838] pre_invocations(0)
+[T 22:38:46 838] post_invocations(0)
+[T 22:38:46 838] trace_languages(1): [java]
+[T 22:38:46 838] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 22:38:46 838] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 22:38:46 838] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 22:41:31 1042] CodeQL CLI version 2.19.1
+[T 22:41:31 1042] Initializing tracer.
+[T 22:41:31 1042] Initializing tags.
+[T 22:41:31 1042] ID set to 0000000000000412_0000000000000001 (parent root)
+[T 22:41:31 1042] Initializing tracer.
+[T 22:41:31 1042] Initializing tags.
+[T 22:41:31 1042] ID set to 0000000000000412_0000000000000002 (parent root)
+[T 22:41:31 1042] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:41:31 1042] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:41:31 1042] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:41:31 1042] Executing the following tracer actions:
+[T 22:41:31 1042] Tracer actions:
+[T 22:41:31 1042] pre_invocations(0)
+[T 22:41:31 1042] post_invocations(0)
+[T 22:41:31 1042] trace_languages(1): [java]
+[T 22:41:31 1042] Initializing tracer.
+[T 22:41:31 1042] Initializing tags.
+[T 22:41:31 1042] ID set to 0000000000000412_0000000000000003 (parent 0000000000000412_0000000000000002)
+[T 22:41:31 1042] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 22:41:31 1042] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 22:41:31 1042] Executing the following tracer actions:
+[T 22:41:31 1042] Tracer actions:
+[T 22:41:31 1042] pre_invocations(0)
+[T 22:41:31 1042] post_invocations(0)
+[T 22:41:31 1042] trace_languages(1): [java]
+[T 22:41:31 1045] Initializing tracer.
+[T 22:41:31 1045] Initializing tags.
+[T 22:41:31 1045] ID set to 0000000000000415_0000000000000001 (parent 0000000000000412_0000000000000003)
+[T 22:41:31 1045] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 22:41:31 1045] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 22:41:31 1045] Executing the following tracer actions:
+[T 22:41:31 1045] Tracer actions:
+[T 22:41:31 1045] pre_invocations(0)
+[T 22:41:31 1045] post_invocations(0)
+[T 22:41:31 1045] trace_languages(1): [java]
+[T 22:41:31 1045] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 22:41:31 1045] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 22:41:32 1045] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 22:46:34 1245] CodeQL CLI version 2.19.1
+[T 22:46:34 1245] Initializing tracer.
+[T 22:46:34 1245] Initializing tags.
+[T 22:46:34 1245] ID set to 00000000000004DD_0000000000000001 (parent root)
+[T 22:46:34 1245] Initializing tracer.
+[T 22:46:34 1245] Initializing tags.
+[T 22:46:34 1245] ID set to 00000000000004DD_0000000000000002 (parent root)
+[T 22:46:34 1245] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:46:34 1245] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:46:34 1245] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:46:34 1245] Executing the following tracer actions:
+[T 22:46:34 1245] Tracer actions:
+[T 22:46:34 1245] pre_invocations(0)
+[T 22:46:34 1245] post_invocations(0)
+[T 22:46:34 1245] trace_languages(1): [java]
+[T 22:46:34 1245] Initializing tracer.
+[T 22:46:34 1245] Initializing tags.
+[T 22:46:34 1245] ID set to 00000000000004DD_0000000000000003 (parent 00000000000004DD_0000000000000002)
+[T 22:46:34 1245] ==== Candidate to intercept: true (canonical: /usr/bin/true) ====
+[T 22:46:34 1245] Lua: === Intercepted call to /usr/bin/true ===
+[T 22:46:34 1245] Executing the following tracer actions:
+[T 22:46:34 1245] Tracer actions:
+[T 22:46:34 1245] pre_invocations(0)
+[T 22:46:34 1245] post_invocations(0)
+[T 22:46:34 1245] trace_languages(1): [java]
+[T 22:53:29 1432] CodeQL CLI version 2.19.1
+[T 22:53:29 1432] Initializing tracer.
+[T 22:53:29 1432] Initializing tags.
+[T 22:53:29 1432] ID set to 0000000000000598_0000000000000001 (parent root)
+[T 22:53:29 1432] Initializing tracer.
+[T 22:53:29 1432] Initializing tags.
+[T 22:53:29 1432] ID set to 0000000000000598_0000000000000002 (parent root)
+[T 22:53:29 1432] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:53:29 1432] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:53:29 1432] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:53:29 1432] Executing the following tracer actions:
+[T 22:53:29 1432] Tracer actions:
+[T 22:53:29 1432] pre_invocations(0)
+[T 22:53:29 1432] post_invocations(0)
+[T 22:53:29 1432] trace_languages(1): [java]
+[T 22:53:29 1432] Initializing tracer.
+[T 22:53:29 1432] Initializing tags.
+[T 22:53:29 1432] ID set to 0000000000000598_0000000000000003 (parent 0000000000000598_0000000000000002)
+[T 22:53:29 1432] ==== Candidate to intercept: true (canonical: /usr/bin/true) ====
+[T 22:53:29 1432] Lua: === Intercepted call to /usr/bin/true ===
+[T 22:53:29 1432] Executing the following tracer actions:
+[T 22:53:29 1432] Tracer actions:
+[T 22:53:29 1432] pre_invocations(0)
+[T 22:53:29 1432] post_invocations(0)
+[T 22:53:29 1432] trace_languages(1): [java]
+[T 22:55:57 1605] CodeQL CLI version 2.19.1
+[T 22:55:57 1605] Initializing tracer.
+[T 22:55:57 1605] Initializing tags.
+[T 22:55:57 1605] ID set to 0000000000000645_0000000000000001 (parent root)
+[T 22:55:57 1605] Initializing tracer.
+[T 22:55:57 1605] Initializing tags.
+[T 22:55:57 1605] ID set to 0000000000000645_0000000000000002 (parent root)
+[T 22:55:57 1605] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:55:57 1605] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:55:57 1605] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:55:57 1605] Executing the following tracer actions:
+[T 22:55:57 1605] Tracer actions:
+[T 22:55:57 1605] pre_invocations(0)
+[T 22:55:57 1605] post_invocations(0)
+[T 22:55:57 1605] trace_languages(1): [java]
+[T 22:55:57 1605] Initializing tracer.
+[T 22:55:57 1605] Initializing tags.
+[T 22:55:57 1605] ID set to 0000000000000645_0000000000000003 (parent 0000000000000645_0000000000000002)
+[T 22:55:57 1605] ==== Candidate to intercept: javac (canonical: /usr/bin/javac) ====
+[T 22:55:57 1605] Lua: === Intercepted call to /usr/bin/javac ===
+[T 22:55:57 1605] Executing the following tracer actions:
+[T 22:55:57 1605] Tracer actions:
+[T 22:55:57 1605] pre_invocations(0)
+[T 22:55:57 1605] post_invocations(0)
+[T 22:55:57 1605] trace_languages(1): [java]
+[T 22:55:57 1605] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 22:55:57 1605] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 22:55:58 1605] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 22:55:58 1631] Initializing tracer.
+[T 22:55:58 1631] Initializing tags.
+[T 22:55:58 1631] ID set to 000000000000065F_0000000000000001 (parent 0000000000000645_0000000000000003)
+[T 22:55:58 1631] ==== Candidate to intercept: /usr/lib/jvm/java-17-openjdk-amd64/lib/jspawnhelper (canonical: /usr/lib/jvm/java-17-openjdk-amd64/lib/jspawnhelper) ====
+[T 22:55:58 1631] Lua: === Intercepted call to /usr/lib/jvm/java-17-openjdk-amd64/lib/jspawnhelper ===
+[T 22:55:58 1631] Executing the following tracer actions:
+[T 22:55:58 1631] Tracer actions:
+[T 22:55:58 1631] pre_invocations(0)
+[T 22:55:58 1631] post_invocations(0)
+[T 22:55:58 1631] trace_languages(1): [java]
+[T 22:55:58 1631] Initializing tracer.
+[T 22:55:58 1631] Initializing tags.
+[T 22:55:58 1631] ID set to 000000000000065F_0000000000000002 (parent 000000000000065F_0000000000000001)
+[T 22:55:58 1631] ==== Candidate to intercept: /usr/lib/jvm/java-17-openjdk-amd64/bin/java (canonical: /usr/lib/jvm/java-17-openjdk-amd64/bin/java) ====
+[T 22:55:58 1631] Lua: === Intercepted call to /usr/lib/jvm/java-17-openjdk-amd64/bin/java ===
+[T 22:55:58 1631] Executing the following tracer actions:
+[T 22:55:58 1631] Tracer actions:
+[T 22:55:58 1631] pre_invocations(0)
+[T 22:55:58 1631] post_invocations(0)
+[T 22:55:58 1631] trace_languages(1): [java]
+[T 22:55:58 1631] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 22:55:58 1631] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 22:55:58 1631] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 22:58:11 1836] CodeQL CLI version 2.19.1
+[T 22:58:11 1836] Initializing tracer.
+[T 22:58:11 1836] Initializing tags.
+[T 22:58:11 1836] ID set to 000000000000072C_0000000000000001 (parent root)
+[T 22:58:11 1836] Initializing tracer.
+[T 22:58:11 1836] Initializing tags.
+[T 22:58:11 1836] ID set to 000000000000072C_0000000000000002 (parent root)
+[T 22:58:11 1836] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 22:58:11 1836] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 22:58:11 1836] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 22:58:11 1836] Executing the following tracer actions:
+[T 22:58:11 1836] Tracer actions:
+[T 22:58:11 1836] pre_invocations(0)
+[T 22:58:11 1836] post_invocations(0)
+[T 22:58:11 1836] trace_languages(1): [java]
+[T 22:58:11 1836] Initializing tracer.
+[T 22:58:11 1836] Initializing tags.
+[T 22:58:11 1836] ID set to 000000000000072C_0000000000000003 (parent 000000000000072C_0000000000000002)
+[T 22:58:11 1836] ==== Candidate to intercept: true (canonical: /usr/bin/true) ====
+[T 22:58:11 1836] Lua: === Intercepted call to /usr/bin/true ===
+[T 22:58:11 1836] Executing the following tracer actions:
+[T 22:58:11 1836] Tracer actions:
+[T 22:58:11 1836] pre_invocations(0)
+[T 22:58:11 1836] post_invocations(0)
+[T 22:58:11 1836] trace_languages(1): [java]
+[T 23:02:56 2002] CodeQL CLI version 2.19.1
+[T 23:02:56 2002] Initializing tracer.
+[T 23:02:56 2002] Initializing tags.
+[T 23:02:56 2002] ID set to 00000000000007D2_0000000000000001 (parent root)
+[T 23:02:56 2002] Initializing tracer.
+[T 23:02:56 2002] Initializing tags.
+[T 23:02:56 2002] ID set to 00000000000007D2_0000000000000002 (parent root)
+[T 23:02:56 2002] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:02:56 2002] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 23:02:56 2002] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 23:02:56 2002] Executing the following tracer actions:
+[T 23:02:56 2002] Tracer actions:
+[T 23:02:56 2002] pre_invocations(0)
+[T 23:02:56 2002] post_invocations(0)
+[T 23:02:56 2002] trace_languages(1): [java]
+[T 23:02:56 2002] Initializing tracer.
+[T 23:02:56 2002] Initializing tags.
+[T 23:02:56 2002] ID set to 00000000000007D2_0000000000000003 (parent 00000000000007D2_0000000000000002)
+[T 23:02:56 2002] ==== Candidate to intercept: true (canonical: /usr/bin/true) ====
+[T 23:02:56 2002] Lua: === Intercepted call to /usr/bin/true ===
+[T 23:02:56 2002] Executing the following tracer actions:
+[T 23:02:56 2002] Tracer actions:
+[T 23:02:56 2002] pre_invocations(0)
+[T 23:02:56 2002] post_invocations(0)
+[T 23:02:56 2002] trace_languages(1): [java]
+[T 23:06:25 2098] CodeQL CLI version 2.19.1
+[T 23:06:25 2098] Initializing tracer.
+[T 23:06:25 2098] Initializing tags.
+[T 23:06:25 2098] ID set to 0000000000000832_0000000000000001 (parent root)
+[T 23:06:25 2098] Initializing tracer.
+[T 23:06:25 2098] Initializing tags.
+[T 23:06:25 2098] ID set to 0000000000000832_0000000000000002 (parent root)
+[T 23:06:25 2098] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:06:25 2098] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 23:06:25 2098] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 23:06:25 2098] Executing the following tracer actions:
+[T 23:06:25 2098] Tracer actions:
+[T 23:06:25 2098] pre_invocations(0)
+[T 23:06:25 2098] post_invocations(0)
+[T 23:06:25 2098] trace_languages(1): [java]
+[T 23:06:25 2098] Initializing tracer.
+[T 23:06:25 2098] Initializing tags.
+[T 23:06:25 2098] ID set to 0000000000000832_0000000000000003 (parent 0000000000000832_0000000000000002)
+[T 23:06:25 2098] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 23:06:25 2098] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 23:06:25 2098] Executing the following tracer actions:
+[T 23:06:25 2098] Tracer actions:
+[T 23:06:25 2098] pre_invocations(0)
+[T 23:06:25 2098] post_invocations(0)
+[T 23:06:25 2098] trace_languages(1): [java]
+[T 23:06:25 2101] Initializing tracer.
+[T 23:06:25 2101] Initializing tags.
+[T 23:06:25 2101] ID set to 0000000000000835_0000000000000001 (parent 0000000000000832_0000000000000003)
+[T 23:06:25 2101] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 23:06:25 2101] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 23:06:25 2101] Executing the following tracer actions:
+[T 23:06:25 2101] Tracer actions:
+[T 23:06:25 2101] pre_invocations(0)
+[T 23:06:25 2101] post_invocations(0)
+[T 23:06:25 2101] trace_languages(1): [java]
+[T 23:06:25 2101] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:06:25 2101] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:06:25 2101] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 23:08:04 2300] CodeQL CLI version 2.19.1
+[T 23:08:04 2300] Initializing tracer.
+[T 23:08:04 2300] Initializing tags.
+[T 23:08:04 2300] ID set to 00000000000008FC_0000000000000001 (parent root)
+[T 23:08:04 2300] Initializing tracer.
+[T 23:08:04 2300] Initializing tags.
+[T 23:08:04 2300] ID set to 00000000000008FC_0000000000000002 (parent root)
+[T 23:08:04 2300] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:08:04 2300] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 23:08:04 2300] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 23:08:04 2300] Executing the following tracer actions:
+[T 23:08:04 2300] Tracer actions:
+[T 23:08:04 2300] pre_invocations(0)
+[T 23:08:04 2300] post_invocations(0)
+[T 23:08:04 2300] trace_languages(1): [java]
+[T 23:08:04 2300] Initializing tracer.
+[T 23:08:04 2300] Initializing tags.
+[T 23:08:04 2300] ID set to 00000000000008FC_0000000000000003 (parent 00000000000008FC_0000000000000002)
+[T 23:08:04 2300] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 23:08:04 2300] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 23:08:04 2300] Executing the following tracer actions:
+[T 23:08:04 2300] Tracer actions:
+[T 23:08:04 2300] pre_invocations(0)
+[T 23:08:04 2300] post_invocations(0)
+[T 23:08:04 2300] trace_languages(1): [java]
+[T 23:08:04 2303] Initializing tracer.
+[T 23:08:04 2303] Initializing tags.
+[T 23:08:04 2303] ID set to 00000000000008FF_0000000000000001 (parent 00000000000008FC_0000000000000003)
+[T 23:08:04 2303] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 23:08:04 2303] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 23:08:04 2303] Executing the following tracer actions:
+[T 23:08:04 2303] Tracer actions:
+[T 23:08:04 2303] pre_invocations(0)
+[T 23:08:04 2303] post_invocations(0)
+[T 23:08:04 2303] trace_languages(1): [java]
+[T 23:08:04 2303] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:08:04 2303] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:08:04 2303] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 23:11:25 2459] CodeQL CLI version 2.19.1
+[T 23:11:25 2459] Initializing tracer.
+[T 23:11:25 2459] Initializing tags.
+[T 23:11:25 2459] ID set to 000000000000099B_0000000000000001 (parent root)
+[T 23:11:25 2459] Initializing tracer.
+[T 23:11:25 2459] Initializing tags.
+[T 23:11:25 2459] ID set to 000000000000099B_0000000000000002 (parent root)
+[T 23:11:25 2459] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:11:25 2459] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 23:11:25 2459] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 23:11:25 2459] Executing the following tracer actions:
+[T 23:11:25 2459] Tracer actions:
+[T 23:11:25 2459] pre_invocations(0)
+[T 23:11:25 2459] post_invocations(0)
+[T 23:11:25 2459] trace_languages(1): [java]
+[T 23:11:25 2459] Initializing tracer.
+[T 23:11:25 2459] Initializing tags.
+[T 23:11:25 2459] ID set to 000000000000099B_0000000000000003 (parent 000000000000099B_0000000000000002)
+[T 23:11:25 2459] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 23:11:25 2459] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 23:11:25 2459] Executing the following tracer actions:
+[T 23:11:25 2459] Tracer actions:
+[T 23:11:25 2459] pre_invocations(0)
+[T 23:11:25 2459] post_invocations(0)
+[T 23:11:25 2459] trace_languages(1): [java]
+[T 23:11:25 2462] Initializing tracer.
+[T 23:11:25 2462] Initializing tags.
+[T 23:11:25 2462] ID set to 000000000000099E_0000000000000001 (parent 000000000000099B_0000000000000003)
+[T 23:11:25 2462] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 23:11:25 2462] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 23:11:25 2462] Executing the following tracer actions:
+[T 23:11:25 2462] Tracer actions:
+[T 23:11:25 2462] pre_invocations(0)
+[T 23:11:25 2462] post_invocations(0)
+[T 23:11:25 2462] trace_languages(1): [java]
+[T 23:11:25 2462] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:11:25 2462] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:11:25 2462] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).
+[T 23:28:07 2656] CodeQL CLI version 2.19.1
+[T 23:28:07 2656] Initializing tracer.
+[T 23:28:07 2656] Initializing tags.
+[T 23:28:07 2656] ID set to 0000000000000A60_0000000000000001 (parent root)
+[T 23:28:07 2656] Initializing tracer.
+[T 23:28:07 2656] Initializing tags.
+[T 23:28:07 2656] ID set to 0000000000000A60_0000000000000002 (parent root)
+[T 23:28:07 2656] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 23:28:07 2656] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux) ====
+[T 23:28:07 2656] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/runner-linux ===
+[T 23:28:07 2656] Executing the following tracer actions:
+[T 23:28:07 2656] Tracer actions:
+[T 23:28:07 2656] pre_invocations(0)
+[T 23:28:07 2656] post_invocations(0)
+[T 23:28:07 2656] trace_languages(1): [java]
+[T 23:28:07 2656] Initializing tracer.
+[T 23:28:07 2656] Initializing tags.
+[T 23:28:07 2656] ID set to 0000000000000A60_0000000000000003 (parent 0000000000000A60_0000000000000002)
+[T 23:28:07 2656] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh (canonical: /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh) ====
+[T 23:28:07 2656] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/java/tools/autobuild.sh ===
+[T 23:28:07 2656] Executing the following tracer actions:
+[T 23:28:07 2656] Tracer actions:
+[T 23:28:07 2656] pre_invocations(0)
+[T 23:28:07 2656] post_invocations(0)
+[T 23:28:07 2656] trace_languages(1): [java]
+[T 23:28:07 2659] Initializing tracer.
+[T 23:28:07 2659] Initializing tags.
+[T 23:28:07 2659] ID set to 0000000000000A63_0000000000000001 (parent 0000000000000A60_0000000000000003)
+[T 23:28:07 2659] ==== Candidate to intercept: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java (canonical: /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java) ====
+[T 23:28:07 2659] Lua: === Intercepted call to /home/debiana/w3school/objexamples/police/codeql/tools/linux64/java/bin/java ===
+[T 23:28:07 2659] Executing the following tracer actions:
+[T 23:28:07 2659] Tracer actions:
+[T 23:28:07 2659] pre_invocations(0)
+[T 23:28:07 2659] post_invocations(0)
+[T 23:28:07 2659] trace_languages(1): [java]
+[T 23:28:07 2659] Passing through -javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 23:28:07 2659] Passing through -Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar to underlying JVM.
+[T 23:28:08 2659] Intercepted JVM creation with extra hidden args: ['-javaagent:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:/home/debiana/w3school/objexamples/police/codeql/java/tools/codeql-java-agent.jar' ] (result: 1, 0).

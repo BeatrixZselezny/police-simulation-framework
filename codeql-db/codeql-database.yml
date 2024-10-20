@@ -1,0 +1,39 @@
+---
+sourceLocationPrefix: /home/debiana/w3school/objexamples/police/out
+baselineLinesOfCode: 0
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+inProgress:
+  primaryLanguage: java
+  installedExtractors:
+    ruby:
+     - /home/debiana/w3school/objexamples/police/codeql/ruby
+    html:
+     - /home/debiana/w3school/objexamples/police/codeql/html
+    go:
+     - /home/debiana/w3school/objexamples/police/codeql/go
+    cpp:
+     - /home/debiana/w3school/objexamples/police/codeql/cpp
+    swift:
+     - /home/debiana/w3school/objexamples/police/codeql/swift
+    java:
+     - /home/debiana/w3school/objexamples/police/codeql/java
+    properties:
+     - /home/debiana/w3school/objexamples/police/codeql/properties
+    csv:
+     - /home/debiana/w3school/objexamples/police/codeql/csv
+    xml:
+     - /home/debiana/w3school/objexamples/police/codeql/xml
+    javascript:
+     - /home/debiana/w3school/objexamples/police/codeql/javascript
+    python:
+     - /home/debiana/w3school/objexamples/police/codeql/python
+    yaml:
+     - /home/debiana/w3school/objexamples/police/codeql/yaml
+    csharp:
+     - /home/debiana/w3school/objexamples/police/codeql/csharp
+creationMetadata:
+  cliVersion: 2.19.1
+  creationTime: 2024-10-17T23:28:07.534850317Z
+finalised: false

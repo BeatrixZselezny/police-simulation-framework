@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="python3src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/python/tools/python3src.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

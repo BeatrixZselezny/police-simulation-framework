@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xml-extractor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/xml/tools/xml-extractor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

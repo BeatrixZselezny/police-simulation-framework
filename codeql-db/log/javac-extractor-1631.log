@@ -1,0 +1,11 @@
+[2024-10-18 00:55:58] [javac-extractor-1631] Starting extraction for:
+                                             sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@/home/debiana/w3school/objexamples/police/codeql-db/log/ext/javac.args
+                                             user.dir=/home/debiana/w3school/objexamples/police
+[2024-10-18 00:55:58] [javac-extractor-1631] Compilation name /home/debiana/w3school/objexamples/police/codeql-db/trap/java/diagnostics/diagnostic.trap.gz
+[2024-10-18 00:55:59] [javac-extractor-1631] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2024-10-18 00:55:59] [javac-extractor-1631] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2024-10-18 00:55:59] [javac-extractor-1631] Javac init time: 1.0s
+[2024-10-18 00:55:59] [javac-extractor-1631] Javac attr time: 0.0s
+[2024-10-18 00:55:59] [javac-extractor-1631] Extractor time: 0.0s
+[2024-10-18 00:55:59] [javac-extractor-1631] Other time: 0.5s
+[2024-10-18 00:55:59] [javac-extractor-1631] Total time: 1.5s

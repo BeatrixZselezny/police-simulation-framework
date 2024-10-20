@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="yaml-extractor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeql/yaml/tools/yaml-extractor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
