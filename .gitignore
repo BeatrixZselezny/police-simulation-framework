@@ -1,5 +1,7 @@
 .env
 codeql/
+codeql-db/
+src_codeql/
 *.log
 bin/
 .gradle/
