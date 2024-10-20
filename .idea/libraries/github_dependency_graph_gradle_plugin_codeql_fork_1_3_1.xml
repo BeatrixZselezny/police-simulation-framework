@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="github-dependency-graph-gradle-plugin-codeql-fork-1.3.1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/codeql/java/tools/depgraph-plugin-maven-repo/org/gradle/github-dependency-graph-gradle-plugin-codeql-fork/1.3.1/github-dependency-graph-gradle-plugin-codeql-fork-1.3.1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
