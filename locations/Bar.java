@@ -1,32 +1,34 @@
+package locations;
 
-  package locations;
+import victims.Victim;
+import java.util.ArrayList;
+import java.util.List;
 
-  import victims.Victim;
-  import java.util.ArrayList;
-  import java.util.List;
+public class Bar {
+    private String name;
+    private List<Victim> victims;
 
-
-
-
-  public class Bar {
-     private List<Victim> victims;
-        
-     public Bar(List<Victim> victims) {
+    public Bar(String name, List<Victim> victims) {
+        this.name = name;
         this.victims = victims;
-     }
+    }
 
-     public Bar() {
+    public Bar() {
+        this.name = "Default Bar Name";
         this.victims = new ArrayList<>();
-     }
+    }
 
-     public Victim findVictim(String gender, int age, String hairColor) {
+    public String getName() {
+        return name;
+    }
+
+    public Victim findVictim(String gender, int age, String hairColor) {
         for (Victim victim : victims) {
-	   if (victim.getGender() .equals(gender) && victim.getAge() == age && victim.getHairColor() .equals(hairColor)) {
-	   return victim;
-	   }
-	} 
-       return null;	
-     }
- 
-  }
+            if (victim.getGender().equals(gender) && victim.getAge() == age && victim.getHairColor().equals(hairColor)) {
+                return victim;
+            }
+        }
+        return null;
+    }
+}
   
