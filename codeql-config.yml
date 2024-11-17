@@ -1,0 +1,15 @@
+name: "My Project CodeQL Analysis"
+paths:
+  - src/main/java
+  - src_codeql
+  - policeofficers
+  - criminals
+  - detectives
+  - realtime
+  - simulation
+  - victims
+  - locations
+  - crimes
+  - botnet
+  - cybercriminals
+  - policestation
