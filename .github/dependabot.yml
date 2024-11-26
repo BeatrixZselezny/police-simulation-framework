@@ -4,18 +4,8 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file# .github/dependabot.yml
 version: 2
 updates:
-  # Ha nincs szükséged `npm` frissítésekre, ezt a részt ki lehet kommentelni vagy eltávolítani
-  # - package-ecosystem: "npm" # npm, pip, maven, etc.
-  #   directory: "/" # a projekt gyökérkönyvtára
-  #   schedule:
-  #     interval: "weekly" # lehet daily, weekly vagy monthly
-
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
 
