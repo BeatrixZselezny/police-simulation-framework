@@ -1,10 +1,12 @@
 package detectives;
 
+// Class representing Detective Vicky with a main method to demonstrate her details
 public class DetectiveVicky {
 	  public static void main(String[] args) {
+              // Creating an instance of DetectivesClass for Vicky
 		  DetectivesClass detectiveVicky = new DetectivesClass();
-		  detectiveVicky.DetectiveVicky();
-		  detectiveVicky.printVickyDetails();
+		  detectiveVicky.DetectiveVicky(); // Initializing Vicky's details
+		  detectiveVicky.printVickyDetails(); // Printing Vicky's details
 	  }
 
   }
