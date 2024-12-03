@@ -7,27 +7,28 @@
   public class PoliceOperation {
      public static void main(String[] args) {
         System.out.println("Police operation preparation...");
-	
-	// Bevetési terület körülzárása
+
+	// Setting up the operation area
 	Observable<String> operationSetup = Observable.create(emitter -> {
-	   System.out.println("Rendőrök körülveszik a területet...");
+	   System.out.println("Police are surrounding the area...");
 	   try {
-	      Thread.sleep(2000); // szimuláljuk az előkészületeket
+	      Thread.sleep(2000); // Simulating the setup process
 	   } catch (InterruptedException e) {
 	      e.printStackTrace();
 	   }
-	   System.out.println("Terület körülzárva.");
-	   emitter.onNext("Terület körülzárva");
-	   emitter.onComplete();
+	   System.out.println("Area secured.");
+	   emitter.onNext("Area secured");
+	   emitter.onComplete(); // Marking the Observable as complete
 	});
 
+        // Subscribing to the Observable to perform actions on different threads
 	operationSetup
-		.subscribeOn(Schedulers.io())
-		.observeOn(Schedulers.single())
+		.subscribeOn(Schedulers.io()) // Performing emission on IO thread
+		.observeOn(Schedulers.single()) // Observing result on single thread
 		.subscribe(
-			status -> System.out.println("Status: " + status),
-		        Throwable::printStackTrace,
-		        () -> System.out.println("Police operation setup completes.")	
+			status -> System.out.println("Status: " + status), // Handling emitted status
+		        Throwable::printStackTrace, // Handling errors
+		        () -> System.out.println("Police operation setup completes.") // Completion action
 		);
 	System.out.println("PoliceOperation execution finished.");
      }

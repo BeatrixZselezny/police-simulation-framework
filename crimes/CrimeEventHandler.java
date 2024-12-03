@@ -13,33 +13,38 @@ public class CrimeEventHandler {
     public static void main(String[] args) {
         System.out.println("Starting CrimeEventHandler...");
 
+        // Creating an Observable to simulate crime events
         Observable<String> crimeObservable = Observable.create(emitter -> {
             emitter.onNext("Theft reported");
             emitter.onNext("Drug dealing reported");
             emitter.onNext("Human trafficking reported");
-            emitter.onComplete();
+            emitter.onComplete(); // Marking the Observable as complete
         });
 
+        // Subscribing to the Observable to process events on different threads
         crimeObservable
-            .subscribeOn(Schedulers.io())
-            .observeOn(Schedulers.single())
+            .subscribeOn(Schedulers.io()) // Emitting events on IO thread
+            .observeOn(Schedulers.single()) // Observing events on single thread
             .subscribe(
-                event -> System.out.println("Event: " + event),
-                Throwable::printStackTrace,
-                () -> System.out.println("All events processed")
+                event -> System.out.println("Event: " + event), // Handling emitted events
+                Throwable::printStackTrace, // Handling errors
+                () -> System.out.println("All events processed") // Completion action
             );
 
+        // Reporting theft event
         TheftEvent theftEvent = new TheftEvent();
         theftEvent.reportTheft();
 
+        // Reporting drug dealing event
         DrugDealingEvent drugDealingEvent = new DrugDealingEvent();
         drugDealingEvent.reportDrugDealing();
 
+        // Starting human trafficking event
         Bar bar = new Bar();
         HumanTraffickingEvent humanTraffickingEvent = new HumanTraffickingEvent();
         humanTraffickingEvent.startHumanTrafficking(bar);
 
-        // Mentőakció indítása
+        // Starting rescue operation
         Anna anna = new Anna();
         RescueEvent rescueEvent = new RescueEvent();
         rescueEvent.startRescue(anna, "RedLightHouse");

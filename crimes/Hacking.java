@@ -1,19 +1,21 @@
 
   package crimes;
 
-
+  // Class representing the crime of hacking, extending AbstractCrime
   public class Hacking extends AbstractCrime {
+     // Constructor to initialize a Hacking object with the type "Hacking"
      public Hacking() {
         super("Hacking");
      }
 
-
+     // Method to commit the hacking crime
      @Override
 
      public void commitCrime() {
         System.out.println("Committing hacking...");
      }
 
+     // Method to handle the scenario when the hacking is caught
      @Override
 
      public void getCaught() {
