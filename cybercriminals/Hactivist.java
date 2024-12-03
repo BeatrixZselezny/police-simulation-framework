@@ -1,13 +1,16 @@
-  package cybercriminals;
-  import criminals.Criminal;
+package cybercriminals;
+import criminals.Criminal;
 
-
+  // Class representing a Hactivist in the cybercriminal world, extending CyberCriminal
   public class Hactivist extends CyberCriminal {
+     // Constructor to initialize a Hactivist object with name and age
      public Hactivist(String name, int age) {
         super(name, age);
 
      }
 
+
+     // Overriding the commitCyberCrime method to print a message about the cybercrime being committed
      @Override
 
      public void commitCyberCrime(String command) {
