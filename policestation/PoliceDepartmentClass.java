@@ -2,13 +2,19 @@
   import java.util.HashMap;
   import java.util.Map;
 
+ /**
+  * Class representing the Police Department in the Police Station.
+  */
 
+
+  // Class representing a leader in the police department
   class Leader {
 	  private String name;
 	  private String rank;
 	  private int age;
 	  private String department;
 
+          // Constructor to initialize a Leader object
 	  public Leader(String name, String rank, int age, String department) {
 		  this.name = name;
 		  this.rank = rank;
@@ -16,6 +22,7 @@
 		  this.department = department;
 	  }
 
+          // Getter methods to access private fields
 	  public String getName() {
 		  return name;
 	  }
@@ -32,6 +39,7 @@
 		  return department;
 	  }
 
+          // Overriding the toString method to return a formatted string @Override
 	  @Override
 	  public String toString() {
 		  return "name: " + name +", Rank: " + ", Age: " + age + ", Department: " + department;
@@ -39,14 +47,15 @@
   }
 
 
-  
+  // Main class representing the police department
   public class PoliceDepartmentClass {
 	  private Map<String, Leader> leaders;
 	  private String catName;
 	  private String catColor;
 	  private boolean isChiefPresent;
 
-  
+
+  // Constructor to initialize the PoliceDepartmentClass object with default values
   public PoliceDepartmentClass() {
       leaders = new HashMap<>();
       leaders.put("Chief of Police", new Leader("Ben Johnson", "Chief of Police", 50, "Headquarters"));
@@ -61,12 +70,14 @@
    isChiefPresent = true;
   }
 
+   // Method to get leader information based on the title
    public String getLeaderInfo(String title) {
 	   Leader defaultLeader = new Leader("N/A", "N/A", 0, "N/A");
 	 return leaders.getOrDefault(title, defaultLeader).toString();
-   
+
    }
 
+   // Method to enter the Chief's office with a condition based on isChiefPresent
    public String enterChiefOffice() {
 	   if (!isChiefPresent) {
 		   return catName + ", the " + catColor + "cat, attacks you!";
@@ -77,14 +88,17 @@
 
 
 
+    // Method to change isChiefPresent status when the chief leaves
     public void chiefLeaves() {
 	    isChiefPresent = false;
     }
 
+    // Method to change isChiefPresent status when the chief returns
     public void chiefReturns() {
 	    isChiefPresent = true;
     }
 
+    // Main method to demonstrate the functionality
     public static void main(String[] args) {
 	    PoliceDepartmentClass pd = new PoliceDepartmentClass();
 	    System.out.println(pd.enterChiefOffice());
