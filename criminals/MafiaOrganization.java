@@ -3,9 +3,10 @@
 
 
 
-
+   // Class representing a Mafia organization with a main method to demonstrate its structure
    public class MafiaOrganization {
 	   public static void main(String[] args) {
+           // Creating a Mafia organization and its members
 		   Mafia mafia = new Mafia("Italian Mafia");
 		   MafiaBoss boss = new MafiaBoss("Don Vito", 60, 100, 80, 90);
 		   Underboss underboss = new Underboss("Michael", 40, 90, 75, 85);
@@ -17,6 +18,8 @@
 		   Soldier soldier5 = new Soldier("Mauro", 26, 60, 50, 55);
 		   Consigliere consigliere = new Consigliere("Tom", 40, 95, 60, 95);
 
+
+                   // Building the hierarchy of the Mafia organization
 		   boss.addSubordinate(underboss);
 		   boss.addSubordinate(consigliere);
 		   underboss.addSubordinate(capo);
@@ -29,7 +32,7 @@
 		   mafia.addMember(boss);
 
 
-
+                   // Creating other criminal organizations and their members
 		   DrugDen drugDen = new DrugDen("Downtown Drug Den");
 		   DrugDealer dealer1 = new DrugDealer("Tony", 35, 10, 80);
 		   drugDen.addMember(dealer1);
@@ -38,13 +41,15 @@
 		   Brothel brothel = new Brothel("Red Light District");
 		   HumanTrafficker trafficker1 = new HumanTrafficker("Alice", 30, 8, 75);
 		   brothel.addMember(trafficker1);
-                   
+
+                   // Printing the members of each organization
 		   printOrganizationMembers(mafia);
 		   printOrganizationMembers(drugDen);
 		   printOrganizationMembers(brothel);
 
 	   }
 
+           // Method to print the members of a criminal organization
 	   public static void printOrganizationMembers(CriminalOrganization organization) {
 	    System.out.println("Organization: " + organization.getName());
 	    for (Criminal member : organization.getMembers()) {
@@ -53,16 +58,16 @@
 	}
 
 
-
+           // Method to print the details of a criminal and their subordinates if applicable
 	   public static void printCriminal(Criminal criminal) {
 	      System.out.println(criminal);
 	      if (criminal instanceof MafiaBoss) {
 	          List<MafiaCriminal> subordinates = ((MafiaBoss) criminal).getSubordinates();
 		  for (MafiaCriminal subordinate : subordinates) {
 		      printCriminal(subordinate);
-		  }  
+		  }
 	        } else if (criminal instanceof Underboss) {
-		     List<MafiaCriminal> subordinates = ((Underboss) criminal).getSubordinates();	 
+		     List<MafiaCriminal> subordinates = ((Underboss) criminal).getSubordinates();
 		     for (MafiaCriminal subordinate : subordinates) {
 			     printCriminal(subordinate);
 		     }
