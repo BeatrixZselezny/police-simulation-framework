@@ -1,0 +1,16 @@
+INSERT INTO policestation (room_name, description) VALUES
+('InterrogatorOne', 'This is interrogation room number one.'),
+('InterrogatorTwo', 'This is interrogation room number two.'),
+('InterrogatorThree', 'This is interrogation room number three.'),
+('Prison', 'This is the detention center for the arrested.'),
+('OfficeOne', 'Office number one for the police staff.'),
+('OfficeTwo', 'Office number two for the police staff.'),
+('OfficeThree', 'Office number three for the police staff.'),
+('RelaxRoom', 'This is the relax room for the police staff.'),
+('LargeHall', 'This is the big hall, this is where the police hold the briefing.'),
+('ServerRoom', 'Servers and internet technology tools for the police.'),
+('DiningRoom', 'Dining room and cantin for the police staff.'),
+('BathRoom', 'Bathrooms for the police staff.'),
+('DogKennel', 'This is the dog kennel for the police dogs.'),
+('Armory', 'This is the armory where the weapons are stored.'),
+('Garage', 'This is the garage where the police vehicles are kept.');

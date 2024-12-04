@@ -1,4 +1,5 @@
 RxTest.class
+com/yourcompany/DatabaseInitializer.class
 crimes/CrimeSequenceHandler.class
 detectives/DetectiveMarry.class
 crimes/investigation/InvestigationEventHandler.class
