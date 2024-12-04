@@ -1,0 +1,11 @@
+RxTest.class
+crimes/CrimeSequenceHandler.class
+detectives/DetectiveMarry.class
+crimes/investigation/InvestigationEventHandler.class
+com/yourcompany/JdbcTest.class
+detectives/DetectiveMarc.class
+detectives/DetectivesClass.class
+detectives/DetectivePhil.class
+detectives/DetectiveAndy.class
+detectives/DetectiveVicky.class
+detectives/DetectivePeter.class
