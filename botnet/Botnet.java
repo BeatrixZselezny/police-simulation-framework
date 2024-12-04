@@ -9,7 +9,9 @@
 
   // Class representing a botnet
   public class Botnet {
+// This method is named name;
      private String name;
+// This method is named bots;
      private List<Bot> bots;
 
      // Constructor to initialize a Botnet object with a name and an empty list of bots

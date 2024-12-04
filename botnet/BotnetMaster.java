@@ -15,6 +15,7 @@
      // Overriding the commitCyberCrime method to send a command to the botnet
      @Override
 
+// This method is named commitCyberCrime
      public void commitCyberCrime(String command) {
         System.out.println(getName() + " is sending command to botnet: " + command);
 

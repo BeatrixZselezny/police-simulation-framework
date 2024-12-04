@@ -20,6 +20,7 @@
 
   // Class representing a Cyber Criminal Organization with a main method to demonstrate its structure
   public class CyberCriminalOrganization {
+// This method is named main
      public static void main(String[] args) {
         // Creating instances of various cyber criminals
         Abuser abuser = new Abuser("Adele", 40);

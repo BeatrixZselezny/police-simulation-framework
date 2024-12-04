@@ -6,6 +6,7 @@
 
   // Class representing a kennel for police dogs
   class DogKennel {
+// This method is named dogs;
 	  public List<PoliceDog> dogs;
 
           // Constructor to initialize the DogKennel object
@@ -30,6 +31,7 @@
 
           // Overriding the toString method to return a formatted string
 	  @Override
+// This method is named toString
 	  public String toString() {
 		  return "DogKennel{" +
 			  "dogs=" + dogs +
@@ -87,7 +89,9 @@
 
   // Class representing a police dog
   class PoliceDog {
+// This method is named name;
 	  private String name;
+// This method is named breed;
 	  private String breed;
 
           // Constructor to initialize the PoliceDog object
@@ -96,11 +100,13 @@
 		  this.breed = breed;
 	  }
 
+// This method is named fields
           // Getter methods to access private fields
 	  public String getName() {
 		  return name;
 	  }
 
+// This method is named getBreed
 	  public String getBreed() {
 		  return breed;
 	  }
@@ -108,6 +114,7 @@
 
           // Overriding the toString method to return a formatted string
 	  @Override
+// This method is named toString
           public String toString() {
 		  return "PoliceDog{" +
 			  "name='" + name + '\'' +

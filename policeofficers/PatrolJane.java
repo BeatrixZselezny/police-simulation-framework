@@ -4,6 +4,7 @@ package policeofficers;
  * Class representing Patrol Jane police officer.
  */
 
+// This class is named PatrolJane
 public class PatrolJane {
 
     /**
@@ -11,6 +12,7 @@ public class PatrolJane {
      *
      * @param args command line arguments
      */
+// This method is named main
 	  public static void main(String[] args) {
 		  PoliceOfficersClass patrolJane = new PoliceOfficersClass();
 		  patrolJane.OfficerJane(); //Initialize officer Jane

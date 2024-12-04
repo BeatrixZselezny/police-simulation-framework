@@ -5,6 +5,7 @@
 
    // Class representing a Mafia organization with a main method to demonstrate its structure
    public class MafiaOrganization {
+// This method is named main
 	   public static void main(String[] args) {
            // Creating a Mafia organization and its members
 		   Mafia mafia = new Mafia("Italian Mafia");

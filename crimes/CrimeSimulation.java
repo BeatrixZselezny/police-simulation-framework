@@ -6,6 +6,7 @@
 
   // Class to simulate various crimes and their handling
   public class CrimeSimulation {
+// This method is named main
      public static void main(String[] args) {
         // Creating instances of different types of crimes
 	Crime drugDealing = new DrugDealing();

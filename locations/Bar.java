@@ -6,7 +6,9 @@ import java.util.List;
 
 // Class representing a Bar location with a list of victims
 public class Bar {
+// This method is named name;
     private String name;
+// This method is named victims;
     private List<Victim> victims;
 
     // Constructor to initialize a Bar object with a name and list of victims
@@ -15,6 +17,7 @@ public class Bar {
         this.victims = victims;
     }
 
+// This method is named Bar
     // Default constructor to initialize a Bar object with a default name and an empty list of victims public Bar() {
     public Bar() {
         this.name = "Default Bar Name";

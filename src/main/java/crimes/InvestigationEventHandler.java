@@ -4,7 +4,9 @@ import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import detectives.DetectiveAndy;
 
+// This class is named InvestigationEventHandler
 public class InvestigationEventHandler {
+// This method is named startInvestigation
     public Observable<String> startInvestigation() {
         return Observable.create(emitter -> {
             DetectiveAndy detectiveAndy = new DetectiveAndy();

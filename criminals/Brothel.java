@@ -5,6 +5,7 @@
 
   // Class representing a brothel as a criminal organization
   public class Brothel extends CriminalOrganization {
+// This method is named members;
      private List<HumanTrafficker> members;
 
      // Constructor to initialize a Brothel object with a name and an empty list of members
@@ -22,6 +23,7 @@
      // Overriding the method to get the list of members (human traffickers) in the brothel
      @Override
 
+// This method is named getMembers
      public List<HumanTrafficker> getMembers() {
         return members;
      }

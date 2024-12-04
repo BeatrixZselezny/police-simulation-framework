@@ -5,6 +5,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 
 // Class representing Detective Andy and his investigation events
 public class DetectiveAndy {
+// This method is named startInvestigationEvent
     public Observable<String> startInvestigationEvent() {
         // Method to start an investigation event and return an Observable
         return Observable.create(emitter -> {

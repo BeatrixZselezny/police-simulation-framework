@@ -9,9 +9,13 @@
 
   // Class representing a leader in the police department
   class Leader {
+// This method is named name;
 	  private String name;
+// This method is named rank;
 	  private String rank;
+// This method is named age;
 	  private int age;
+// This method is named department;
 	  private String department;
 
           // Constructor to initialize a Leader object
@@ -22,36 +26,46 @@
 		  this.department = department;
 	  }
 
+// This method is named fields
           // Getter methods to access private fields
 	  public String getName() {
 		  return name;
 	  }
 
+// This method is named getRank
 	  public String getRank() {
 		  return rank;
 	  }
 
+// This method is named getAge
 	  public int getAge() {
 		  return age;
 	  }
 
+// This method is named getDepartment
 	  public String getDepartment() {
 		  return department;
 	  }
 
           // Overriding the toString method to return a formatted string @Override
 	  @Override
+// This method is named toString
 	  public String toString() {
 		  return "name: " + name +", Rank: " + ", Age: " + age + ", Department: " + department;
 	  }
   }
 
 
+// This class is named representing
   // Main class representing the police department
   public class PoliceDepartmentClass {
+// This method is named leaders;
 	  private Map<String, Leader> leaders;
+// This method is named catName;
 	  private String catName;
+// This method is named catColor;
 	  private String catColor;
+// This method is named isChiefPresent;
 	  private boolean isChiefPresent;
 
 

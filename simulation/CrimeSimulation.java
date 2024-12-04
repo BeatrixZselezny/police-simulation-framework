@@ -7,6 +7,7 @@ import locations.Bar;
 
   // Class representing a Crime Simulation
   public class CrimeSimulation {
+// This method is named main
      public static void main(String[] args) {
      // Creating a victim instance
         Victim victim = new Victim("Anna", 22, "female", "brown", 30);

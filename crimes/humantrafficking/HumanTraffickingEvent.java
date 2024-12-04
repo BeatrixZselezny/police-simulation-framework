@@ -6,6 +6,7 @@ import victims.Victim;
 import victims.Anna;
 import locations.Bar;
 
+// This class is named HumanTraffickingEvent
 public class HumanTraffickingEvent {
     // Method to start a human trafficking event at a specified bar
     public void startHumanTrafficking(Bar bar) {

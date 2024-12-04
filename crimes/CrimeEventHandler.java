@@ -9,7 +9,9 @@ import crimes.rescue.RescueEvent;
 import locations.Bar;
 import victims.Anna;
 
+// This class is named CrimeEventHandler
 public class CrimeEventHandler {
+// This method is named main
     public static void main(String[] args) {
         System.out.println("Starting CrimeEventHandler...");
 

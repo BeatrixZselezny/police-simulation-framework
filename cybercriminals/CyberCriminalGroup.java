@@ -7,6 +7,7 @@
 
   // Class representing a group of CyberCriminals, extending CyberCriminal
   public class CyberCriminalGroup extends CyberCriminal {
+// This method is named members;
      private List<CyberCriminal> members;
 
      // Constructor to initialize a CyberCriminalGroup object with name, age, and an empty list of members
@@ -25,6 +26,7 @@
      // Overriding the commitCyberCrime method to print a message about the cyber crime being committed
      @Override
 
+// This method is named commitCyberCrime
      public void commitCyberCrime(String command) {
         System.out.println(getName() + " is leading a cyber crime group." + command);
 	for (CyberCriminal member : members) {

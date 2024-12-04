@@ -13,6 +13,7 @@ import criminals.Criminal;
      // Overriding the commitCyberCrime method to print a message about the cybercrime being committed
      @Override
 
+// This method is named commitCyberCrime
      public void commitCyberCrime(String command) {
         System.out.println(getName() + " Is hacking for a political cause." + command);
      }

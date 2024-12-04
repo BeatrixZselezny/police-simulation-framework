@@ -5,6 +5,7 @@
 
   // Class representing an Underboss in a Mafia organization, extending MafiaCriminal
   public class Underboss extends MafiaCriminal {
+// This method is named subordinates;
      private List<MafiaCriminal> subordinates;
 
      // Constructor to initialize an Underboss object with name, age, loyalty, strength, and intelligence

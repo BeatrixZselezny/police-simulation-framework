@@ -5,6 +5,7 @@
 
   // Class representing a Capo in a Mafia organization, extending MafiaCriminal
   public class Capo extends MafiaCriminal {
+// This method is named soldiers;
      private List<Soldier> soldiers;
 
      // Constructor to initialize a Capo object with name, age, loyalty, strength, and intelligence

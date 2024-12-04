@@ -4,7 +4,9 @@
 
   // Class representing a bot in a botnet
   public class Bot {
+// This method is named ipAddress;
      private String ipAddress;
+// This method is named active;
      private boolean active;
 
      // Constructor to initialize a Bot object with an IP address and set it as active

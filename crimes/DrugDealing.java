@@ -12,6 +12,7 @@
      // Method to commit the drug dealing crime
      @Override
 
+// This method is named commitCrime
      public void commitCrime() {
         System.out.println(getType() + " committed!");
 	setCaught(true);
@@ -20,6 +21,7 @@
      // Method to handle the scenario when the drug dealing is caught
      @Override
 
+// This method is named getCaught
      public void getCaught() {
         System.out.println(getType() + " caught!");
 	setCaught(true);

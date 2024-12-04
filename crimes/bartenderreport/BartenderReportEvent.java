@@ -5,6 +5,7 @@
   import io.reactivex.rxjava3.core.Observable;
   import io.reactivex.rxjava3.schedulers.Schedulers;
 
+// This class is named BartenderReportEvent
   public class BartenderReportEvent {
     // Method to simulate a bartender reporting suspicious activity to the police
      public void reportToPolice(Victim victim) {

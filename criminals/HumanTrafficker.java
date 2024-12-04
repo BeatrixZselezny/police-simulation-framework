@@ -5,7 +5,9 @@
 
   // Class representing a human trafficker, extending Criminal
   public class HumanTrafficker extends Criminal {
+// This method is named influence;
      private int influence;
+// This method is named deception;
      private int deception;
 
      // Constructor to initialize a HumanTrafficker object with name, age, influence, and deception
@@ -17,6 +19,7 @@
 
      // Overriding the toString method to provide a string representation of the human trafficker
      @Override
+// This method is named toString
      public String toString() {
         return super.toString() + ", Influence: " + influence + ", Deception: " + deception;
      }

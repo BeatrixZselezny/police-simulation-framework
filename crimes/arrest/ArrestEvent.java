@@ -3,6 +3,7 @@
   import io.reactivex.rxjava3.core.Observable;
   import io.reactivex.rxjava3.schedulers.Schedulers;
 
+// This class is named ArrestEvent
   public class ArrestEvent {
     // Method to simulate the arrest of a human trafficker
      public void arrestHumanTrafficker(String traffickerName) {

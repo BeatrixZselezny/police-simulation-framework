@@ -6,6 +6,7 @@ import java.util.concurrent.CountDownLatch;
 
 // Class representing an Event Notifier with a main method to demonstrate real-time event notifications
 public class EventNotifier {
+// This method is named main
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Starting EventNotifier...");
 

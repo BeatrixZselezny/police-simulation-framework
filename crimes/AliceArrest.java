@@ -6,6 +6,7 @@
 
   // This Class presentation arrest for Human Traficker Cryme Alice
   public class AliceArrest {
+// This method is named main
      public static void main(String[] args) {
         System.out.println("Starting Alice's arrest...");
 

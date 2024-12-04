@@ -4,6 +4,7 @@
   import io.reactivex.rxjava3.core.Observable;
   import io.reactivex.rxjava3.schedulers.Schedulers;
 
+// This class is named TheftEvent
   public class TheftEvent {
     // Method to simulate reporting a theft event
      public void reportTheft() {

@@ -3,7 +3,9 @@ package detectives;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 
+// This class is named DetectiveAndy
 public class DetectiveAndy {
+// This method is named startInvestigationEvent
     public Observable<String> startInvestigationEvent() {
         return Observable.create(emitter -> {
             System.out.println("Detective Andy is investigating...");

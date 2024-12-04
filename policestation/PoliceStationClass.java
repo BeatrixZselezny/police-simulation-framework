@@ -1,7 +1,9 @@
 package policestation;
 
+// This class is named for
  // Main class for the police station
 public class PoliceStationClass {
+// This method is named main
     public static void main(String[] args) {
         System.out.println("This is Police Station 101!");
 
@@ -150,58 +152,72 @@ public class PoliceStationClass {
         InterrogatorOne();
     }
 
+// This method is named printInterrogatorTwoDetails
     public void printInterrogatorTwoDetails() {
         InterrogatorTwo();
     }
 
+// This method is named printInterrogatorThreeDetails
     public void printInterrogatorThreeDetails() {
         InterrogatorThree();
     }
 
+// This method is named printPrisonDetails
     public void printPrisonDetails() {
         Prison();
     }
 
+// This method is named printOfficeOneDetails
     public void printOfficeOneDetails() {
         OfficeOne();
     }
 
+// This method is named printOfficeTwoDetails
     public void printOfficeTwoDetails() {
         OfficeTwo();
     }
 
+// This method is named printOfficeThreeDetails
     public void printOfficeThreeDetails() {
         OfficeThree();
     }
 
+// This method is named printRelaxRoomDetails
     public void printRelaxRoomDetails() {
         RelaxRoom();
     }
 
+// This method is named printLargeHallDetails
     public void printLargeHallDetails() {
         LargeHall();
     }
 
+// This method is named printServerRoomDetails
     public void printServerRoomDetails() {
         ServerRoom();
     }
 
+// This method is named printDiningRoomDetails
     public void printDiningRoomDetails() {
         DiningRoom();
     }
 
+// This method is named printBathRoomDetails
     public void printBathRoomDetails() {
         BathRoom();
     }
 
+// This method is named printDogKennelDetails
     public void printDogKennelDetails() {
         DogKennel();
     }
 
+// This method is named printArmoryDetails
     public void printArmoryDetails() {
         Armory();
     }
 
+// This method is named printGarageDetails
     public void printGarageDetails() {
         Garage();
     }

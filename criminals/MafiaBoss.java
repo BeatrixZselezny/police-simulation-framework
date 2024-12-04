@@ -6,6 +6,7 @@
 
   // Class representing a Mafia boss, extending MafiaCriminal
   public class MafiaBoss extends MafiaCriminal {
+// This method is named subordinates;
 	  private List<MafiaCriminal> subordinates;
 
           // Constructor to initialize a MafiaBoss object with name, age, loyalty, strength, and intelligence

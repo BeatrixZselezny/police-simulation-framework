@@ -6,6 +6,7 @@ import victims.Victim;
 import locations.RedLightHouse;
 import locations.DrugDen;
 
+// This class is named RescueEvent
 public class RescueEvent {
     // Method to start a rescue operation for a victim at a specified location
     public void startRescue(Victim victim, String location) {

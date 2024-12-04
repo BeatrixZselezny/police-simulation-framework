@@ -4,6 +4,7 @@ package policestation;
   * Class representing the Interrogator One in the police station.
   */
 
+// This class is named InterrogatorOne
 public class InterrogatorOne {
 
     /**
@@ -11,6 +12,7 @@ public class InterrogatorOne {
     *
     * @param args command line arguments
     */
+// This method is named main
 	  public static void main(String[] args) {
 		  PoliceStationClass interrogatorone = new PoliceStationClass();
 		  interrogatorone.printInterrogatorOneDetails(); // Print the details of the Interrogator One

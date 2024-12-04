@@ -2,9 +2,12 @@
   package crimes;
 
 
+// This class is named representing
   // Abstract class representing a generic crime, implementing the Crime interface
   public abstract class AbstractCrime implements Crime {
+// This method is named caught;
      private boolean caught;
+// This method is named type;
      private String type;
 
 
@@ -19,6 +22,7 @@
      // Method to check if the crime has been caught
      @Override
 
+// This method is named isCaught
      public boolean isCaught() {
         return caught;
      }
@@ -26,6 +30,7 @@
      // Method to get the type of crime
      @Override
 
+// This method is named getType
      public String getType() {
         return type;
 

@@ -1,0 +1,21 @@
+import os
+
+def document_files(directory):
+    documentation = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith(".java"):
+                file_path = os.path.join(root, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    first_line = f.readline().strip()
+                    documentation.append(f"**{file}**: {first_line}")
+
+    return documentation
+
+if __name__ == "__main__":
+    docs = document_files('src')  # Itt módosíthatod a könyvtárat, ha szükséges
+    with open('FILE_DESCRIPTIONS.md', 'w', encoding='utf-8') as f:
+        for line in docs:
+            f.write(line + "\n")
+
+    print("FILE_DESCRIPTIONS.md fájl sikeresen létrehozva.")

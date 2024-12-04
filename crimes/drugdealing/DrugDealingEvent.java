@@ -4,6 +4,7 @@
   import io.reactivex.rxjava3.core.Observable;
   import io.reactivex.rxjava3.schedulers.Schedulers;
 
+// This class is named DrugDealingEvent
   public class DrugDealingEvent {
      // Method to simulate reporting a drug dealing event
      public void reportDrugDealing() {
