@@ -1,18 +1,22 @@
- package detectives;
+package detectives;
 
 
+// Class representing multiple detectives with their details and methods to print them
 public class DetectivesClass {
+// This method is named main
 	 public static void main(String[] args) {
 		 System.out.println("We are Police Detectives!");
 
-	 
 
+         // Creating instances of DetectivesClass for each detective
          DetectivesClass peter = new DetectivesClass();
 	 DetectivesClass marc = new DetectivesClass();
 	 DetectivesClass marry = new DetectivesClass();
 	 DetectivesClass andy = new DetectivesClass();
 	 DetectivesClass phil = new DetectivesClass();
 	 DetectivesClass vicky = new DetectivesClass();
+
+         // Initializing and printing details for each detective
 	 peter.DetectivePeter();
 	 peter.printPeterDetails();
 	 marc.DetectiveMarc();
@@ -25,37 +29,42 @@ public class DetectivesClass {
 	 phil.printPhilDetails();
 	 vicky.DetectiveVicky();
 	 vicky.printVickyDetails();
-	 
-   }    
 
+   }
 
+         // Methods to print the introduction of each detective
 	 public void DetectivePeter() {
                  System.out.println("I'm, Police detective Peter! ");
 	 }
-         
+
+// This method is named DetectiveMarc
          public void DetectiveMarc() {
-	         System.out.println("I'm, Police detective Marc!");	 
+	         System.out.println("I'm, Police detective Marc!");
          }
 
+// This method is named DetectiveMarry
 	 public void DetectiveMarry() {
 		 System.out.println("I'm, Police detective Marry!");
 	 }
 
+// This method is named DetectiveAndy
 	 public void DetectiveAndy() {
 		 System.out.println("I'm, Police detective Andy!");
 	 }
 
+// This method is named DetectivePhil
 	 public void DetectivePhil() {
 		 System.out.println("I'm, Police detective Phil!");
 	 }
 
+// This method is named DetectiveVicky
 	 public void DetectiveVicky() {
 		 System.out.println("I'm, Police detective Vicky!");
 	 }
 
 
 
-
+         // Details of each detective stored in 2D arrays
          String[][] peter = {
 		 {"Name:", "Peter Winston"},
 		 {"Age:", "46"},
@@ -100,13 +109,14 @@ public class DetectivesClass {
 
 
 
-
+         // Methods to print the details of each detective
 	 public void printPeterDetails() {
 		 for (int i = 0; i < peter.length; i++) {
 			 System.out.println(peter[i][0] + " " + peter[i][1]);
 		 }
           }
 
+// This method is named printMarcDetails
 	 public void printMarcDetails() {
 		 for (int i = 0; i < marc.length; i++) {
 			 System.out.println(marc[i][0] + " " + marc[i][1]);
@@ -115,30 +125,34 @@ public class DetectivesClass {
 
           }
 
+// This method is named printMarryDetails
 	 public void printMarryDetails() {
 		 for (int i = 0; i < marry.length; i++) {
 			 System.out.println(marry[i][0] + " " + marry[i][1]);
 		 }
 	 }
 
+// This method is named printAndyDetails
 	 public void printAndyDetails() {
 		 for (int i = 0; i < andy.length; i++) {
 			 System.out.println(andy[i][0] + " " + andy[i][1]);
 		 }
         }
 
+// This method is named printPhilDetails
 	 public void printPhilDetails() {
 		 for (int i = 0; i < phil.length; i++) {
 			 System.out.println(phil[i][0] + " " + phil[i][1]);
 		 }
         }
 
+// This method is named printVickyDetails
 	 public void printVickyDetails() {
 		 for (int i = 0; i < vicky.length; i++) {
 			 System.out.println(vicky[i][0] + " " + vicky[i][1]);
 		 }
 	 }
- 
+
 
 }
 

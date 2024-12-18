@@ -1,16 +1,18 @@
+package cybercriminals;
 
-  package cybercriminals;
-
-
+  // Class representing a Scammer in the cybercriminal world, extending CyberCriminal
   public class Scammer extends CyberCriminal {
+     // Constructor to initialize a Scammer object with name and age
      public Scammer(String name, int age) {
         super(name, age);
 
-     } 
+     }
 
 
+     // Overriding the commitCyberCrime method to print a message about the cybercrime being committed
      @Override
 
+// This method is named commitCyberCrime
      public void commitCyberCrime(String command) {
         System.out.println(getName() + " is committing online scams." + command);
      }

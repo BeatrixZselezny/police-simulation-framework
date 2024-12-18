@@ -1,12 +1,35 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-sourceCompatibility = '17'
-targetCompatibility = '17'
+group 'com.yourcompany'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.9'
+    // Add more dependencies as needed
+}
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
 }
+
+application {
+   mainClass = 'RxTest'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java'] 
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+[[34;1mINFO[0m] Unable to find the root directory. Create a .mvn directory in the root directory or add the root="true" attribute on the root project's model to identify it.
+[[34;1mINFO[0m] Error stacktraces are turned on.
+[[34;1mINFO[0m] Scanning for projects...
+[[34;1mINFO[0m] 
+[[34;1mINFO[0m] [1m-------------------------------------< [36;22mcom.yourcompany:police-simulation[39;1m >--------------------------------------[0m
+[[34;1mINFO[0m] [1mBuilding police-simulation 1.0-SNAPSHOT[0m
+[[34;1mINFO[0m]   from pom.xml
+[[34;1mINFO[0m] [1m----------------------------------------------------[ jar ]-----------------------------------------------------[0m
+[[34;1mINFO[0m] 
+[[34;1mINFO[0m] [1m--- [32;22mclean:3.2.0:clean[0m [1m(default-clean)[0m @ [36mpolice-simulation[39;1m ---[0m
+[[34;1mINFO[0m] Deleting /home/debiana/w3school/objexamples/police/target
+[[34;1mINFO[0m] 
+[[34;1mINFO[0m] [1m--- [32;22mresources:3.2.0:resources[0m [1m(default-resources)[0m @ [36mpolice-simulation[39;1m ---[0m
+[[34;1mINFO[0m] Using 'UTF-8' encoding to copy filtered resources.
+[[34;1mINFO[0m] Using 'UTF-8' encoding to copy filtered properties files.
+[[34;1mINFO[0m] Copying 1 resource
+[[34;1mINFO[0m] skip non existing resourceDirectory /home/debiana/w3school/objexamples/police/src/main/resources-filtered
+[[34;1mINFO[0m] 
+[[34;1mINFO[0m] [1m--- [32;22mcompiler:3.13.0:compile[0m [1m(default-compile)[0m @ [36mpolice-simulation[39;1m ---[0m
+[[34;1mINFO[0m] Recompiling the module because of [1mchanged source code[m.
+[[34;1mINFO[0m] Compiling 21 source files with javac [debug release 8] to target/classes
+[[34;1mINFO[0m] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java uses or overrides a deprecated API.
+[[34;1mINFO[0m] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[[34;1mINFO[0m] -------------------------------------------------------------
+[[31;1mERROR[0m] COMPILATION ERROR : 
+[[34;1mINFO[0m] -------------------------------------------------------------
+[[31;1mERROR[0m] /home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[1,20] package io.reactivex does not exist
+[[31;1mERROR[0m] /home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[6,7] cannot find symbol
+  symbol:   class Observable
+  location: class RxJavaRxExample
+[[31;1mERROR[0m] /home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[6,40] cannot find symbol
+  symbol:   variable Observable
+  location: class RxJavaRxExample
+[[34;1mINFO[0m] 3 errors 
+[[34;1mINFO[0m] -------------------------------------------------------------
+[[34;1mINFO[0m] [1m----------------------------------------------------------------------------------------------------------------[0m
+[[34;1mINFO[0m] [31;1mBUILD FAILURE[0m
+[[34;1mINFO[0m] [1m----------------------------------------------------------------------------------------------------------------[0m
+[[34;1mINFO[0m] Total time:  3.282 s
+[[34;1mINFO[0m] Finished at: 2024-12-15T01:08:41+01:00
+[[34;1mINFO[0m] [1m----------------------------------------------------------------------------------------------------------------[0m
+[[31;1mERROR[0m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile[0m [1m(default-compile)[0m on project [36mpolice-simulation[0m: [31;1mCompilation failure[0m: Compilation failure: [m
+[[31;1mERROR[0m] [0m/home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[1,20] package io.reactivex does not exist[m
+[[31;1mERROR[0m] [0m/home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[6,7] cannot find symbol[m
+[[31;1mERROR[0m] [0m  symbol:   class Observable[m
+[[31;1mERROR[0m] [0m  location: class RxJavaRxExample[m
+[[31;1mERROR[0m] [0m/home/debiana/w3school/objexamples/police/src/main/java/com/examle/RxJavaRxExample.java:[6,40] cannot find symbol[m
+[[31;1mERROR[0m] [0m  symbol:   variable Observable[m
+[[31;1mERROR[0m] [0m  location: class RxJavaRxExample[m
+[[31;1mERROR[0m] [0m-> [1m[Help 1][0m[m
+[31;1morg.apache.maven.lifecycle.LifecycleExecutionException[0m: [31;1mFailed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile[0m [1m(default-compile)[0m on project [36mpolice-simulation[0m: [31;1mCompilation failure[0m[0m
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2([1mMojoExecutor.java:329[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute([1mMojoExecutor.java:311[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:213[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:178[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor$1.run([1mMojoExecutor.java:167[0m)
+    [1mat[0m org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute([1mDefaultMojosExecutionStrategy.java:39[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:164[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject([1mLifecycleModuleBuilder.java:107[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject([1mLifecycleModuleBuilder.java:73[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build([1mSingleThreadedBuilder.java:60[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.DefaultLifecycleStarter.execute([1mDefaultLifecycleStarter.java:123[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.doExecute([1mDefaultMaven.java:311[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.doExecute([1mDefaultMaven.java:225[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.execute([1mDefaultMaven.java:149[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.execute([1mMavenCli.java:958[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.doMain([1mMavenCli.java:288[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.main([1mMavenCli.java:205[0m)
+    [1mat[0m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0([1mNative Method[0m)
+    [1mat[0m jdk.internal.reflect.NativeMethodAccessorImpl.invoke([1mNativeMethodAccessorImpl.java:77[0m)
+    [1mat[0m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke([1mDelegatingMethodAccessorImpl.java:43[0m)
+    [1mat[0m java.lang.reflect.Method.invoke([1mMethod.java:569[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced([1mLauncher.java:255[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.launch([1mLauncher.java:201[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode([1mLauncher.java:361[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.main([1mLauncher.java:314[0m)
+[1mCaused by[0m: org.apache.maven.plugin.compiler.CompilationFailureException: [31;1mCompilation failure[0m
+    [1mat[0m org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute([1mAbstractCompilerMojo.java:1309[0m)
+    [1mat[0m org.apache.maven.plugin.compiler.CompilerMojo.execute([1mCompilerMojo.java:215[0m)
+    [1mat[0m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo([1mDefaultBuildPluginManager.java:144[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2([1mMojoExecutor.java:323[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.doExecute([1mMojoExecutor.java:311[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:213[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:178[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor$1.run([1mMojoExecutor.java:167[0m)
+    [1mat[0m org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute([1mDefaultMojosExecutionStrategy.java:39[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.MojoExecutor.execute([1mMojoExecutor.java:164[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject([1mLifecycleModuleBuilder.java:107[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject([1mLifecycleModuleBuilder.java:73[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build([1mSingleThreadedBuilder.java:60[0m)
+    [1mat[0m org.apache.maven.lifecycle.internal.DefaultLifecycleStarter.execute([1mDefaultLifecycleStarter.java:123[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.doExecute([1mDefaultMaven.java:311[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.doExecute([1mDefaultMaven.java:225[0m)
+    [1mat[0m org.apache.maven.DefaultMaven.execute([1mDefaultMaven.java:149[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.execute([1mMavenCli.java:958[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.doMain([1mMavenCli.java:288[0m)
+    [1mat[0m org.apache.maven.cli.MavenCli.main([1mMavenCli.java:205[0m)
+    [1mat[0m jdk.internal.reflect.NativeMethodAccessorImpl.invoke0([1mNative Method[0m)
+    [1mat[0m jdk.internal.reflect.NativeMethodAccessorImpl.invoke([1mNativeMethodAccessorImpl.java:77[0m)
+    [1mat[0m jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke([1mDelegatingMethodAccessorImpl.java:43[0m)
+    [1mat[0m java.lang.reflect.Method.invoke([1mMethod.java:569[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced([1mLauncher.java:255[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.launch([1mLauncher.java:201[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode([1mLauncher.java:361[0m)
+    [1mat[0m org.codehaus.plexus.classworlds.launcher.Launcher.main([1mLauncher.java:314[0m)
+[[31;1mERROR[0m] 
+[[31;1mERROR[0m] Re-run Maven using the '[1m-X[0m' switch to enable verbose output
+[[31;1mERROR[0m] 
+[[31;1mERROR[0m] For more information about the errors and possible solutions, please read the following articles:
+[[31;1mERROR[0m] [1m[Help 1][0m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

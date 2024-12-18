@@ -1,0 +1,261 @@
+[33mcommit ef5cbdff1ba38d82fa345cffa2ed1a7f243692ad[m[33m ([m[1;36mHEAD -> [m[1;32mcodeql-configuration[m[33m)[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Dec 1 20:43:11 2024 +0100
+
+    Remove CodeQL Action from workflow
+
+[33mcommit 2f8b2b1dec82955e1867fd84fd6d84dadfcf1095[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Dec 1 20:20:57 2024 +0100
+
+    Update CodeQL Action to v3
+
+[33mcommit bdf438546f348a4e92374c99cf81791ccd484eb0[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Dec 1 20:09:15 2024 +0100
+
+    Updated rxjava and maven compiler plugin versions
+
+[33mcommit ac46312331c3faece355f111c14297985224dfe1[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Dec 1 19:52:09 2024 +0100
+
+    Java rx update to 3.1.10
+
+[33mcommit 84e8841a925489efa0a14fa2452134cfc5fe73df[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Dec 1 06:18:02 2024 +0100
+
+    Frissítve a pom.xml a megfelelő Java verzióhoz és RxJava függőség
+
+[33mcommit 9bb98c72b6cb6f22b9c2835a119dc2b14e7155f2[m
+Merge: 14be2b9 6fe4af3
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Tue Nov 26 19:38:49 2024 +0100
+
+    Resolved merge conflict in dependabot.yml
+
+[33mcommit 6fe4af3954400f26e18d35a57d6619089ccb7af7[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Tue Nov 26 19:31:03 2024 +0100
+
+    Update dependabot.yml
+    
+    I'm remove the pip directives
+
+[33mcommit 14be2b911c41cf24b24a1810ee332d4646f3ca98[m
+Merge: a7b8bde 485ac1f
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Tue Nov 26 18:46:51 2024 +0100
+
+    Merge branch 'main' of github.com:BeatrixZselezny/Police-simulation-game-project into codeql-configuration
+    Merge branch 'main' of github.com:BeatrixZselezny/Police-simulation-game-project into codeql-configuration
+
+[33mcommit 485ac1fa5b961e5ca992d38bd9da0b218d660ebb[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Tue Nov 26 18:41:48 2024 +0100
+
+    Update dependabot.yml
+
+[33mcommit a7b8bde2dca089e9db8ebc79d1af5cc9c19365b3[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 14:05:02 2024 +0100
+
+    Fix Gradle setup and resolve RxJava import issues
+
+[33mcommit f3d3989ac4beb037c95015a4a10a78b378f0fff6[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 12:47:01 2024 +0100
+
+    Hozzáadva az RxTest osztály és a függőségek
+
+[33mcommit 809d31097fd079bea08c31d0d244e4a3ab01c170[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 10:07:51 2024 +0100
+
+    Add README.md with supported versions and vulnerability reporting
+
+[33mcommit 6946fde8c7115aeb08a369f334cbdaf49255d82c[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Tue Nov 26 18:20:56 2024 +0100
+
+    Update dependabot.yml
+    
+    I remove the npm directives.
+
+[33mcommit 39365fd38dfccc95b098f13903211161d5ef9757[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 08:39:13 2024 +0100
+
+    Add CodeQL configuration and update source directories
+
+[33mcommit a14698c2732863ed520b97430758bd19524208b9[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 03:55:36 2024 +0100
+
+    Hozzáadva az UTF-8 kódolási beállítás a pom.xml fájlhoz
+
+[33mcommit 5169e77b1935313aa4def4ce68b2896875e3353f[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 03:52:00 2024 +0100
+
+    Hozzáadva az UTF-8 kódolási beállítás a pom.xml fájlhoz
+
+[33mcommit 72a6540c67bebb5794b60c6ac571bf0bd4fb9a4e[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Nov 17 03:46:42 2024 +0100
+
+    Frissítések a projektben és új fájlok hozzáadása
+
+[33mcommit cb0f58d650707af6657c0728473123e523e9f3a3[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Thu Nov 14 02:10:56 2024 +0100
+
+    Alias lista hozzáadva a conf könyvtárban
+
+[33mcommit a16ecd338f423b93dc3b391b83f4c1cc06b3aa96[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Thu Nov 14 01:10:04 2024 +0100
+
+    Megterveztük és leírtuk Alice az emberkereskedő letartóztatását
+
+[33mcommit 828c5bf021aba45bd412296ac01dbe0db411e275[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Fri Nov 1 10:50:31 2024 +0100
+
+    Frissítve repository beállítások hozzáadása
+
+[33mcommit e2affd3dbc2224857225a9a3ab25ff1613d0049d[m
+Merge: 5af53a6 caa2a7f
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Fri Nov 1 10:40:47 2024 +0100
+
+    Merge branch 'main' of https://github.com/BeatrixZselezny/Police-simulation-game-project
+
+[33mcommit 5af53a6fd351649b6aa5e4998b77a8c940995450[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Fri Nov 1 10:33:58 2024 +0100
+
+    Frissítve rxandroid verzió 3.1.0-ra
+
+[33mcommit caa2a7f55c297f76262f948d9e438d00b2b178c9[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Fri Nov 1 10:32:02 2024 +0100
+
+    Update pom.xml
+    
+    I was redo the rxandroid comment outs.
+
+[33mcommit b512a75cb4336acb2e92bed7c61f39e9497128f1[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Fri Nov 1 10:27:15 2024 +0100
+
+    Update pom.xml
+    
+    I commentout the rx depedencyes
+
+[33mcommit 480aed1549f3a1f65a9c7dce6bd70ea717640b21[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Fri Nov 1 10:22:05 2024 +0100
+
+    Update pom.xml
+    
+    Uddate rxandroid from 3.0.0 to 3.1.0
+
+[33mcommit 7a226d9923f05babf7abb9a22d5aa2778bb4e28f[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Fri Nov 1 10:13:33 2024 +0100
+
+    Update pom.xml from 3.0 to 3.1.9
+    
+    Update pom.xml from 3.0 to 3.1.9
+
+[33mcommit b48e1cc73af9f18313130f494dc0d2942b4626ec[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Oct 20 14:08:33 2024 +0200
+
+    Végső tisztítás és CodeQL teljes eltávolítása
+
+[33mcommit e955fcd698e6de8b3b97d6bd7f03f336ecc837e6[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Oct 20 12:15:36 2024 +0200
+
+    Kód tisztítása és felesleges fájlok eltávolítása
+    
+    Felesleges .idea és egyéb fájlok eltávolítása
+    
+    Ideiglenes változtatások
+
+[33mcommit a6d95455247a11ae8dc1090323858e732f5b880f[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Sun Oct 20 09:09:49 2024 +0200
+
+    Új fájlok és könyvtárak hozzáadása
+
+[33mcommit 8a7cea927f4c4a11830e669ced47067208e72576[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Fri Oct 18 17:26:57 2024 +0200
+
+    Update Robbery.java
+    
+    Just pI was prepare a text error
+
+[33mcommit e90076805af9be7a1dc4548f83cafdcf8ab4b07e[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Fri Oct 18 02:17:11 2024 +0200
+
+    Update GitHub Actions workflow for custom Java build
+
+[33mcommit b1773f2580b21d41292bf45ae618d0c8c36c9e26[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Wed Oct 16 01:47:10 2024 +0200
+
+    Update codeql-analysis.yml
+
+[33mcommit 034f788116d4f28e0e829c32edcb9e67e650381a[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Wed Oct 16 01:36:57 2024 +0200
+
+    Update codeql-analysis.yml
+
+[33mcommit 387686c8d6387e22f0ab204d1d9603fd12735579[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Wed Oct 16 01:29:52 2024 +0200
+
+    Create codeql-analysis.yml
+    
+    Codeql-analisys rules
+
+[33mcommit 2a216c5d9b55ae1b397b8c4ca978877c850b911e[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Wed Oct 16 01:01:14 2024 +0200
+
+    Create dependabot.yml
+    
+    Dependabot basically rules.
+
+[33mcommit 1b6646d853f5edc65e1e62ddb8c8211c1a539a67[m
+Author: Beatrix Zselezny <33733991+BeatrixZselezny@users.noreply.github.com>
+Date:   Wed Oct 16 00:37:10 2024 +0200
+
+    Create SECURITY.md
+    
+    Security policy descriptions for my java Police simulation game project.
+
+[33mcommit fa4199dbfb20301faf49a51d3e9bd3597de046d6[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Tue Oct 15 23:30:03 2024 +0200
+
+    Removed sensitive data
+
+[33mcommit 98b3a67833ea94285f758520b13bd2d6ea4cbdbb[m
+Author: Beatrix Zselezny <cattybaby75@gmail.com>
+Date:   Tue Oct 15 03:42:15 2024 +0200
+
+    Ebben a változtatásban létrehoztam egy crimes csomagot a bűnözőknek, továbbá csináltam elkövetés és elfogás metódusokat alap szinten
+
+[33mcommit 1d7d5a42145d40ff1973d9fa2b72ac3b814a5ff1[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Debiana <cattybaby75@gmail.com>
+Date:   Tue Oct 15 00:15:06 2024 +0200
+
+    Első commit
