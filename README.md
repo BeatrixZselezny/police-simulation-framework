@@ -15,4 +15,4 @@ Use this section to tell people about which versions of your project are current
 
 Use this section to let people know how to report a vulnerability.
 
-If you think that my repo have a vulnerabilityes, please send me a report at: cattybaby75 (at) gmail dot com.  thank you so much! 
+If you think that my repo have with vulnerabilityes, please send me a report at: cattybaby75 (at) gmail dot com.  thank you so much! 
