@@ -14,3 +14,5 @@ Use this section to tell people about which versions of your project are current
 ## Reporting a Vulnerability
 
 Use this section to let people know how to report a vulnerability.
+
+If you think that my repo have a vulnerabilityes, please send me a report at: cattybaby75"@"gmail.com.  thank you so much! 
