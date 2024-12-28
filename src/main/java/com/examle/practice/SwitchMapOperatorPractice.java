@@ -1,0 +1,11 @@
+package com.example.practice;
+
+import io.reactivex.rxjava3.core.Observable;
+
+public class SwitchMapOperatorPractice {
+   public static void main(String[] args) {
+      Observable.just("Hello", "RxJava")
+         .switchMap(s -> Observable.fromArray(s.split("")))
+         .subscribe(System.out::println);
+   }
+}
