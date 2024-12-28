@@ -11,3 +11,4 @@ realtime/
 target/
 *.class
 *.tmp
+*.jar
