@@ -1,5 +1,4 @@
 com/example/practice/BufferOperatorPractice.class
-com/yourcompany/config/SecurityConfig.class
 spring/data/FileStorageException.class
 crimes/investigation/InvestigationEventHandler.class
 detectives/DetectivePeter.class
@@ -32,4 +31,5 @@ com/yourcompany/DatabaseInitializer.class
 com/example/practice/ThrottleFirstOperatorPractice.class
 spring/data/FileStorageProperties.class
 com/yourcompany/controller/HomeController.class
+SecurityConfig.class
 com/example/practice/FilterOperatorPractice.class
