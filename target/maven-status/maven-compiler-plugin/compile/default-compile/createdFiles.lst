@@ -11,6 +11,7 @@ crimes/CrimeSequenceHandler.class
 com/example/practice/TakeWhileOperatorPractice.class
 com/example/practice/TakeOperatorPractice.class
 detectives/DetectiveMarry.class
+com/example/practice/ReduceExample.class
 com/yourcompany/JdbcTest.class
 detectives/DetectiveMarc.class
 com/example/practice/CombineLatestOperatorPractice.class
@@ -22,7 +23,11 @@ com/example/practice/FlatMapOperatorPractice.class
 com/example/practice/ZipOperatorPractice.class
 com/example/practice/ConcatMapOperatorPractice.class
 com/example/practice/SkipOperatorPractice.class
+com/example/practice/DebounceExample.class
+com/example/practice/FilterExample.class
+com/example/practice/ConcatMapExample.class
 detectives/DetectivesClass.class
+com/example/practice/FlatMapExample.class
 detectives/DetectiveVicky.class
 com/yourcompany/PoliceSimulationApplication.class
 com/example/practice/MapOperatorPractice.class
@@ -33,3 +38,4 @@ spring/data/FileStorageProperties.class
 com/yourcompany/controller/HomeController.class
 SecurityConfig.class
 com/example/practice/FilterOperatorPractice.class
+com/example/practice/MapExample.class
