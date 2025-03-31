@@ -1,4 +1,4 @@
-  CREATE OR REPLACE FUNCTION  Int_stp_upl_receptek(\
+  CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader.sql(\
       receptid INT,\
       recept_név VARCHAR DEFAULT 'Nincs megadva',\
       elkészítés VARCHAR DEFAULT 'Nincs megadva',\
