@@ -23,4 +23,4 @@
 \prompt 'Adja meg a fűszernövényt: ' fűszernövény
 \prompt 'Adja meg a kész krémet: ' kész_krém
 
-SELECT InteractiveRecipeUploader.sql(:receptid, :recept_név, :elkészítés, :jegyzet, :recept_osztály_id, :alaplé, :zsíradék, :hús, :zöldség, :tejtermék, :gabonaféle, :szárazáru, :állati_termék, :gyümölcs, :fűszer, :magvak, :feldolgozott_élelmiszer, :pékáru, :ital, :konzervtermék, :édességek, :kész_szósz, :fűszernövény, :kész_krém);
+SELECT InteractiveRecipeUploader(:receptid, :recept_név, :elkészítés, :jegyzet, :recept_osztály_id, :alaplé, :zsíradék, :hús, :zöldség, :tejtermék, :gabonaféle, :szárazáru, :állati_termék, :gyümölcs, :fűszer, :magvak, :feldolgozott_élelmiszer, :pékáru, :ital, :konzervtermék, :édességek, :kész_szósz, :fűszernövény, :kész_krém);

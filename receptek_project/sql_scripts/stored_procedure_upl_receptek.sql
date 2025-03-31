@@ -1,4 +1,4 @@
-  CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader.sql(\
+  CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader(\
       receptid INT,\
       recept_név VARCHAR DEFAULT 'Nincs megadva',\
       elkészítés VARCHAR DEFAULT 'Nincs megadva',\
@@ -29,7 +29,7 @@
     v.zsíradék VARCHAR := CASE WHEN $7 IS NULL OR $7 = '' THEN NULL ELSE $7 END;
     v.hús VARCHAR := CASE WHEN $8 IS NULL OR $8 = '' THEN NULL ELSE $8 END;
     v.zöldség VARCHAR := CASE WHEN $9 IS NULL OR $9 = '' THEN NULL ELSE $9 END;
-    v.tejtermét VARCHAR := CASE WHEN $10 IS NULL OR $10 = '' THEN NULL ELSE $10 END;
+    v.tejtermék VARCHAR := CASE WHEN $10 IS NULL OR $10 = '' THEN NULL ELSE $10 END;
     v.gabonaféle VARCHAR := CASE WHEN $11 IS NULL OR $11 = '' THEN NULL ELSE $11 END;
     v.szárazáru VARCHAR := CASE WHEN $12 IS NULL OR $12 = '' THEN NULL ELSE $12 END;
     v.állati_termék VARCHAR := CASE WHEN $13 IS NULL OR $13 = '' THEN NULL ELSE $13 END;
