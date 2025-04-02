@@ -1,33 +1,33 @@
 CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader(
       receptid INT,
-      recept_név VARCHAR DEFAULT 'Nincs megadva',
-      elkészítés VARCHAR DEFAULT 'Nincs megadva',
-      jegyzet VARCHAR DEFAULT 'Nincs megadva',
+      recept_név VARCHAR,
+      elkészítés VARCHAR,
+      jegyzet VARCHAR,
       recept_osztály_id INT,
-      alaplé VARCHAR DEFAULT 'Nincs megadva',
-      zsíradék VARCHAR DEFAULT 'Nincs megadva',
-      hús VARCHAR DEFAULT 'Nincs megadva',
-      zöldség VARCHAR DEFAULT 'Nincs megadva',
-      tejtermék VARCHAR DEFAULT 'Nincs megadva',
-      gabonaféle VARCHAR DEFAULT 'Nincs megadva',
-      szárazáru VARCHAR DEFAULT 'Nincs megadva',
-      állati_termék VARCHAR DEFAULT 'Nincs megadva',
-      gyümölcs VARCHAR DEFAULT 'Nincs megadva',
-      fűszer VARCHAR DEFAULT 'Nincs megadva',
-      magvak VARCHAR DEFAULT 'Nincs megadva',
-      feldolgozott_élelmiszer VARCHAR DEFAULT 'Nincs megadva',
-      pékáru VARCHAR DEFAULT 'Nincs megadva',
-      ital VARCHAR DEFAULT 'Nincs megadva',
-      konzervtermék VARCHAR DEFAULT 'Nincs megadva',
-      édességek VARCHAR DEFAULT 'Nincs megadva',
-      kész_szósz VARCHAR DEFAULT 'Nincs megadva',
-      fűszernövény VARCHAR DEFAULT 'Nincs megadva',
-      kész_krém VARCHAR DEFAULT 'Nincs megadva'
+      alaplé VARCHAR,
+      zsíradék VARCHAR,
+      hús VARCHAR,
+      zöldség VARCHAR,
+      tejtermék VARCHAR,
+      gabonaféle VARCHAR,
+      szárazáru VARCHAR,
+      állati_termék VARCHAR,
+      gyümölcs VARCHAR,
+      fűszer VARCHAR,
+      magvak VARCHAR,
+      feldolgozott_élelmiszer VARCHAR,
+      pékáru VARCHAR,
+      ital VARCHAR,
+      konzervtermék VARCHAR,
+      édességek VARCHAR,
+      kész_szósz VARCHAR,
+      fűszernövény VARCHAR,
+      kész_krém VARCHAR
 ) RETURNS VOID AS $$
 BEGIN
        -- Ellenőrizzük, hogy már létezik -e a megadott recept_id
     IF NOT EXISTS (SELECT 1 FROM receptek WHERE receptek.receptid = $1)  THEN
-       -- Hem már létezik, beszúrunk egy új rekordot
+       -- HA már létezik, beszúrunk egy új rekordot
         INSERT INTO receptek (receptid, recept_név, elkészítés, jegyzet, recept_osztály_id, alaplé, zsíradék, hús, zöldség, tejtermék,
  gabonaféle, szárazáru, állati_termék, gyümölcs, fűszer, magvak, feldolgozott_élelmiszer, pékáru, ital, konzervtermék, édességek,
  kész_szósz, fűszernövény, kész_krém)
