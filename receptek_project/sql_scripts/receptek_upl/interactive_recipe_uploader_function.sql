@@ -26,18 +26,18 @@ CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader(
 ) RETURNS VOID AS $$
 BEGIN
        -- Ellenőrizzük, hogy már létezik -e a megadott recept_id
-    IF NOT EXISTS (SELECT 1 FROM receptek WHERE receptek.receptid = $1)  THEN
-       -- HA már létezik, beszúrunk egy új rekordot
+      IF EXISTS (SELECT 1 FROM receptek WHERE receptek.receptid = $1)  THEN
+         RAISE NOTICE 'Ez az ID már foglalt! Kérlek, válassz másikat!';
+      ELSE
+       -- Beszúrunk egy új rekordot
         INSERT INTO receptek (receptid, recept_név, elkészítés, jegyzet, recept_osztály_id, alaplé, zsíradék, hús, zöldség, tejtermék,
  gabonaféle, szárazáru, állati_termék, gyümölcs, fűszer, magvak, feldolgozott_élelmiszer, pékáru, ital, konzervtermék, édességek,
  kész_szósz, fűszernövény, kész_krém)
         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24);
-
-
         RAISE NOTICE 'A rekord sikeresen létrejött: receptid = %, recept_név = %', $1, $2;
-    END IF;
- EXCEPTION
-    WHEN OTHERS THEN
+     END IF;
+        EXCEPTION
+     WHEN OTHERS THEN
         -- Hibakezelés
         RAISE NOTICE 'Hiba történt a beszúrás során. Nem sikerült a művelet!';
         RAISE EXCEPTION 'Nem várt hiba fordult elő!';
