@@ -9,12 +9,12 @@ CREATE OR REPLACE FUNCTION InteractiveRecipeMultiUploader.sql(
 ) RETURNS VOID AS $$
 BEGIN
   -- Ellenőrizzük, hogy hogy már létezik -e, a megadott recept ID:
-    IF EXISTS (SELECT 1 FROM recept_összetevők WHERE recept_összetevők.receptid = $1) THEN
+    IF EXISTS (SELECT 1, 2, 3, 4 FROM recept_összetevők WHERE recept_összetevők.receptid = $1, $2, $3, $4) THEN
         	RAISE NOTICE 'Ez az ID már foglalt! Kérlek, válassz másikat!';
-	ELSE    
-  -- Beszúrunk egy új rekordot:
+	ELSE
+  -- Beszúrjuk az új rekordokat:
     WITH data AS (
-       SELECT :receptid::int AS rec_id,
+         SELECT UNNEST(string_to_array(:'receptid', ',')::int[]) AS rec_id,
         	UNNEST(string_to_array(:'recept_sorszám', ',')::int[]) AS rec_no,
 		UNNEST(string_to_array(:'összetevő_id', ',')::int[]) AS össz_id,
 		UNNEST(string_to_array(:'mennyiség', ',')::int[]) AS menny,
