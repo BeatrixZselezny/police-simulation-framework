@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TRIGGER_FILE="$HOME/w3school/objexamples/police/receptek_project/sql_scripts/triggers/logs/run_triggers.sql"
-LOG_FILE="$HOME/w3school/objexamples/police/receptek_project/sql_scripts/triggers/logs/trigger_errors.log"
+TRIGGER_FILE="/home/debiana/w3school/objexamples/police/receptek_project/sql_scripts/triggers/logs/run_triggers.sql"
+LOG_FILE="/home/debiana/w3school/objexamples/police/receptek_project/sql_scripts/triggers/logs/trigger_errors.log"
 
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
