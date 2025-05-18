@@ -1,43 +1,54 @@
 name: PostgreSQL Backup Test
 
 on:
-  schedule:
-    - cron: '0 23 * * *'  # Ez UTC 23:00, magyar idő szerint pont éjfél
-  workflow_dispatch:
   push:
     paths:
-      - 'sql_scripts/db_backup/**'
+      - .github/workflows/pgbackup.yaml
+  workflow_dispatch:
 
 jobs:
   db-dump-test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 📥 Repo klónozása
+      - name: 📦 Repo klónozása
         uses: actions/checkout@v3
 
-      - name: 🐘 PostgreSQL telepítése
+      - name: 🐘 PostgreSQL telepítése és indítása
         run: |
           sudo apt update
           sudo apt install -y postgresql postgresql-contrib
+          sudo pg_ctlcluster 14 main start
 
-      - name: 🗃️ Adatbázis létrehozása teszthez
+      - name: 🛠️ Tesztadatbázis létrehozása
         run: |
           sudo -u postgres createdb receptek_utf8_test
 
-      - name: 📂 Dump visszatöltése teszt adatbázisba
+      - name: 📤 Dump készítése
         run: |
-          sudo -u postgres psql -d receptek_utf8_test -f sql_scripts/db_backup/receptek_utf8_dump.sql
+          echo "CREATE TABLE test (id SERIAL PRIMARY KEY, name TEXT);" | sudo -u postgres psql receptek_utf8_test
+          sudo -u postgres pg_dump receptek_utf8_test > dump.sql
+
+      - name: 📥 Dump visszatöltése új adatbázisba
+        run: |
+          sudo -u postgres createdb restore_test
+          sudo -u postgres psql restore_test < dump.sql
 
       - name: 🧹 Takarítás
         run: |
           sudo -u postgres dropdb receptek_utf8_test
+          sudo -u postgres dropdb restore_test
+          rm -f dump.sql
+
+      - name: 📝 Post - sikeres teszt log
+        run: echo "✅ PostgreSQL backup & restore teszt sikeres."
 
   notify-on-failure:
+    needs: db-dump-test
     if: failure()
     runs-on: ubuntu-latest
+
     steps:
-      - name: ❌ Send failure notification
-        run: |
-          echo "🔴 PostgreSQL backup or restore failed."
-          echo "Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      - name: 🚨 Értesítés hibáról
+        run: echo "❌ Sikertelen lett a PostgreSQL backup workflow. Nézd meg a logokat!"
 
