@@ -2,53 +2,64 @@ name: PostgreSQL Backup Test
 
 on:
   push:
-    paths:
-      - .github/workflows/pgbackup.yaml
-  workflow_dispatch:
 
 jobs:
   db-dump-test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_USER: bea
+          POSTGRES_PASSWORD: titok
+          POSTGRES_DB: receptek
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
-      - name: 📦 Repo klónozása
-        uses: actions/checkout@v3
+    - name: Repo klónozása
+      uses: actions/checkout@v4
 
-      - name: 🐘 PostgreSQL telepítése és indítása
-        run: |
-          sudo apt update
-          sudo apt install -y postgresql postgresql-contrib
-          sudo pg_ctlcluster 14 main start
+    - name: Várakozás PostgreSQL-re
+      run: |
+        echo "Várunk a DB-re..."
+        sleep 10
 
-      - name: 🛠️ Tesztadatbázis létrehozása
-        run: |
-          sudo -u postgres createdb receptek_utf8_test
+    - name: Tesztadatbázis létrehozása
+      run: |
+        psql -h localhost -U bea -d receptek -c "CREATE TABLE test (id SERIAL PRIMARY KEY, name TEXT);"
+      env:
+        PGPASSWORD: titok
 
-      - name: 📤 Dump készítése
-        run: |
-          echo "CREATE TABLE test (id SERIAL PRIMARY KEY, name TEXT);" | sudo -u postgres psql receptek_utf8_test
-          sudo -u postgres pg_dump receptek_utf8_test > dump.sql
+    - name: Dump készítése
+      run: |
+        pg_dump -h localhost -U bea -d receptek -f dump.sql
+      env:
+        PGPASSWORD: titok
 
-      - name: 📥 Dump visszatöltése új adatbázisba
-        run: |
-          sudo -u postgres createdb restore_test
-          sudo -u postgres psql restore_test < dump.sql
+    - name: Dump visszatöltése új adatbázisba
+      run: |
+        psql -h localhost -U bea -c "CREATE DATABASE receptek_restore;"
+        psql -h localhost -U bea -d receptek_restore -f dump.sql
+      env:
+        PGPASSWORD: titok
 
-      - name: 🧹 Takarítás
-        run: |
-          sudo -u postgres dropdb receptek_utf8_test
-          sudo -u postgres dropdb restore_test
-          rm -f dump.sql
+    - name: Takarítás
+      run: rm -f dump.sql
 
-      - name: 📝 Post - sikeres teszt log
-        run: echo "✅ PostgreSQL backup & restore teszt sikeres."
-
+    - name: Post - sikeres teszt log
+      run: echo "Sikeresen ment a backup & restore teszt! 🎉"
+      
   notify-on-failure:
     needs: db-dump-test
     if: failure()
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🚨 Értesítés hibáról
-        run: echo "❌ Sikertelen lett a PostgreSQL backup workflow. Nézd meg a logokat!"
+    - name: Értesítés sikertelen mentésről
+      run: echo "❌ PostgreSQL mentés/restore sikertelen volt!"
 
