@@ -32,4 +32,11 @@ jobs:
         run: |
           sudo -u postgres dropdb receptek_utf8_test
 
+    notify-on-failure:
+        if: failure()
+        runs-on: ubuntu-latest
+        steps:
+      - name: ❌ Send failure notification
+        run: echo "🔴 PostgreSQL backup or restore failed. Check logs here: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
 
