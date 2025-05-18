@@ -1,0 +1,48 @@
+name: PostgreSQL Dump Teszt
+
+on:
+  push:
+    paths:
+      - 'sql_scripts/db_backup/receptek_utf8_dump.sql'
+  workflow_dispatch:
+
+jobs:
+  postgres-dump-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: receptek_utf8_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: 📥 Repo klónozása
+        uses: actions/checkout@v3
+
+      - name: ⏳ Várakozás PostgreSQL indulásra
+        run: sleep 10
+
+      - name: 🔧 PostgreSQL client telepítése
+        run: sudo apt-get install -y postgresql-client
+
+      - name: 🧪 Dump betöltése tesztadatbázisba
+        run: |
+          psql -h localhost -U postgres -d receptek_utf8_test -f sql_scripts/db_backup/receptek_utf8_dump.sql
+        env:
+          PGPASSWORD: postgres
+
+      - name: ✅ Táblák listázása ellenőrzésképp
+        run: |
+          psql -h localhost -U postgres -d receptek_utf8_test -c "\dt"
+        env:
+          PGPASSWORD: postgres
+
