@@ -1,65 +1,40 @@
-name: PostgreSQL Backup Test
+name: PostgreSQL Backup
 
 on:
-  push:
+  workflow_dispatch:  # kézi indításhoz
+  schedule:
+    - cron: '0 23 * * *'  # minden nap éjfélkor magyar idő szerint (23:00 UTC)
 
 jobs:
-  db-dump-test:
+  backup:
+    name: 💾 PostgreSQL mentés
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:14
-        env:
-          POSTGRES_USER: bea
-          POSTGRES_PASSWORD: titok
-          POSTGRES_DB: receptek
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+
+    env:
+      PGUSER: postgres
+      PGHOST: localhost
+      PGPORT: 5432
+      PGDATABASE: receptek_utf8
+      PGPASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
 
     steps:
-    - name: Repo klónozása
-      uses: actions/checkout@v4
+      - name: 📥 Repo klónozása
+        uses: actions/checkout@v3
 
-    - name: Várakozás PostgreSQL-re
-      run: |
-        echo "Várunk a DB-re..."
-        sleep 10
+      - name: 🐘 PostgreSQL telepítése
+        run: |
+          sudo apt update
+          sudo apt install -y postgresql postgresql-client
 
-    - name: Tesztadatbázis létrehozása
-      run: |
-        psql -h localhost -U bea -d receptek -c "CREATE TABLE test (id SERIAL PRIMARY KEY, name TEXT);"
-      env:
-        PGPASSWORD: titok
+      - name: 📦 Adatbázis mentése pg_dump-pal
+        run: |
+          mkdir -p backup
+          pg_dump -Fc -f backup/receptek_utf8_$(date +%Y-%m-%d).dump
 
-    - name: Dump készítése
-      run: |
-        pg_dump -h localhost -U bea -d receptek -f dump.sql
-      env:
-        PGPASSWORD: titok
+      - name: ⬆️ Artifact feltöltése
+        uses: actions/upload-artifact@v4
+        with:
+          name: postgres-backup-${{ github.run_id }}
+          path: backup/*.dump
 
-    - name: Dump visszatöltése új adatbázisba
-      run: |
-        psql -h localhost -U bea -c "CREATE DATABASE receptek_restore;"
-        psql -h localhost -U bea -d receptek_restore -f dump.sql
-      env:
-        PGPASSWORD: titok
-
-    - name: Takarítás
-      run: rm -f dump.sql
-
-    - name: Post - sikeres teszt log
-      run: echo "Sikeresen ment a backup & restore teszt! 🎉"
-      
-  notify-on-failure:
-    needs: db-dump-test
-    if: failure()
-    runs-on: ubuntu-latest
-    steps:
-    - name: Értesítés sikertelen mentésről
-      run: echo "❌ PostgreSQL mentés/restore sikertelen volt!"
 
