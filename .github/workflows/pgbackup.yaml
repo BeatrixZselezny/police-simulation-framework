@@ -5,7 +5,7 @@ on:
     paths:
       - 'sql_scripts/db_backup/**'
   schedule:
-    - cron: '0 23 * * *'  # ⏰ Ez UTC 23:00, azaz magyar idő szerint pont éjfél!
+    - cron: '0 23 * * *' # Ez UTC 23:00, azaz magyar idő szerint pont éjfél!
 
 jobs:
   db-dump-test:
@@ -32,11 +32,10 @@ jobs:
         run: |
           sudo -u postgres dropdb receptek_utf8_test
 
-    notify-on-failure:
-        if: failure()
-        runs-on: ubuntu-latest
-        steps:
+  notify-on-failure:
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
       - name: ❌ Send failure notification
         run: echo "🔴 PostgreSQL backup or restore failed. Check logs here: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-
 
