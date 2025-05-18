@@ -1,14 +1,29 @@
 name: PostgreSQL Backup
 
 on:
-  workflow_dispatch:  # kézi indításhoz
+  workflow_dispatch:
   schedule:
-    - cron: '0 23 * * *'  # minden nap éjfélkor magyar idő szerint (23:00 UTC)
+    - cron: '0 23 * * *'
 
 jobs:
   backup:
     name: 💾 PostgreSQL mentés
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: receptek_utf8
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     env:
       PGUSER: postgres
@@ -21,10 +36,8 @@ jobs:
       - name: 📥 Repo klónozása
         uses: actions/checkout@v3
 
-      - name: 🐘 PostgreSQL telepítése
-        run: |
-          sudo apt update
-          sudo apt install -y postgresql postgresql-client
+      - name: 🐘 Várakozás PostgreSQL indulásra
+        run: sleep 10
 
       - name: 📦 Adatbázis mentése pg_dump-pal
         run: |
@@ -36,5 +49,4 @@ jobs:
         with:
           name: postgres-backup-${{ github.run_id }}
           path: backup/*.dump
-
 
