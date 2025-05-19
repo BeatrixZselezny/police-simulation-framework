@@ -1,4 +1,7 @@
 .env
+backup/
+*.dump
+pg_local_backup.sh~    # temp vagy backup fájlok, ha szokott ilyet generálni editorod
 codeql/
 codeql-db/
 src_codeql/
