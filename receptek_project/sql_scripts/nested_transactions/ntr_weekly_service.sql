@@ -1,30 +1,32 @@
+-- Weekly backup SQL script (RAW SQL, NO PL/pgSQL)
+
+-- TRANZAKCIÓ INDÍTÁSA
 BEGIN;
-	SAVEPOINT sp_backup;
-	-- Táblanév lista
-DECLARE table_list TEXT[] := ARRAY['recept_osztályok', 'összetevők_osztály', 'receptek', 'összetevők', 'mértékek', 'recept_összetevők'];
 
-	-- Iterálás minden táblára
-	FOR i IN ARRAY_LOWER(table_list,1) .. ARRAY_UPPER(table_list,1) LOOP
-		BEGIN
-			-- Régi backup törlése
-                        EXECUTE format('DROP TABLE IF EXISTS public.%I_backup', table_list[i]);
+-- Napló: Backup indítása
+INSERT INTO backup_log (operation, status, initiated_by)
+VALUES ('Weekly Backup', 'Started', 'System');
 
-			-- Új backup létrehozása (SELECT INTO-val)
-                        EXECUTE format('SELECT * INTO public.%I_backup FROM public.%I', table_list[i], table_list[i]);
+-- MENTÉS: ÖSSZETEVŐK
+SAVEPOINT sp_osszetevok;
+INSERT INTO összetevők_backup SELECT * FROM összetevők;
 
-			-- Log mentése a backup_log táblába
+-- MENTÉS: RECEPTEK
+SAVEPOINT sp_receptek;
+INSERT INTO receptek_backup SELECT * FROM receptek;
 
-                        EXECUTE format('INSERT INTO backup_log (table_name, status) VALUES (%L, %L)', table_list[i], 'Sikeres');
+-- MENTÉS: ÖSSZETEVŐK_OSZTÁLY
+SAVEPOINT sp_osztaly;
+INSERT INTO összetevők_osztály_backup SELECT * FROM összetevők_osztály;
 
+-- MENTÉS: RECEPT_ÖSSZETEVŐK
+SAVEPOINT sp_ro;
+INSERT INTO recept_összetevők_backup SELECT * FROM recept_összetevők;
 
-		    RAISE NOTICE 'Backup készült: %', table_list[i];
-		      EXCEPTION
-		        WHEN OTHERS THEN
-			  RAISE NOTICE 'Hiba történt a % tábla mentésénél: %', table_list[i], SQLERRM;
-			  EXECUTE format('INSERT INTO backup_log (table_name, status) VALUES (%L, %L)', table_list[i], 'Hiba');
-			 
-			  ROLLBACK TO SAVEPOINT sp_backup;
-		        END;	
-		      END LOOP;
+-- NAPLÓ: Sikeres backup bejegyzése
+INSERT INTO backup_log (operation, status, initiated_by)
+VALUES ('Weekly Backup', 'Completed', 'System');
 
-	              COMMIT;	
+-- TRANZAKCIÓ VÉGE
+COMMIT;
+
