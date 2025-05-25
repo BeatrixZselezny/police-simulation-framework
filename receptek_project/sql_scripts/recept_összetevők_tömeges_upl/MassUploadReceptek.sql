@@ -43,4 +43,3 @@ BEGIN
 
     RAISE NOTICE 'Adatok sikeresen importálva!';
 END; $$;
-
