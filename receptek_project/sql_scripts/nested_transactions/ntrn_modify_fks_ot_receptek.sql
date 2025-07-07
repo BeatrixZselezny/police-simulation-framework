@@ -43,7 +43,7 @@ DO $$
 			RELEASE SAVEPOINT modify_recept_osszetevok_fk_mertekek;
 		      EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_recept_összetevők_mértékek" megszorítás módosítása során. 
+				RAISE NOTICE 'HIBA történt a "fk_recept_összetevők_mértékek" megszorítás módosítása során.
 				Visszaállítás a mentési pontra.';
 			ROLLBACK TO modify_recept_osszetevok_fk_mertekek;
 			RAISE;
@@ -66,7 +66,7 @@ DO $$
 		      EXCEPTION
 			WHEN OTHERS THEN
 				RAISE NOTICE 'HIBA történt a "fk_receptek_recept_összetevők" megszorítás módosítása során.
-				Visszaállítás a mentési pontra.';		
+				Visszaállítás a mentési pontra.';
 			ROLLBACK TO modify_recept_osszetevok_fk_receptek;
 			RAISE;
         END;
@@ -88,7 +88,7 @@ DO $$
 		      EXCEPTION
 			WHEN OTHERS THEN
 				RAISE NOTICE 'HIBA történt a "fk_összetevők_osztály_id" megszorítás módosítása során.
-				Visszaállítás a mentési pontra';	
+				Visszaállítás a mentési pontra';
 				ROLLBACK TO  modify_recept_osszetevok_fk_osszetevok_osztaly;
 				RAISE;
         END;
@@ -102,7 +102,7 @@ DO $$
 		SAVEPOINT modify_recept_osszetevok_fk_osszetevok;
 
 		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT fk_összetevők_recept_összetevők';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT fk_összetevők_recept_összetevők 
+		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT fk_összetevők_recept_összetevők';
 		FOREIGN KEY ("összetevő_id") REFERENCES összetevők("összetevő_id") ON DELETE RESTRICT';
 
 		RAISE NOTICE 'A "fk_összetevők_recept_összetevők" megszoríítás módosítva.';
@@ -110,7 +110,7 @@ DO $$
 	      EXCEPTION
 		WHEN OTHERS THEN
 			RAISE NOTICE 'HIBA történt a "fk_összetevők_recept_összetevők" megszoríítás módosítása során.
-			Visszaállítás a mentési pontra.';	
+			Visszaállítás a mentési pontra.';
 			ROLLBACK TO modify_recept_osszetevok_fk_osszetevok;
 			RAISE;
         END;
@@ -138,8 +138,8 @@ DO $$
 		RELEASE SAVEPOINT modify_osszetevok_fk_mertekek;
 	      EXCEPTION
 		WHEN OTHERS THEN
-			RAISE NOTICE 'HIBA történt a "mértékekÖsszetevők" megszorítás módosítása során. 
-			Visszaállítás a mentési pontra.';	
+			RAISE NOTICE 'HIBA történt a "mértékekÖsszetevők" megszorítás módosítása során.
+			Visszaállítás a mentési pontra.';
 			ROLLBACK TO modify_osszetevok_fk_mertekek;
 			RAISE;
 	END;
@@ -159,8 +159,8 @@ DO $$
 		RELEASE SAVEPOINT modify_osszetevok_fk_osszetevok_osztaly;
 	      EXCEPTION
 		WHEN OTHERS THEN
-		RAISE NOTICE 'HIBA történt az "Összetevő_osztályokÖsszetevők" megszorítás módosítása során. 
-		Visszaállítás a mentési pontra.';	
+		RAISE NOTICE 'HIBA történt az "Összetevő_osztályokÖsszetevők" megszorítás módosítása során.
+		Visszaállítás a mentési pontra.';
 		ROLLBACK TO modify_osszetevok_fk_osszetevok_osztaly;
 		RAISE;
 	END;
@@ -186,8 +186,8 @@ DO $$
 		RELEASE SAVEPOINT modify_receptek_fk_recept_osztalyok;
 	      EXCEPTION
 		WHEN OTHERS THEN
-		RAISE NOTICE 'HIBA történt a "recept_osztályokreceptek" megszorítás módosítása során. 
-		Visszaállítás a mentési pontra.';	
+		RAISE NOTICE 'HIBA történt a "recept_osztályokreceptek" megszorítás módosítása során.
+		Visszaállítás a mentési pontra.';
 		ROLLBACK TO modify_receptek_fk_recept_osztalyok;
 		RAISE;
 	END;
@@ -203,5 +203,4 @@ COMMIT;
 ROLLBACK TO full_rollback_point;
 ROLLBACK;
 
-		
-		
+

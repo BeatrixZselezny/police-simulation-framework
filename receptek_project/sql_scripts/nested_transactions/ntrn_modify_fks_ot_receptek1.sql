@@ -23,7 +23,7 @@ DO $$
 		EXCEPTION
 			WHEN OTHERS THEN
 				RAISE NOTICE 'HIBA történt a "fk_recept_osztály_id" megszorítás módosítása során. Visszaállítás mentési pontra';
-				ROLLBACK recept_osztaly_id;
+				ROLLBACK TO recept_osztaly_id;
 			END;
 			$$ LANGUAGE plpgsql;
 
@@ -124,8 +124,8 @@ DO $$
 		RAISE NOTICE 'Módosítom az "összetevők" tébla "mértékekÖsszetevők" megszorítását';
 		SAVEPOINT modify_osszetevok_fk_mertekek;
 
-		EXECUTE 'ALTER TABEL összetevők DROP CONSTRAINT "mértékekÖsszetevők"';
-		EXECUTE 'ALTER TABLE összetevők ADD CONSTRAINT "mértékekÖsszetevők" FOREIGN KEY ("mérték_mennyiség_id") REFERENCES("mérték_mennyiség_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE összetevők DROP CONSTRAINT "mértékekÖsszetevők"';
+		EXECUTE 'ALTER TABLE összetevők ADD CONSTRAINT "mértékekÖsszetevők" FOREIGN KEY ("mérték_mennyiség_id") REFERENCES mértékek("mérték_mennyiség_id") ON DELETE RESTRICT';
 
 		RAISE NOTICE 'A "mértékekÖsszetevők" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_osszetevok_fk_mertekek;
@@ -193,10 +193,6 @@ DO $$
 -- Ez a rész NEM része a DO blokknak, a külső tranzakció kezeli.
 -- Ha minden DO blokk hiba nélkül lefutott:
 COMMIT;
--- Ha valami kritikus hiba történt az egész folyamat során:
-ROLLBACK TO full_rollback;
--- Egyébként:
-ROLLBACK;
 
 
 
