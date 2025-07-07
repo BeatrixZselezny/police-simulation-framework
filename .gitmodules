@@ -1,0 +1,3 @@
+[submodule "BeaSQL"]
+	path = BeaSQL
+	url = https://github.com/BeatrixZselezny/BeaSQL.git
