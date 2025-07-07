@@ -1,3 +1,6 @@
 [submodule "BeaSQL"]
 	path = BeaSQL
 	url = https://github.com/BeatrixZselezny/BeaSQL.git
+[submodule "ProtectLINUX"]
+	path = ProtectLINUX
+	url = https://github.com/BeatrixZselezny/ProtectLINUX.git
