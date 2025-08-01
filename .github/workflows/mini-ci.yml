@@ -1,0 +1,32 @@
+name: Mini CI – Java Validation
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify-java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Maven
+        run: mvn clean install --batch-mode
+
+      - name: Run Tests
+        run: mvn test --batch-mode
+
+      - name: Lint (optional)
+        run: mvn checkstyle:check
+
