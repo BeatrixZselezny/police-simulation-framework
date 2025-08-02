@@ -1,0 +1,1346 @@
+Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+Maven home: /mnt/c/Program Files/apache-maven-3.8.8
+Java version: 21.0.8, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-21-jdk-amd64
+Default locale: hu_HU, platform encoding: UTF-8
+OS name: "linux", version: "6.6.87.2-microsoft-standard-wsl2", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /mnt/c/Program Files/apache-maven-3.8.8/conf/settings.xml
+[DEBUG] Reading user settings from /home/debiana/.m2/settings.xml
+[DEBUG] Reading global toolchains from /mnt/c/Program Files/apache-maven-3.8.8/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/debiana/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/debiana/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/debiana/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.yourcompany:police-simulation:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.yourcompany:police-simulation:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, verify]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] -----------------< com.yourcompany:police-simulation >------------------
+[INFO] Building police-simulation 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.yourcompany:police-simulation:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases+snapshots)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <moduleVersion default-value="${project.version}">${maven.compiler.moduleVersion}</moduleVersion>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>21</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">false</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">21</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">21</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <release>21</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">false</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">21</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">21</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathDependencies>${maven.test.additionalClasspathDependencies}</additionalClasspathDependencies>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport>${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableOutErrElements default-value="true">${enableOutErrElements}</enableOutErrElements>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <enablePropertiesElement default-value="true">${enablePropertiesElement}</enablePropertiesElement>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludeJUnit5Engines>${surefire.excludeJUnit5Engines}</excludeJUnit5Engines>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>${surefire.excludes}</excludes>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests default-value="true">${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests default-value="false">${failIfNoTests}</failIfNoTests>
+  <failOnFlakeCount default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includeJUnit5Engines>${surefire.includeJUnit5Engines}</includeJUnit5Engines>
+  <includes>${surefire.includes}</includes>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <promoteUserPropertiesToSystemProperties default-value="true"/>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <runOrderRandomSeed>${surefire.runOrder.random.seed}</runOrderRandomSeed>
+  <session default-value="${session}"/>
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="false">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">${surefire.useModulePath}</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:3.4.2:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <detectMultiReleaseJar default-value="true">${maven.jar.detectMultiReleaseJar}</detectMultiReleaseJar>
+  <finalName default-value="${project.build.finalName}"/>
+  <forceCreation default-value="false">${maven.jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false"/>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=7719800, ConflictMarker.markTime=477000, ConflictMarker.nodeCount=184, ConflictIdSorter.graphTime=2533799, ConflictIdSorter.topsortTime=2267800, ConflictIdSorter.conflictIdCount=80, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=21422800, ConflictResolver.conflictItemCount=162, DefaultDependencyCollector.collectTime=537190281, DefaultDependencyCollector.transformTime=46902199}
+[DEBUG] com.yourcompany:police-simulation:jar:1.0-SNAPSHOT
+[DEBUG]    io.reactivex.rxjava3:rxjava:jar:3.1.11:compile
+[DEBUG]       org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[DEBUG]    org.postgresql:postgresql:jar:42.7.7:compile
+[DEBUG]       org.checkerframework:checker-qual:jar:3.49.3:runtime
+[DEBUG]    javax.xml.bind:jaxb-api:jar:2.3.1:compile
+[DEBUG]       javax.activation:javax.activation-api:jar:1.2.0:compile
+[DEBUG]    javax.servlet:javax.servlet-api:jar:4.0.1:provided
+[DEBUG]    org.springframework.boot:spring-boot-starter-security:jar:3.5.3:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:3.5.3:compile
+[DEBUG]          org.springframework.boot:spring-boot:jar:3.5.3:compile
+[DEBUG]          org.springframework.boot:spring-boot-autoconfigure:jar:3.5.3:compile
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:3.5.3:compile
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.5.18:compile
+[DEBUG]                ch.qos.logback:logback-core:jar:1.5.18:compile
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.24.3:compile
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[DEBUG]          org.yaml:snakeyaml:jar:2.4:compile
+[DEBUG]       org.springframework:spring-aop:jar:6.2.8:compile
+[DEBUG]       org.springframework.security:spring-security-web:jar:6.5.1:compile
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:3.5.3:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:3.5.3:compile
+[DEBUG]          com.zaxxer:HikariCP:jar:6.3.0:compile
+[DEBUG]          org.springframework:spring-jdbc:jar:6.2.8:compile
+[DEBUG]       org.hibernate.orm:hibernate-core:jar:6.6.18.Final:compile
+[DEBUG]          jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile
+[DEBUG]          jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.5.0.Final:runtime
+[DEBUG]          org.hibernate.common:hibernate-commons-annotations:jar:7.0.3.Final:runtime
+[DEBUG]          io.smallrye:jandex:jar:3.2.0:runtime
+[DEBUG]          com.fasterxml:classmate:jar:1.5.1:runtime
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.15.11:runtime
+[DEBUG]          jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.0:runtime
+[DEBUG]             jakarta.activation:jakarta.activation-api:jar:2.1.0:runtime
+[DEBUG]          org.glassfish.jaxb:jaxb-runtime:jar:4.0.2:runtime
+[DEBUG]             org.glassfish.jaxb:jaxb-core:jar:4.0.2:runtime
+[DEBUG]                org.eclipse.angus:angus-activation:jar:2.0.0:runtime
+[DEBUG]                org.glassfish.jaxb:txw2:jar:4.0.2:runtime
+[DEBUG]                com.sun.istack:istack-commons-runtime:jar:4.1.1:runtime
+[DEBUG]          jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[DEBUG]          org.antlr:antlr4-runtime:jar:4.13.0:compile
+[DEBUG]       org.springframework.data:spring-data-jpa:jar:3.5.1:compile
+[DEBUG]          org.springframework.data:spring-data-commons:jar:3.5.1:compile
+[DEBUG]          org.springframework:spring-orm:jar:6.2.8:compile
+[DEBUG]          org.springframework:spring-tx:jar:6.2.8:compile
+[DEBUG]          org.slf4j:slf4j-api:jar:2.0.2:compile
+[DEBUG]       org.springframework:spring-aspects:jar:6.2.8:compile
+[DEBUG]          org.aspectj:aspectjweaver:jar:1.9.22.1:compile
+[DEBUG]    org.springframework:spring-web:jar:6.2.9:compile
+[DEBUG]       org.springframework:spring-beans:jar:6.2.9:compile
+[DEBUG]       org.springframework:spring-core:jar:6.2.9:compile
+[DEBUG]          org.springframework:spring-jcl:jar:6.2.9:compile
+[DEBUG]       io.micrometer:micrometer-observation:jar:1.14.9:compile
+[DEBUG]          io.micrometer:micrometer-commons:jar:1.14.9:compile
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:3.5.3:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:3.5.3:compile
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.19.1:compile
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.19.1:compile
+[DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.19.1:compile
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.19.1:compile
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.19.1:compile
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.19.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:3.5.3:compile
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.42:compile
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.42:compile
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.42:compile
+[DEBUG]       org.springframework:spring-webmvc:jar:6.2.8:compile
+[DEBUG]    org.springframework.security:spring-security-core:jar:6.5.1:compile
+[DEBUG]       org.springframework.security:spring-security-crypto:jar:6.5.1:compile
+[DEBUG]       org.springframework:spring-context:jar:6.2.7:compile
+[DEBUG]       org.springframework:spring-expression:jar:6.2.7:compile
+[DEBUG]    org.springframework.security:spring-security-config:jar:6.5.1:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.18.0:compile
+[DEBUG]    org.junit.jupiter:junit-jupiter-api:jar:5.13.3:test
+[DEBUG]       org.opentest4j:opentest4j:jar:1.3.0:test
+[DEBUG]       org.junit.platform:junit-platform-commons:jar:1.13.3:test
+[DEBUG]       org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]    org.junit.jupiter:junit-jupiter-engine:jar:5.13.3:test
+[DEBUG]       org.junit.platform:junit-platform-engine:jar:1.13.3:test
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ police-simulation ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=39200, ConflictMarker.markTime=100300, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=61600, ConflictIdSorter.topsortTime=24400, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=199200, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=28853499, DefaultDependencyCollector.transformTime=487500}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = /home/debiana/w3school/objexamples/police/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]   (f) reportDirectory = /home/debiana/w3school/objexamples/police/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /home/debiana/w3school/objexamples/police/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /home/debiana/w3school/objexamples/police/target
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/generated-sources/annotations
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/generated-sources
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/maven-archiver/pom.properties
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/maven-archiver
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/police-simulation-1.0-SNAPSHOT.jar
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/maven-status
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/PoliceSimulationApplication.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/police/PoliceSimulationApplication.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/police
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/DatabaseInitializer.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/JdbcTest.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/controller/HomeController.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany/controller
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com/yourcompany
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/MapExample.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/CombineLatestOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ReduceOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/FlatMapOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ConcatMapOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/DebounceOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ConcatMapExample.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/SwitchMapOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/MergeOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ThrottleFirstOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/SkipOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/BufferOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/FilterExample.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/TakeOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/TakeWhileOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ZipOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/ReduceExample.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/DebounceExample.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/FilterOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/DistinctUntilChangedOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/MapOperatorPractice.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/com/example/practice/FlatMapExample.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com/example/practice
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com/example
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/com
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/crimes/investigation/InvestigationEventHandler.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/crimes/investigation
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/crimes/CrimeSequenceHandler.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/crimes
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/RxTest.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/spring/web/FileController.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/spring/web
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/spring/data/FileStorageService.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/spring/data/FileStorageException.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/spring/data/FileStorageProperties.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/spring/data
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/spring
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/SecurityConfig.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectiveVicky.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectivePeter.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectivePhil.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectivesClass.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectiveMarc.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectiveAndy.class
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/detectives/DetectiveMarry.class
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes/detectives
+[INFO] Deleting file /home/debiana/w3school/objexamples/police/target/classes/application.properties
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target/classes
+[INFO] Deleting directory /home/debiana/w3school/objexamples/police/target
+[DEBUG] Skipping non-existing directory /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG] Skipping non-existing directory /home/debiana/w3school/objexamples/police/target/test-classes
+[DEBUG] Skipping non-existing directory /home/debiana/w3school/objexamples/police/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ police-simulation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=33100, ConflictMarker.markTime=19800, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=49800, ConflictIdSorter.topsortTime=11900, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=172200, ConflictResolver.conflictItemCount=13, DefaultDependencyCollector.collectTime=58125798, DefaultDependencyCollector.transformTime=305400}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.5.1:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.3.1:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.12.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.12.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/debiana/w3school/objexamples/police/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] classworlds.conf: /mnt/c/Program Files/apache-maven-3.8.8/bin/m2.conf
+[DEBUG] env.DISPLAY: :0
+[DEBUG] env.HOME: /home/debiana
+[DEBUG] env.HOSTTYPE: x86_64
+[DEBUG] env.JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
+[DEBUG] env.LANG: hu_HU.UTF-8
+[DEBUG] env.LOGNAME: debiana
+[DEBUG] env.LS_COLORS: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+[DEBUG] env.M2_HOME: /home/debiana/w3school/objexamples/police/apache-maven-3.8.7
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean verify -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /home/debiana/w3school/objexamples/police
+[DEBUG] env.NAME: Blackswan
+[DEBUG] env.OLDPWD: /home/debiana/w3school/objexamples/police
+[DEBUG] env.PATH: /usr/lib/jvm/temurin-21-jdk-amd64/bin:/home/debiana/w3school/objexamples/police/apache-maven-3.8.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/catty/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/apache-maven-3.8.8/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/catty/AppData/Local/Microsoft/WindowsApps:/snap/bin
+[DEBUG] env.PGPASSWORD: @mV|cLj"F6z#9m0P.<3f
+[DEBUG] env.PULSE_SERVER: unix:/mnt/wslg/PulseServer
+[DEBUG] env.PWD: /home/debiana/w3school/objexamples/police
+[DEBUG] env.SHELL: /bin/bash
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.USER: debiana
+[DEBUG] env.WAYLAND_DISPLAY: wayland-0
+[DEBUG] env.WSL2_GUI_APPS_ENABLED: 1
+[DEBUG] env.WSLENV: WT_SESSION:WT_PROFILE_ID:
+[DEBUG] env.WSL_DISTRO_NAME: Debian
+[DEBUG] env.WSL_INTEROP: /run/WSL/223_interop
+[DEBUG] env.WT_PROFILE_ID: {58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}
+[DEBUG] env.WT_SESSION: 5f444e7a-d61f-4563-a783-b3812f3c9056
+[DEBUG] env.XDG_DATA_DIRS: /usr/local/share:/usr/share:/var/lib/snapd/desktop
+[DEBUG] env.XDG_RUNTIME_DIR: /mnt/wslg/runtime-dir
+[DEBUG] env._: /mnt/c/Program Files/apache-maven-3.8.8/bin/mvn
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] java.class.path: /mnt/c/Program Files/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar
+[DEBUG] java.class.version: 65.0
+[DEBUG] java.home: /usr/lib/jvm/temurin-21-jdk-amd64
+[DEBUG] java.io.tmpdir: /tmp
+[DEBUG] java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 21.0.8+9-LTS
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 21
+[DEBUG] java.vendor: Eclipse Adoptium
+[DEBUG] java.vendor.url: https://adoptium.net/
+[DEBUG] java.vendor.url.bug: https://github.com/adoptium/adoptium-support/issues
+[DEBUG] java.vendor.version: Temurin-21.0.8+9
+[DEBUG] java.version: 21.0.8
+[DEBUG] java.version.date: 2025-07-15
+[DEBUG] java.vm.compressedOopsMode: 32-bit
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 21
+[DEBUG] java.vm.vendor: Eclipse Adoptium
+[DEBUG] java.vm.version: 21.0.8+9-LTS
+[DEBUG] jdk.debug: release
+[DEBUG] library.jansi.path: /mnt/c/Program Files/apache-maven-3.8.8/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2025-08-02T01:17:23Z
+[DEBUG] maven.build.version: Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+[DEBUG] maven.compiler.source: 21
+[DEBUG] maven.compiler.target: 21
+[DEBUG] maven.conf: /mnt/c/Program Files/apache-maven-3.8.8/conf
+[DEBUG] maven.home: /mnt/c/Program Files/apache-maven-3.8.8
+[DEBUG] maven.multiModuleProjectDirectory: /home/debiana/w3school/objexamples/police
+[DEBUG] maven.version: 3.8.8
+[DEBUG] native.encoding: UTF-8
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Linux
+[DEBUG] os.version: 6.6.87.2-microsoft-standard-WSL2
+[DEBUG] path.separator: :
+[DEBUG] project.baseUri: file:/home/debiana/w3school/objexamples/police/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /usr/lib/jvm/temurin-21-jdk-amd64/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean verify -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] user.country: HU
+[DEBUG] user.dir: /home/debiana/w3school/objexamples/police
+[DEBUG] user.home: /home/debiana
+[DEBUG] user.language: hu
+[DEBUG] user.name: debiana
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/debiana/w3school/objexamples/police/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[DEBUG] copy /home/debiana/w3school/objexamples/police/src/main/resources/application.properties to /home/debiana/w3school/objexamples/police/target/classes/application.properties
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:compile (default-compile) @ police-simulation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=64000, ConflictMarker.markTime=48600, ConflictMarker.nodeCount=22, ConflictIdSorter.graphTime=16700, ConflictIdSorter.topsortTime=22500, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=490900, ConflictResolver.conflictItemCount=22, DefaultDependencyCollector.collectTime=61133798, DefaultDependencyCollector.transformTime=677900}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.14.0
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.4.0:compile
+[DEBUG]       org.ow2.asm:asm:jar:9.7.1:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.15.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.codehaus.plexus:plexus-xml:jar:3.0.1:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.14.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.14.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.14.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.14.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.4.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.7.1
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-xml:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.1
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.14.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /home/debiana/w3school/objexamples/police
+[DEBUG]   (f) buildDirectory = /home/debiana/w3school/objexamples/police/target
+[DEBUG]   (f) compilePath = [/home/debiana/w3school/objexamples/police/target/classes, /home/debiana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.11/rxjava-3.1.11.jar, /home/debiana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar, /home/debiana/.m2/repository/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar, /home/debiana/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar, /home/debiana/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar, /home/debiana/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.5.3/spring-boot-starter-security-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.3/spring-boot-starter-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot/3.5.3/spring-boot-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.3/spring-boot-autoconfigure-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.3/spring-boot-starter-logging-3.5.3.jar, /home/debiana/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar, /home/debiana/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar, /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar, /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar, /home/debiana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar, /home/debiana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar, /home/debiana/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar, /home/debiana/.m2/repository/org/springframework/spring-aop/6.2.8/spring-aop-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-web/6.5.1/spring-security-web-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.3/spring-boot-starter-data-jpa-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.3/spring-boot-starter-jdbc-3.5.3.jar, /home/debiana/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar, /home/debiana/.m2/repository/org/springframework/spring-jdbc/6.2.8/spring-jdbc-6.2.8.jar, /home/debiana/.m2/repository/org/hibernate/orm/hibernate-core/6.6.18.Final/hibernate-core-6.6.18.Final.jar, /home/debiana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar, /home/debiana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /home/debiana/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar, /home/debiana/.m2/repository/org/springframework/data/spring-data-jpa/3.5.1/spring-data-jpa-3.5.1.jar, /home/debiana/.m2/repository/org/springframework/data/spring-data-commons/3.5.1/spring-data-commons-3.5.1.jar, /home/debiana/.m2/repository/org/springframework/spring-orm/6.2.8/spring-orm-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/spring-tx/6.2.8/spring-tx-6.2.8.jar, /home/debiana/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar, /home/debiana/.m2/repository/org/springframework/spring-aspects/6.2.8/spring-aspects-6.2.8.jar, /home/debiana/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar, /home/debiana/.m2/repository/org/springframework/spring-web/6.2.9/spring-web-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-beans/6.2.9/spring-beans-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-core/6.2.9/spring-core-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-jcl/6.2.9/spring-jcl-6.2.9.jar, /home/debiana/.m2/repository/io/micrometer/micrometer-observation/1.14.9/micrometer-observation-1.14.9.jar, /home/debiana/.m2/repository/io/micrometer/micrometer-commons/1.14.9/micrometer-commons-1.14.9.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.3/spring-boot-starter-web-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.3/spring-boot-starter-json-3.5.3.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.1/jackson-databind-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.1/jackson-annotations-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.1/jackson-core-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.1/jackson-datatype-jdk8-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.1/jackson-datatype-jsr310-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.1/jackson-module-parameter-names-2.19.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.3/spring-boot-starter-tomcat-3.5.3.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.42/tomcat-embed-core-10.1.42.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.42/tomcat-embed-el-10.1.42.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.42/tomcat-embed-websocket-10.1.42.jar, /home/debiana/.m2/repository/org/springframework/spring-webmvc/6.2.8/spring-webmvc-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-core/6.5.1/spring-security-core-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-crypto/6.5.1/spring-security-crypto-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar, /home/debiana/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-config/6.5.1/spring-security-config-6.5.1.jar, /home/debiana/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/debiana/w3school/objexamples/police/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/debiana/w3school/objexamples/police/target/generated-sources/annotations
+[DEBUG]   (f) moduleVersion = 1.0-SNAPSHOT
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (f) projectArtifact = com.yourcompany:police-simulation:jar:1.0-SNAPSHOT
+[DEBUG]   (s) release = 21
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 21
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 21
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /home/debiana/w3school/objexamples/police/target/generated-sources/annotations to compile source roots:
+  /home/debiana/w3school/objexamples/police/src/main/java
+[DEBUG] New compile source roots:
+  /home/debiana/w3school/objexamples/police/src/main/java
+  /home/debiana/w3school/objexamples/police/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivePhil.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveMarry.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DebounceExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveVicky.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/web/FileController.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ReduceExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveMarc.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/CombineLatestOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ZipOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ConcatMapOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/SkipOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ThrottleFirstOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ConcatMapExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageException.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/TakeOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MapOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/JdbcTest.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MergeOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DistinctUntilChangedOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/BufferOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageProperties.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MapExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageService.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivesClass.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FilterOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/SwitchMapOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/controller/HomeController.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ReduceOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/crimes/InvestigationEventHandler.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/police/PoliceSimulationApplication.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/PoliceSimulationApplication.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/TakeWhileOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DebounceOperatorPractice.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/RxTest.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FlatMapExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveAndy.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/DatabaseInitializer.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FilterExample.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivePeter.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/crimes/CrimeSequenceHandler.java
+[INFO] 	Stale source detected: /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FlatMapOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/PoliceSimulationApplication.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/BufferOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/CombineLatestOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ConcatMapExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ConcatMapOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DebounceExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DebounceOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/DistinctUntilChangedOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FilterExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FilterOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FlatMapExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/FlatMapOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MapExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MapOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/MergeOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ReduceExample.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ReduceOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/SkipOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/SwitchMapOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/TakeOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/TakeWhileOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ThrottleFirstOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/examle/practice/ZipOperatorPractice.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/DatabaseInitializer.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/JdbcTest.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/RxTest.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/controller/HomeController.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/police/PoliceSimulationApplication.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/crimes/CrimeSequenceHandler.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/crimes/InvestigationEventHandler.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveAndy.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveMarc.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveMarry.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivePeter.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivePhil.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectiveVicky.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/detectives/DetectivesClass.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageException.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageProperties.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/spring/data/FileStorageService.java
+[INFO] 	Input tree files (+): /home/debiana/w3school/objexamples/police/src/main/java/web/FileController.java
+[INFO] Recompiling the module because of changed source code.
+[DEBUG] Classpath:
+[DEBUG]  /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]  /home/debiana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.11/rxjava-3.1.11.jar
+[DEBUG]  /home/debiana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar
+[DEBUG]  /home/debiana/.m2/repository/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar
+[DEBUG]  /home/debiana/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[DEBUG]  /home/debiana/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[DEBUG]  /home/debiana/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.5.3/spring-boot-starter-security-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.3/spring-boot-starter-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot/3.5.3/spring-boot-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.3/spring-boot-autoconfigure-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.3/spring-boot-starter-logging-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar
+[DEBUG]  /home/debiana/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar
+[DEBUG]  /home/debiana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-aop/6.2.8/spring-aop-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/security/spring-security-web/6.5.1/spring-security-web-6.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.3/spring-boot-starter-data-jpa-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.3/spring-boot-starter-jdbc-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-jdbc/6.2.8/spring-jdbc-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/hibernate/orm/hibernate-core/6.6.18.Final/hibernate-core-6.6.18.Final.jar
+[DEBUG]  /home/debiana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar
+[DEBUG]  /home/debiana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/data/spring-data-jpa/3.5.1/spring-data-jpa-3.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/data/spring-data-commons/3.5.1/spring-data-commons-3.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-orm/6.2.8/spring-orm-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-tx/6.2.8/spring-tx-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-aspects/6.2.8/spring-aspects-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-web/6.2.9/spring-web-6.2.9.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-beans/6.2.9/spring-beans-6.2.9.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-core/6.2.9/spring-core-6.2.9.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-jcl/6.2.9/spring-jcl-6.2.9.jar
+[DEBUG]  /home/debiana/.m2/repository/io/micrometer/micrometer-observation/1.14.9/micrometer-observation-1.14.9.jar
+[DEBUG]  /home/debiana/.m2/repository/io/micrometer/micrometer-commons/1.14.9/micrometer-commons-1.14.9.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.3/spring-boot-starter-web-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.3/spring-boot-starter-json-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.1/jackson-databind-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.1/jackson-annotations-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.1/jackson-core-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.1/jackson-datatype-jdk8-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.1/jackson-datatype-jsr310-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.1/jackson-module-parameter-names-2.19.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.3/spring-boot-starter-tomcat-3.5.3.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.42/tomcat-embed-core-10.1.42.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.42/tomcat-embed-el-10.1.42.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.42/tomcat-embed-websocket-10.1.42.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-webmvc/6.2.8/spring-webmvc-6.2.8.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/security/spring-security-core/6.5.1/spring-security-core-6.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/security/spring-security-crypto/6.5.1/spring-security-crypto-6.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar
+[DEBUG]  /home/debiana/.m2/repository/org/springframework/security/spring-security-config/6.5.1/spring-security-config-6.5.1.jar
+[DEBUG]  /home/debiana/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar
+[DEBUG] Source roots:
+[DEBUG]  /home/debiana/w3school/objexamples/police/src/main/java
+[DEBUG]  /home/debiana/w3school/objexamples/police/target/generated-sources/annotations
+[DEBUG] Command line options:
+[DEBUG] -d /home/debiana/w3school/objexamples/police/target/classes -classpath /home/debiana/w3school/objexamples/police/target/classes:/home/debiana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.11/rxjava-3.1.11.jar:/home/debiana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/debiana/.m2/repository/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar:/home/debiana/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/debiana/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/debiana/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.5.3/spring-boot-starter-security-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.3/spring-boot-starter-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot/3.5.3/spring-boot-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.3/spring-boot-autoconfigure-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.3/spring-boot-starter-logging-3.5.3.jar:/home/debiana/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/debiana/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/debiana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/debiana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/debiana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/debiana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/debiana/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/home/debiana/.m2/repository/org/springframework/spring-aop/6.2.8/spring-aop-6.2.8.jar:/home/debiana/.m2/repository/org/springframework/security/spring-security-web/6.5.1/spring-security-web-6.5.1.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.3/spring-boot-starter-data-jpa-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.3/spring-boot-starter-jdbc-3.5.3.jar:/home/debiana/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar:/home/debiana/.m2/repository/org/springframework/spring-jdbc/6.2.8/spring-jdbc-6.2.8.jar:/home/debiana/.m2/repository/org/hibernate/orm/hibernate-core/6.6.18.Final/hibernate-core-6.6.18.Final.jar:/home/debiana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/debiana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/debiana/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/debiana/.m2/repository/org/springframework/data/spring-data-jpa/3.5.1/spring-data-jpa-3.5.1.jar:/home/debiana/.m2/repository/org/springframework/data/spring-data-commons/3.5.1/spring-data-commons-3.5.1.jar:/home/debiana/.m2/repository/org/springframework/spring-orm/6.2.8/spring-orm-6.2.8.jar:/home/debiana/.m2/repository/org/springframework/spring-tx/6.2.8/spring-tx-6.2.8.jar:/home/debiana/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar:/home/debiana/.m2/repository/org/springframework/spring-aspects/6.2.8/spring-aspects-6.2.8.jar:/home/debiana/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar:/home/debiana/.m2/repository/org/springframework/spring-web/6.2.9/spring-web-6.2.9.jar:/home/debiana/.m2/repository/org/springframework/spring-beans/6.2.9/spring-beans-6.2.9.jar:/home/debiana/.m2/repository/org/springframework/spring-core/6.2.9/spring-core-6.2.9.jar:/home/debiana/.m2/repository/org/springframework/spring-jcl/6.2.9/spring-jcl-6.2.9.jar:/home/debiana/.m2/repository/io/micrometer/micrometer-observation/1.14.9/micrometer-observation-1.14.9.jar:/home/debiana/.m2/repository/io/micrometer/micrometer-commons/1.14.9/micrometer-commons-1.14.9.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.3/spring-boot-starter-web-3.5.3.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.3/spring-boot-starter-json-3.5.3.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.1/jackson-databind-2.19.1.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.1/jackson-annotations-2.19.1.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.1/jackson-core-2.19.1.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.1/jackson-datatype-jdk8-2.19.1.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.1/jackson-datatype-jsr310-2.19.1.jar:/home/debiana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.1/jackson-module-parameter-names-2.19.1.jar:/home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.3/spring-boot-starter-tomcat-3.5.3.jar:/home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.42/tomcat-embed-core-10.1.42.jar:/home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.42/tomcat-embed-el-10.1.42.jar:/home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.42/tomcat-embed-websocket-10.1.42.jar:/home/debiana/.m2/repository/org/springframework/spring-webmvc/6.2.8/spring-webmvc-6.2.8.jar:/home/debiana/.m2/repository/org/springframework/security/spring-security-core/6.5.1/spring-security-core-6.5.1.jar:/home/debiana/.m2/repository/org/springframework/security/spring-security-crypto/6.5.1/spring-security-crypto-6.5.1.jar:/home/debiana/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar:/home/debiana/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar:/home/debiana/.m2/repository/org/springframework/security/spring-security-config/6.5.1/spring-security-config-6.5.1.jar:/home/debiana/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar: -sourcepath /home/debiana/w3school/objexamples/police/src/main/java:/home/debiana/w3school/objexamples/police/target/generated-sources/annotations: -s /home/debiana/w3school/objexamples/police/target/generated-sources/annotations -g -nowarn --release 21 -encoding UTF-8 -XDuseUnsharedTable=true
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 42 source files with javac [debug release 21] to target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java uses or overrides a deprecated API that is marked for removal.
+[INFO] /home/debiana/w3school/objexamples/police/src/main/java/com/yourcompany/config/SecurityConfig.java: Recompile with -Xlint:removal for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ police-simulation ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/debiana/w3school/objexamples/police/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/debiana/w3school/objexamples/police/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] classworlds.conf: /mnt/c/Program Files/apache-maven-3.8.8/bin/m2.conf
+[DEBUG] env.DISPLAY: :0
+[DEBUG] env.HOME: /home/debiana
+[DEBUG] env.HOSTTYPE: x86_64
+[DEBUG] env.JAVA_HOME: /usr/lib/jvm/temurin-21-jdk-amd64
+[DEBUG] env.LANG: hu_HU.UTF-8
+[DEBUG] env.LOGNAME: debiana
+[DEBUG] env.LS_COLORS: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+[DEBUG] env.M2_HOME: /home/debiana/w3school/objexamples/police/apache-maven-3.8.7
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean verify -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /home/debiana/w3school/objexamples/police
+[DEBUG] env.NAME: Blackswan
+[DEBUG] env.OLDPWD: /home/debiana/w3school/objexamples/police
+[DEBUG] env.PATH: /usr/lib/jvm/temurin-21-jdk-amd64/bin:/home/debiana/w3school/objexamples/police/apache-maven-3.8.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/catty/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/apache-maven-3.8.8/bin:/mnt/c/Program Files/PowerShell/7-preview/preview:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/catty/AppData/Local/Microsoft/WindowsApps:/snap/bin
+[DEBUG] env.PGPASSWORD: @mV|cLj"F6z#9m0P.<3f
+[DEBUG] env.PULSE_SERVER: unix:/mnt/wslg/PulseServer
+[DEBUG] env.PWD: /home/debiana/w3school/objexamples/police
+[DEBUG] env.SHELL: /bin/bash
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.USER: debiana
+[DEBUG] env.WAYLAND_DISPLAY: wayland-0
+[DEBUG] env.WSL2_GUI_APPS_ENABLED: 1
+[DEBUG] env.WSLENV: WT_SESSION:WT_PROFILE_ID:
+[DEBUG] env.WSL_DISTRO_NAME: Debian
+[DEBUG] env.WSL_INTEROP: /run/WSL/223_interop
+[DEBUG] env.WT_PROFILE_ID: {58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}
+[DEBUG] env.WT_SESSION: 5f444e7a-d61f-4563-a783-b3812f3c9056
+[DEBUG] env.XDG_DATA_DIRS: /usr/local/share:/usr/share:/var/lib/snapd/desktop
+[DEBUG] env.XDG_RUNTIME_DIR: /mnt/wslg/runtime-dir
+[DEBUG] env._: /mnt/c/Program Files/apache-maven-3.8.8/bin/mvn
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] java.class.path: /mnt/c/Program Files/apache-maven-3.8.8/boot/plexus-classworlds-2.6.0.jar
+[DEBUG] java.class.version: 65.0
+[DEBUG] java.home: /usr/lib/jvm/temurin-21-jdk-amd64
+[DEBUG] java.io.tmpdir: /tmp
+[DEBUG] java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 21.0.8+9-LTS
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 21
+[DEBUG] java.vendor: Eclipse Adoptium
+[DEBUG] java.vendor.url: https://adoptium.net/
+[DEBUG] java.vendor.url.bug: https://github.com/adoptium/adoptium-support/issues
+[DEBUG] java.vendor.version: Temurin-21.0.8+9
+[DEBUG] java.version: 21.0.8
+[DEBUG] java.version.date: 2025-07-15
+[DEBUG] java.vm.compressedOopsMode: 32-bit
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 21
+[DEBUG] java.vm.vendor: Eclipse Adoptium
+[DEBUG] java.vm.version: 21.0.8+9-LTS
+[DEBUG] jdk.debug: release
+[DEBUG] library.jansi.path: /mnt/c/Program Files/apache-maven-3.8.8/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2025-08-02T01:17:26Z
+[DEBUG] maven.build.version: Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+[DEBUG] maven.compiler.source: 21
+[DEBUG] maven.compiler.target: 21
+[DEBUG] maven.conf: /mnt/c/Program Files/apache-maven-3.8.8/conf
+[DEBUG] maven.home: /mnt/c/Program Files/apache-maven-3.8.8
+[DEBUG] maven.multiModuleProjectDirectory: /home/debiana/w3school/objexamples/police
+[DEBUG] maven.version: 3.8.8
+[DEBUG] native.encoding: UTF-8
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Linux
+[DEBUG] os.version: 6.6.87.2-microsoft-standard-WSL2
+[DEBUG] path.separator: :
+[DEBUG] project.baseUri: file:/home/debiana/w3school/objexamples/police/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /usr/lib/jvm/temurin-21-jdk-amd64/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean verify -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] user.country: HU
+[DEBUG] user.dir: /home/debiana/w3school/objexamples/police
+[DEBUG] user.home: /home/debiana
+[DEBUG] user.language: hu
+[DEBUG] user.name: debiana
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/debiana/w3school/objexamples/police/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/debiana/w3school/objexamples/police/src/test/resources
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:testCompile (default-testCompile) @ police-simulation ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.14.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /home/debiana/w3school/objexamples/police
+[DEBUG]   (f) buildDirectory = /home/debiana/w3school/objexamples/police/target
+[DEBUG]   (f) compileSourceRoots = [/home/debiana/w3school/objexamples/police/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/debiana/w3school/objexamples/police/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/debiana/w3school/objexamples/police/target/test-classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (s) release = 21
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 21
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 21
+[DEBUG]   (f) testPath = [/home/debiana/w3school/objexamples/police/target/test-classes, /home/debiana/w3school/objexamples/police/target/classes, /home/debiana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.11/rxjava-3.1.11.jar, /home/debiana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar, /home/debiana/.m2/repository/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar, /home/debiana/.m2/repository/org/checkerframework/checker-qual/3.49.3/checker-qual-3.49.3.jar, /home/debiana/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar, /home/debiana/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar, /home/debiana/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.5.3/spring-boot-starter-security-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.3/spring-boot-starter-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot/3.5.3/spring-boot-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.3/spring-boot-autoconfigure-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.3/spring-boot-starter-logging-3.5.3.jar, /home/debiana/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar, /home/debiana/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar, /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar, /home/debiana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar, /home/debiana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar, /home/debiana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar, /home/debiana/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar, /home/debiana/.m2/repository/org/springframework/spring-aop/6.2.8/spring-aop-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-web/6.5.1/spring-security-web-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.3/spring-boot-starter-data-jpa-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.3/spring-boot-starter-jdbc-3.5.3.jar, /home/debiana/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar, /home/debiana/.m2/repository/org/springframework/spring-jdbc/6.2.8/spring-jdbc-6.2.8.jar, /home/debiana/.m2/repository/org/hibernate/orm/hibernate-core/6.6.18.Final/hibernate-core-6.6.18.Final.jar, /home/debiana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar, /home/debiana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /home/debiana/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar, /home/debiana/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar, /home/debiana/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar, /home/debiana/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, /home/debiana/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar, /home/debiana/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar, /home/debiana/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar, /home/debiana/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar, /home/debiana/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar, /home/debiana/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar, /home/debiana/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar, /home/debiana/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar, /home/debiana/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar, /home/debiana/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar, /home/debiana/.m2/repository/org/springframework/data/spring-data-jpa/3.5.1/spring-data-jpa-3.5.1.jar, /home/debiana/.m2/repository/org/springframework/data/spring-data-commons/3.5.1/spring-data-commons-3.5.1.jar, /home/debiana/.m2/repository/org/springframework/spring-orm/6.2.8/spring-orm-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/spring-tx/6.2.8/spring-tx-6.2.8.jar, /home/debiana/.m2/repository/org/slf4j/slf4j-api/2.0.2/slf4j-api-2.0.2.jar, /home/debiana/.m2/repository/org/springframework/spring-aspects/6.2.8/spring-aspects-6.2.8.jar, /home/debiana/.m2/repository/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar, /home/debiana/.m2/repository/org/springframework/spring-web/6.2.9/spring-web-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-beans/6.2.9/spring-beans-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-core/6.2.9/spring-core-6.2.9.jar, /home/debiana/.m2/repository/org/springframework/spring-jcl/6.2.9/spring-jcl-6.2.9.jar, /home/debiana/.m2/repository/io/micrometer/micrometer-observation/1.14.9/micrometer-observation-1.14.9.jar, /home/debiana/.m2/repository/io/micrometer/micrometer-commons/1.14.9/micrometer-commons-1.14.9.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.3/spring-boot-starter-web-3.5.3.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.3/spring-boot-starter-json-3.5.3.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.1/jackson-databind-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.1/jackson-annotations-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.1/jackson-core-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.1/jackson-datatype-jdk8-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.1/jackson-datatype-jsr310-2.19.1.jar, /home/debiana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.1/jackson-module-parameter-names-2.19.1.jar, /home/debiana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.3/spring-boot-starter-tomcat-3.5.3.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.42/tomcat-embed-core-10.1.42.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.42/tomcat-embed-el-10.1.42.jar, /home/debiana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.42/tomcat-embed-websocket-10.1.42.jar, /home/debiana/.m2/repository/org/springframework/spring-webmvc/6.2.8/spring-webmvc-6.2.8.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-core/6.5.1/spring-security-core-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-crypto/6.5.1/spring-security-crypto-6.5.1.jar, /home/debiana/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar, /home/debiana/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar, /home/debiana/.m2/repository/org/springframework/security/spring-security-config/6.5.1/spring-security-config-6.5.1.jar, /home/debiana/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar, /home/debiana/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.13.3/junit-jupiter-api-5.13.3.jar, /home/debiana/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar, /home/debiana/.m2/repository/org/junit/platform/junit-platform-commons/1.13.3/junit-platform-commons-1.13.3.jar, /home/debiana/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar, /home/debiana/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.13.3/junit-jupiter-engine-5.13.3.jar, /home/debiana/.m2/repository/org/junit/platform/junit-platform-engine/1.13.3/junit-platform-engine-1.13.3.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.3:test (default-test) @ police-simulation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=151200, ConflictMarker.markTime=44800, ConflictMarker.nodeCount=25, ConflictIdSorter.graphTime=31400, ConflictIdSorter.topsortTime=57400, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8510401, ConflictResolver.conflictItemCount=25, DefaultDependencyCollector.collectTime=62427207, DefaultDependencyCollector.transformTime=8899301}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:3.5.3
+[DEBUG]    org.apache.maven.surefire:surefire-api:jar:3.5.3:compile
+[DEBUG]       org.apache.maven.surefire:surefire-logger-api:jar:3.5.3:compile
+[DEBUG]       org.apache.maven.surefire:surefire-shared-utils:jar:3.5.3:compile (version managed from default)
+[DEBUG]    org.apache.maven.surefire:surefire-extensions-api:jar:3.5.3:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:3.5.3:compile
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:3.5.3:compile
+[DEBUG]          org.apache.maven.surefire:surefire-extensions-spi:jar:3.5.3:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-util:jar:1.4.1:compile
+[DEBUG]          org.apache.maven.resolver:maven-resolver-api:jar:1.4.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0:compile (version managed from default)
+[DEBUG]          org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from default)
+[DEBUG]       org.codehaus.plexus:plexus-java:jar:1.4.0:compile (version managed from default)
+[DEBUG]          org.ow2.asm:asm:jar:9.7.1:compile
+[DEBUG]          com.thoughtworks.qdox:qdox:jar:2.2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.1:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.5.3
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.5.3
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.5.3
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-logger-api:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-shared-utils:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-api:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-spi:jar:3.5.3
+[DEBUG]   Included: org.apache.maven.resolver:maven-resolver-util:jar:1.4.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.4.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.7.1
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.1
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:3.5.3, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test:default-test' with basic configurator -->
+[DEBUG]   (f) additionalClasspathDependencies = []
+[DEBUG]   (s) additionalClasspathElements = []
+[DEBUG]   (s) basedir = /home/debiana/w3school/objexamples/police
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (f) classesDirectory = /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]   (s) classpathDependencyExcludes = []
+[DEBUG]   (s) dependenciesToScan = []
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) enableOutErrElements = true
+[DEBUG]   (s) enablePropertiesElement = true
+[DEBUG]   (s) excludeJUnit5Engines = []
+[DEBUG]   (f) excludedEnvironmentVariables = []
+[DEBUG]   (s) excludes = []
+[DEBUG]   (s) failIfNoSpecifiedTests = true
+[DEBUG]   (s) failIfNoTests = false
+[DEBUG]   (s) failOnFlakeCount = 0
+[DEBUG]   (f) forkCount = 1
+[DEBUG]   (s) forkedProcessExitTimeoutInSeconds = 30
+[DEBUG]   (s) includeJUnit5Engines = []
+[DEBUG]   (s) includes = []
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) parallelOptimized = true
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:3.5.3:, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:3.5.3:compile, org.apache.maven.surefire:surefire-logger-api=org.apache.maven.surefire:surefire-logger-api:jar:3.5.3:compile, org.apache.maven.surefire:surefire-shared-utils=org.apache.maven.surefire:surefire-shared-utils:jar:3.5.3:compile, org.apache.maven.surefire:surefire-extensions-api=org.apache.maven.surefire:surefire-extensions-api:jar:3.5.3:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:3.5.3:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:3.5.3:compile, org.apache.maven.surefire:surefire-extensions-spi=org.apache.maven.surefire:surefire-extensions-spi:jar:3.5.3:compile, org.apache.maven.resolver:maven-resolver-util=org.apache.maven.resolver:maven-resolver-util:jar:1.4.1:compile, org.apache.maven.resolver:maven-resolver-api=org.apache.maven.resolver:maven-resolver-api:jar:1.4.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.36:compile, org.codehaus.plexus:plexus-java=org.codehaus.plexus:plexus-java:jar:1.4.0:compile, org.ow2.asm:asm=org.ow2.asm:asm:jar:9.7.1:compile, com.thoughtworks.qdox:qdox=com.thoughtworks.qdox:qdox:jar:2.2.0:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:1.1:runtime}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugins.maven_surefire_plugin.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.5.3:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefireMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (s) projectArtifactMap = {io.reactivex.rxjava3:rxjava=io.reactivex.rxjava3:rxjava:jar:3.1.11:compile, org.reactivestreams:reactive-streams=org.reactivestreams:reactive-streams:jar:1.0.4:compile, org.postgresql:postgresql=org.postgresql:postgresql:jar:42.7.7:compile, org.checkerframework:checker-qual=org.checkerframework:checker-qual:jar:3.49.3:runtime, javax.xml.bind:jaxb-api=javax.xml.bind:jaxb-api:jar:2.3.1:compile, javax.activation:javax.activation-api=javax.activation:javax.activation-api:jar:1.2.0:compile, javax.servlet:javax.servlet-api=javax.servlet:javax.servlet-api:jar:4.0.1:provided, org.springframework.boot:spring-boot-starter-security=org.springframework.boot:spring-boot-starter-security:jar:3.5.3:compile, org.springframework.boot:spring-boot-starter=org.springframework.boot:spring-boot-starter:jar:3.5.3:compile, org.springframework.boot:spring-boot=org.springframework.boot:spring-boot:jar:3.5.3:compile, org.springframework.boot:spring-boot-autoconfigure=org.springframework.boot:spring-boot-autoconfigure:jar:3.5.3:compile, org.springframework.boot:spring-boot-starter-logging=org.springframework.boot:spring-boot-starter-logging:jar:3.5.3:compile, ch.qos.logback:logback-classic=ch.qos.logback:logback-classic:jar:1.5.18:compile, ch.qos.logback:logback-core=ch.qos.logback:logback-core:jar:1.5.18:compile, org.apache.logging.log4j:log4j-to-slf4j=org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile, org.apache.logging.log4j:log4j-api=org.apache.logging.log4j:log4j-api:jar:2.24.3:compile, org.slf4j:jul-to-slf4j=org.slf4j:jul-to-slf4j:jar:2.0.17:compile, jakarta.annotation:jakarta.annotation-api=jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile, org.yaml:snakeyaml=org.yaml:snakeyaml:jar:2.4:compile, org.springframework:spring-aop=org.springframework:spring-aop:jar:6.2.8:compile, org.springframework.security:spring-security-web=org.springframework.security:spring-security-web:jar:6.5.1:compile, org.springframework.boot:spring-boot-starter-data-jpa=org.springframework.boot:spring-boot-starter-data-jpa:jar:3.5.3:compile, org.springframework.boot:spring-boot-starter-jdbc=org.springframework.boot:spring-boot-starter-jdbc:jar:3.5.3:compile, com.zaxxer:HikariCP=com.zaxxer:HikariCP:jar:6.3.0:compile, org.springframework:spring-jdbc=org.springframework:spring-jdbc:jar:6.2.8:compile, org.hibernate.orm:hibernate-core=org.hibernate.orm:hibernate-core:jar:6.6.18.Final:compile, jakarta.persistence:jakarta.persistence-api=jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile, jakarta.transaction:jakarta.transaction-api=jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile, org.jboss.logging:jboss-logging=org.jboss.logging:jboss-logging:jar:3.5.0.Final:runtime, org.hibernate.common:hibernate-commons-annotations=org.hibernate.common:hibernate-commons-annotations:jar:7.0.3.Final:runtime, io.smallrye:jandex=io.smallrye:jandex:jar:3.2.0:runtime, com.fasterxml:classmate=com.fasterxml:classmate:jar:1.5.1:runtime, net.bytebuddy:byte-buddy=net.bytebuddy:byte-buddy:jar:1.15.11:runtime, jakarta.xml.bind:jakarta.xml.bind-api=jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.0:runtime, jakarta.activation:jakarta.activation-api=jakarta.activation:jakarta.activation-api:jar:2.1.0:runtime, org.glassfish.jaxb:jaxb-runtime=org.glassfish.jaxb:jaxb-runtime:jar:4.0.2:runtime, org.glassfish.jaxb:jaxb-core=org.glassfish.jaxb:jaxb-core:jar:4.0.2:runtime, org.eclipse.angus:angus-activation=org.eclipse.angus:angus-activation:jar:2.0.0:runtime, org.glassfish.jaxb:txw2=org.glassfish.jaxb:txw2:jar:4.0.2:runtime, com.sun.istack:istack-commons-runtime=com.sun.istack:istack-commons-runtime:jar:4.1.1:runtime, jakarta.inject:jakarta.inject-api=jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime, org.antlr:antlr4-runtime=org.antlr:antlr4-runtime:jar:4.13.0:compile, org.springframework.data:spring-data-jpa=org.springframework.data:spring-data-jpa:jar:3.5.1:compile, org.springframework.data:spring-data-commons=org.springframework.data:spring-data-commons:jar:3.5.1:compile, org.springframework:spring-orm=org.springframework:spring-orm:jar:6.2.8:compile, org.springframework:spring-tx=org.springframework:spring-tx:jar:6.2.8:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:2.0.2:compile, org.springframework:spring-aspects=org.springframework:spring-aspects:jar:6.2.8:compile, org.aspectj:aspectjweaver=org.aspectj:aspectjweaver:jar:1.9.22.1:compile, org.springframework:spring-web=org.springframework:spring-web:jar:6.2.9:compile, org.springframework:spring-beans=org.springframework:spring-beans:jar:6.2.9:compile, org.springframework:spring-core=org.springframework:spring-core:jar:6.2.9:compile, org.springframework:spring-jcl=org.springframework:spring-jcl:jar:6.2.9:compile, io.micrometer:micrometer-observation=io.micrometer:micrometer-observation:jar:1.14.9:compile, io.micrometer:micrometer-commons=io.micrometer:micrometer-commons:jar:1.14.9:compile, org.springframework.boot:spring-boot-starter-web=org.springframework.boot:spring-boot-starter-web:jar:3.5.3:compile, org.springframework.boot:spring-boot-starter-json=org.springframework.boot:spring-boot-starter-json:jar:3.5.3:compile, com.fasterxml.jackson.core:jackson-databind=com.fasterxml.jackson.core:jackson-databind:jar:2.19.1:compile, com.fasterxml.jackson.core:jackson-annotations=com.fasterxml.jackson.core:jackson-annotations:jar:2.19.1:compile, com.fasterxml.jackson.core:jackson-core=com.fasterxml.jackson.core:jackson-core:jar:2.19.1:compile, com.fasterxml.jackson.datatype:jackson-datatype-jdk8=com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.19.1:compile, com.fasterxml.jackson.datatype:jackson-datatype-jsr310=com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.19.1:compile, com.fasterxml.jackson.module:jackson-module-parameter-names=com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.19.1:compile, org.springframework.boot:spring-boot-starter-tomcat=org.springframework.boot:spring-boot-starter-tomcat:jar:3.5.3:compile, org.apache.tomcat.embed:tomcat-embed-core=org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.42:compile, org.apache.tomcat.embed:tomcat-embed-el=org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.42:compile, org.apache.tomcat.embed:tomcat-embed-websocket=org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.42:compile, org.springframework:spring-webmvc=org.springframework:spring-webmvc:jar:6.2.8:compile, org.springframework.security:spring-security-core=org.springframework.security:spring-security-core:jar:6.5.1:compile, org.springframework.security:spring-security-crypto=org.springframework.security:spring-security-crypto:jar:6.5.1:compile, org.springframework:spring-context=org.springframework:spring-context:jar:6.2.7:compile, org.springframework:spring-expression=org.springframework:spring-expression:jar:6.2.7:compile, org.springframework.security:spring-security-config=org.springframework.security:spring-security-config:jar:6.5.1:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.18.0:compile, org.junit.jupiter:junit-jupiter-api=org.junit.jupiter:junit-jupiter-api:jar:5.13.3:test, org.opentest4j:opentest4j=org.opentest4j:opentest4j:jar:1.3.0:test, org.junit.platform:junit-platform-commons=org.junit.platform:junit-platform-commons:jar:1.13.3:test, org.apiguardian:apiguardian-api=org.apiguardian:apiguardian-api:jar:1.1.2:test, org.junit.jupiter:junit-jupiter-engine=org.junit.jupiter:junit-jupiter-engine:jar:5.13.3:test, org.junit.platform:junit-platform-engine=org.junit.platform:junit-platform-engine:jar:1.13.3:test}
+[DEBUG]   (s) projectBuildDirectory = /home/debiana/w3school/objexamples/police/target
+[DEBUG]   (f) promoteUserPropertiesToSystemProperties = true
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /home/debiana/w3school/objexamples/police/target/surefire-reports
+[DEBUG]   (f) rerunFailingTestsCount = 0
+[DEBUG]   (f) reuseForks = true
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) shutdown = exit
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) skipAfterFailureCount = 0
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) suiteXmlFiles = []
+[DEBUG]   (s) tempDir = surefire
+[DEBUG]   (s) testClassesDirectory = /home/debiana/w3school/objexamples/police/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /home/debiana/w3school/objexamples/police/src/test/java
+[DEBUG]   (s) threadCountClasses = 0
+[DEBUG]   (s) threadCountMethods = 0
+[DEBUG]   (s) threadCountSuites = 0
+[DEBUG]   (s) trimStackTrace = false
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /home/debiana/w3school/objexamples/police
+[DEBUG] -- end configuration --
+[DEBUG] Using JVM: /usr/lib/jvm/temurin-21-jdk-amd64/bin/java with Java version 21.0
+[INFO] No tests to run.
+[DEBUG] Resolved included and excluded patterns: **/Test*.java, **/*Test.java, **/*Tests.java, **/*TestCase.java, !**/*$*
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ police-simulation ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=112400, ConflictMarker.markTime=71400, ConflictMarker.nodeCount=27, ConflictIdSorter.graphTime=103700, ConflictIdSorter.topsortTime=19600, ConflictIdSorter.conflictIdCount=16, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=469000, ConflictResolver.conflictItemCount=27, DefaultDependencyCollector.collectTime=76886909, DefaultDependencyCollector.transformTime=797900}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:3.4.2
+[DEBUG]    org.apache.maven.shared:file-management:jar:3.1.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:4.0.1:compile (version managed from default)
+[DEBUG]       commons-io:commons-io:jar:2.16.1:compile (version managed from default)
+[DEBUG]    org.apache.maven:maven-archiver:jar:3.6.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.27:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:4.9.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:3.4.2:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.26.1:compile
+[DEBUG]          org.apache.commons:commons-lang3:jar:3.14.0:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.16.1:compile
+[DEBUG]       org.iq80.snappy:snappy:jar:0.4:compile
+[DEBUG]       org.tukaani:xz:jar:1.9:runtime
+[DEBUG]       com.github.luben:zstd-jni:jar:1.5.5-11:runtime
+[DEBUG]    javax.inject:javax.inject:jar:1:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.2
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:3.4.2
+[DEBUG]   Included: org.apache.maven.shared:file-management:jar:3.1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.16.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:3.6.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.27
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:4.9.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:3.4.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.26.1
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.14.0
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.16.1
+[DEBUG]   Included: org.iq80.snappy:snappy:jar:0.4
+[DEBUG]   Included: org.tukaani:xz:jar:1.9
+[DEBUG]   Included: com.github.luben:zstd-jni:jar:1.5.5-11
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-jar-plugin:3.4.2:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.2, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-jar-plugin:3.4.2:jar:default-jar' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) classesDirectory = /home/debiana/w3school/objexamples/police/target/classes
+[DEBUG]   (f) detectMultiReleaseJar = true
+[DEBUG]   (f) finalName = police-simulation-1.0-SNAPSHOT
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = /home/debiana/w3school/objexamples/police/target
+[DEBUG]   (f) project = MavenProject: com.yourcompany:police-simulation:1.0-SNAPSHOT @ /home/debiana/w3school/objexamples/police/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@ea9e141
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[DEBUG] isUp2date: false (Destination /home/debiana/w3school/objexamples/police/target/police-simulation-1.0-SNAPSHOT.jar not found.)
+[INFO] Building jar: /home/debiana/w3school/objexamples/police/target/police-simulation-1.0-SNAPSHOT.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory detectives/
+[DEBUG] adding directory spring/
+[DEBUG] adding directory spring/data/
+[DEBUG] adding directory spring/web/
+[DEBUG] adding directory crimes/
+[DEBUG] adding directory crimes/investigation/
+[DEBUG] adding directory com/
+[DEBUG] adding directory com/example/
+[DEBUG] adding directory com/example/practice/
+[DEBUG] adding directory com/yourcompany/
+[DEBUG] adding directory com/yourcompany/controller/
+[DEBUG] adding directory com/yourcompany/police/
+[DEBUG] adding entry application.properties
+[DEBUG] adding entry detectives/DetectiveMarry.class
+[DEBUG] adding entry detectives/DetectiveAndy.class
+[DEBUG] adding entry detectives/DetectiveMarc.class
+[DEBUG] adding entry detectives/DetectivesClass.class
+[DEBUG] adding entry detectives/DetectivePhil.class
+[DEBUG] adding entry detectives/DetectivePeter.class
+[DEBUG] adding entry detectives/DetectiveVicky.class
+[DEBUG] adding entry SecurityConfig.class
+[DEBUG] adding entry spring/data/FileStorageProperties.class
+[DEBUG] adding entry spring/data/FileStorageException.class
+[DEBUG] adding entry spring/data/FileStorageService.class
+[DEBUG] adding entry spring/web/FileController.class
+[DEBUG] adding entry RxTest.class
+[DEBUG] adding entry crimes/CrimeSequenceHandler.class
+[DEBUG] adding entry crimes/investigation/InvestigationEventHandler.class
+[DEBUG] adding entry com/example/practice/FlatMapExample.class
+[DEBUG] adding entry com/example/practice/MapOperatorPractice.class
+[DEBUG] adding entry com/example/practice/DistinctUntilChangedOperatorPractice.class
+[DEBUG] adding entry com/example/practice/FilterOperatorPractice.class
+[DEBUG] adding entry com/example/practice/DebounceExample.class
+[DEBUG] adding entry com/example/practice/ReduceExample.class
+[DEBUG] adding entry com/example/practice/ZipOperatorPractice.class
+[DEBUG] adding entry com/example/practice/TakeWhileOperatorPractice.class
+[DEBUG] adding entry com/example/practice/TakeOperatorPractice.class
+[DEBUG] adding entry com/example/practice/FilterExample.class
+[DEBUG] adding entry com/example/practice/BufferOperatorPractice.class
+[DEBUG] adding entry com/example/practice/SkipOperatorPractice.class
+[DEBUG] adding entry com/example/practice/ThrottleFirstOperatorPractice.class
+[DEBUG] adding entry com/example/practice/MergeOperatorPractice.class
+[DEBUG] adding entry com/example/practice/SwitchMapOperatorPractice.class
+[DEBUG] adding entry com/example/practice/ConcatMapExample.class
+[DEBUG] adding entry com/example/practice/DebounceOperatorPractice.class
+[DEBUG] adding entry com/example/practice/ConcatMapOperatorPractice.class
+[DEBUG] adding entry com/example/practice/FlatMapOperatorPractice.class
+[DEBUG] adding entry com/example/practice/ReduceOperatorPractice.class
+[DEBUG] adding entry com/example/practice/CombineLatestOperatorPractice.class
+[DEBUG] adding entry com/example/practice/MapExample.class
+[DEBUG] adding entry com/yourcompany/controller/HomeController.class
+[DEBUG] adding entry com/yourcompany/JdbcTest.class
+[DEBUG] adding entry com/yourcompany/DatabaseInitializer.class
+[DEBUG] adding entry com/yourcompany/police/PoliceSimulationApplication.class
+[DEBUG] adding entry com/yourcompany/PoliceSimulationApplication.class
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/com.yourcompany/
+[DEBUG] adding directory META-INF/maven/com.yourcompany/police-simulation/
+[DEBUG] adding entry META-INF/maven/com.yourcompany/police-simulation/pom.xml
+[DEBUG] adding entry META-INF/maven/com.yourcompany/police-simulation/pom.properties
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.908 s
+[INFO] Finished at: 2025-08-02T03:17:27+02:00
+[INFO] ------------------------------------------------------------------------
