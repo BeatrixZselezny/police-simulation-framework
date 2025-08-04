@@ -84,24 +84,24 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-        <groupId>io.github.beatrixzselezny</groupId>
+            <groupId>io.github.beatrixzselezny</groupId>
             <artifactId>patchy-core</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
+
     <repositories>
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-    <repositories>
         <repository>
-        <id>github</id>
+            <id>github</id>
             <url>https://maven.pkg.github.com/BeatrixZselezny/patchy-core</url>
         </repository>
-      </repositories>
     </repositories>
-      <pluginRepositories>
+
+    <pluginRepositories>
         <pluginRepository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
@@ -167,7 +167,6 @@
                     <artifactId>maven-install-plugin</artifactId>
                     <version>3.1.4</version>
                 </plugin>
-                <!-- Add more plugins as needed -->
             </plugins>
         </pluginManagement>
         <plugins>
@@ -184,3 +183,4 @@
         </plugins>
     </build>
 </project>
+
