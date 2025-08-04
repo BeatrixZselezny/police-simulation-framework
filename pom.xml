@@ -94,9 +94,14 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+    <repositories>
+        <repository>
+        <id>github</id>
+            <url>https://maven.pkg.github.com/BeatrixZselezny/patchy-core</url>
+        </repository>
+      </repositories>
     </repositories>
-
-    <pluginRepositories>
+      <pluginRepositories>
         <pluginRepository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
