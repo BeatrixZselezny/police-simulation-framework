@@ -4,3 +4,6 @@
 [submodule "ProtectLINUX"]
 	path = ProtectLINUX
 	url = https://github.com/BeatrixZselezny/ProtectLINUX.git
+[submodule "patchy-core"]
+	path = patchy-core
+	url = https://github.com/BeatrixZselezny/patchy-core
