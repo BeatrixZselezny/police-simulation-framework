@@ -83,11 +83,6 @@
             <version>5.13.4</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.github.beatrixzselezny</groupId>
-            <artifactId>patchy-core</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
 
     <repositories>
