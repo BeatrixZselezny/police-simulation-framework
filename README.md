@@ -1,61 +1,50 @@
-# Police Simulation Game Project
+# 🕹️ Police Simulation Game Project
 
-## 🎯 Támogatott verziók
-
-Ez a szakasz jelzi, hogy mely verziókhoz biztosítok jelenleg biztonsági frissítést.
-
-| Verzió  | Támogatott?        |
-| ------- | ------------------ |
-| 5.1.x   | ✅                 |
-| 5.0.x   | ❌                 |
-| 4.0.x   | ✅                 |
-| < 4.0   | ❌                 |
-
-## 💾 Adatbázis mentés
-
-A `sql_scripts/db_backup/receptek_utf8_dump.sql` fájl tartalmazza a teljes PostgreSQL dumpot.
-Ez a fájl felhasználható az adatbázis helyreállítására például így:
-
-```bash
-psql -U postgres -d receptek_utf8 -f sql_scripts/db_backup/receptek_utf8_dump.sql
-
-## 📦 Adatbázis mentés
-
-A `sql_scripts/db_backup/receptek_utf8_dump.sql` fájl tartalmazza a teljes PostgreSQL dump-ot.
-Használható helyreállításhoz:
-
-```bash
-psql -U postgres -d receptek_utf8 -f sql_scripts/db_backup/receptek_utf8_dump.sql
-
-
-## Sebezhetőség jelentése
-
-Ha úgy gondolod, hogy ez a Repositoty bármiért sebezhető, kérlekm értesíts engem erről a: cattybaby75 (at) gmail dot com címen. Köszönöm szépen!! 
-
-
-## 🛡️ PostgreSQL Backup & Restore automatizálás
-
-Ez a projekt automatikus PostgreSQL backup-restore rendszert használ GitHub Actions segítségével. Az éjféli mentések és a hibaértesítések célja a maximális üzembiztonság.
-
-### 💡 Funkciók
-
-- Éjféli automatikus backup (`pg_dump`) a GitHub Actions időzített (`schedule`) futtatásával
-- Azonnali értesítés hibás restore (`pg_restore`) esetén a GitHub saját értesítési rendszerén keresztül
-- Naplózás `pgbackup.log` fájlba
-- Tesztelt és biztonságos: minden workflow zöld! ✅
-
-### 🛠️ Workflow fájlok
-
-- `.github/workflows/pgbackup.yaml` – A mentési és visszaállítási logika automatizálva
-
-### 🚀 Használat
-
-1. Beállított `pg_dump` és `pg_restore` parancsok a `scripts` könyvtárban
-2. A workflow minden éjfél után automatikusan fut
-3. Hibák esetén a GitHub natív értesítési rendszere jelez (pl. mobilon, emailen)
-4. Nincs szükség manuális logfigyelésre – teljesen automatizált!
+A tactical simulation game built in **modern Java (JDK 21)**, designed to model real-time decision-making in law enforcement scenarios. Originally created to practice Java development, the project has evolved into a robust, reactive system with PostgreSQL integration, automated backups, and custom AI logic.
 
 ---
 
-✍️ Az egész rendszert egyetlen fejlesztő, [BeatrixZs](https://github.com/BeatrixZs) építette saját tanulásához, de annyira jól sikerült, hogy már túlnőtt a “kis tanuló projekten”.
+## 🔍 Key Features
 
+- **Reactive architecture** using **RxJava** for event-driven simulation  
+- **Modular design** with clean separation of logic, data, and UI  
+- **Spring Framework** for dependency injection and scalable architecture  
+- **PostgreSQL integration** with automated backup/restore workflows  
+- **GitHub Actions** for nightly backups and error notifications  
+- **Custom AI behavior** for tactical units and scenario handling  
+- **Maven-based build system** for dependency management and automation  
+- **Actively maintained** and continuously improved
+
+---
+
+## 🧰 Technology Stack
+
+- Java 21 (LTS)  
+- RxJava  
+- Spring Framework  
+- Maven  
+- PostgreSQL  
+- GitHub Actions  
+- Bash scripting
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository  
+2. Set up PostgreSQL and import the provided dump  
+3. Run the simulation via `Main.java`  
+4. Monitor backups via GitHub Actions workflows
+
+---
+
+## 🛡️ Security & Ethics
+
+This repository contains **no sensitive data**. All scripts and workflows are designed with security in mind. Vulnerabilities or concerns can be reported to:  
+📧 `cattybaby75 (at) gmail dot com`
+
+---
+
+## 👩‍💻 About the Developer
+
+Hi, I'm **Beatrix Zselezny**, a self-taught developer from Budapest. I started this project to practice Java — and it grew far beyond its original scope. I believe in ethical coding, continuous learning, and leaving small but meaningful footprints in the digital world. 🐾
