@@ -17,6 +17,11 @@ A tactical simulation game built in **modern Java (JDK 21)**, designed to model 
 
 ---
 
+## 🎯 Purpose & Scope
+
+This project is not a graphical game, but a tactical simulation model designed for law enforcement training and scenario analysis. Built with RxJava and Spring, the system focuses on reactive event handling, modular decision logic, and real-time data flow. The goal is to provide a flexible framework for modeling complex operational environments without relying on visual interfaces.
+
+
 ## 🧰 Technology Stack
 
 - Java 21 (LTS)  
