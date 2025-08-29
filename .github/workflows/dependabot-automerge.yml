@@ -11,7 +11,7 @@ permissions:
   checks: read
 
 concurrency:
-  group: auto-merge-${{ github.event.pull_request.number }}
+  group: auto-merge-${{ github.head_ref }}
   cancel-in-progress: true
   
 jobs:
