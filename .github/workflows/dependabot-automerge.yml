@@ -12,19 +12,20 @@ permissions:
 
 jobs:
   automerge:
-    if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Ensure PR is labeled for auto-merge
-        if: contains(github.event.pull_request.labels.*.name, 'auto-merge')
-        run: echo "Label found: auto-merge"
-
-      - name: Auto-merge approved Dependabot PR
+      - name: Auto-merge if approved and labeled
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
+            const labels = pr.labels.map(l => l.name);
+            if (!labels.includes('auto-merge')) {
+              throw new Error('Label "auto-merge" not found.');
+            }
+
             const reviews = await github.rest.pulls.listReviews({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -32,6 +33,7 @@ jobs:
             });
 
             const approved = reviews.data.some(r => r.state === 'APPROVED');
+
             const status = await github.rest.repos.getCombinedStatusForRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -51,4 +53,3 @@ jobs:
             } else {
               throw new Error('PR not approved or checks failing.');
             }
-
