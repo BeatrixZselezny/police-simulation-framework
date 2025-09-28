@@ -1,4 +1,4 @@
-# Police Simulation Game Project – Infrastructure Simulation for Law Enforcement
+# police-simulation-framework – Infrastructure Simulation for Law Enforcement
 
 This repository documents a developer-level simulation framework built with Java 21 and PostgreSQL.  
 It is designed for law enforcement infrastructure modeling, not for entertainment or gameplay.  
@@ -10,9 +10,9 @@ The system simulates procedural logic, agent behavior, and threat scenarios in a
 - Simulate threat scenarios for infrastructure testing
 - Provide a reproducible backend for agent-based simulations
 - Support CI/CD validation via GitHub Actions
-
-This is not a playable game, not a public training tool, and not designed for general users.  
+ 
 It is a technical framework for developers working on secure simulation logic.
+
 
 ## ⚙️ Technical Highlights
 
@@ -36,7 +36,7 @@ SEL is intended for infrastructure-level simulation, not for public training or 
 ## 🧠 Real-World Inspiration
 
 This simulation framework was inspired by a real incident involving two young police officers, where a drug-influenced attacker stabbed one officer while distracting them by mimicking cat sounds.  
-The surviving officer responded with lethal force, and later described the psychological manipulation used by the attacker.
+The anothet officer responded with lethal force, and later described the psychological manipulation used by the attacker.
 
 Such unpredictable, influence-driven behavior is precisely what the SEL module aims to simulate – safely, reproducibly, and without risk.  
 The goal is not entertainment, but preparedness.
