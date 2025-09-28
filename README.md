@@ -1,55 +1,60 @@
-# 🕹️ Police Simulation Game Project
+# Police Simulation Game Project – Infrastructure Simulation for Law Enforcement
 
-A tactical simulation game built in **modern Java (JDK 21)**, designed to model real-time decision-making in law enforcement scenarios. Originally created to practice Java development, the project has evolved into a robust, reactive system with PostgreSQL integration, automated backups, and custom AI logic.
+This repository documents a developer-level simulation framework built with Java 21 and PostgreSQL.  
+It is designed for law enforcement infrastructure modeling, not for entertainment or gameplay.  
+The system simulates procedural logic, agent behavior, and threat scenarios in a controlled environment.
 
----
+## 🎯 Purpose
 
-## 🔍 Key Features
+- Model law enforcement workflows and procedural logic
+- Simulate threat scenarios for infrastructure testing
+- Provide a reproducible backend for agent-based simulations
+- Support CI/CD validation via GitHub Actions
 
-- **Reactive architecture** using **RxJava** for event-driven simulation  
-- **Modular design** with clean separation of logic, data, and UI  
-- **Spring Framework** for dependency injection and scalable architecture  
-- **PostgreSQL integration** with automated backup/restore workflows  
-- **GitHub Actions** for nightly backups and error notifications  
-- **Custom AI behavior** for tactical units and scenario handling  
-- **Maven-based build system** for dependency management and automation  
-- **Actively maintained** and continuously improved
+This is not a playable game, not a public training tool, and not designed for general users.  
+It is a technical framework for developers working on secure simulation logic.
 
----
+## ⚙️ Technical Highlights
 
-## 🎯 Purpose & Scope
+- Java 21 with modular architecture
+- PostgreSQL relational backend
+- GitHub Actions for CI validation
+- CLI-based simulation logic (no GUI)
 
-This project is not a graphical game, but a tactical simulation model designed for law enforcement training and scenario analysis. Built with RxJava and Spring, the system focuses on reactive event handling, modular decision logic, and real-time data flow. The goal is to provide a flexible framework for modeling complex operational environments without relying on visual interfaces.
+## 🧠 SEL – Social Engineering Library
+
+This module simulates attacker behavior and influence-based threats for law enforcement scenarios.  
+SEL models include:
+
+- Drug-induced behavior
+- Knife-wielding attackers
+- Manipulated or unstable agents
+- Escalation patterns and response logic
+
+SEL is intended for infrastructure-level simulation, not for public training or visualization.
+
+## 🧠 Real-World Inspiration
+
+This simulation framework was inspired by a real incident involving two young police officers, where a drug-influenced attacker fatally stabbed one officer while distracting them by mimicking cat sounds.  
+The surviving officer responded with lethal force, and later described the psychological manipulation used by the attacker.
+
+Such unpredictable, influence-driven behavior is precisely what the SEL module aims to simulate – safely, reproducibly, and without risk.  
+The goal is not entertainment, but preparedness.
 
 
-## 🧰 Technology Stack
+## 📚 Developer Context
 
-- Java 21 (LTS)  
-- RxJava  
-- Spring Framework  
-- Maven  
-- PostgreSQL  
-- GitHub Actions  
-- Bash scripting
+All logic is documented for reproducibility and auditability.  
+No assets, rendering, or game engine integration.  
+Intended for developers modeling secure systems and procedural workflows.
 
----
+## 📖 License
 
-## 🚀 Getting Started
+Non-commercial use only.  
+Forking and study allowed with attribution.  
+Redistribution or repackaging prohibited.
 
-1. Clone the repository  
-2. Set up PostgreSQL and import the provided dump  
-3. Run the simulation via `Main.java`  
-4. Monitor backups via GitHub Actions workflows
+## 🔗 Related Projects
 
----
-
-## 🛡️ Security & Ethics
-
-This repository contains **no sensitive data**. All scripts and workflows are designed with security in mind. Vulnerabilities or concerns can be reported to:  
-📧 `cattybaby75 (at) gmail dot com`
-
----
-
-## 👩‍💻 About the Developer
-
-Hi, I'm **Beatrix Zselezny**, a self-taught developer from Budapest. I started this project to practice Java — and it grew far beyond its original scope. I believe in ethical coding, continuous learning, and leaving small but meaningful footprints in the digital world. 🐾
+- [Patchy Core](https://github.com/BeatrixZselezny/patchy-core) – DNS-agnostic init engine for secure Linux services  
+- [SQL Memoirs – Mentor Edition](https://github.com/BeatrixZselezny/sql-memoirs-mentor-edition) – Developer-level SQL documentation for W3C exam prep
