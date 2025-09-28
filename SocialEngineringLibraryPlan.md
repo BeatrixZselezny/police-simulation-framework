@@ -1,85 +1,40 @@
-# SocialEngineering Library (SEL)
+# SEL – SocialEngineering Library
+
+Moduláris szimulációs keretrendszer, amely manipulatív és fenyegető viselkedésmintákat modellez rendvédelmi szcenáriókban.  
+A Police Simulation Game Project részeként készült, fejlesztői szintű integrációra.
 
 ## 🎯 Célkitűzés
-A SocialEngineering Library (SEL) egy moduláris, szimulációs és oktatási rendszer, amely a rendvédelmi szervek számára készült. Célja, hogy felismerhetővé és modellezhetővé tegye a veszélyes, manipulatív viselkedésmintákat, és biztonságos környezetben segítse a taktikai és pszichológiai felkészülést.
 
----
+A SEL célja, hogy felismerhetővé és szimulálhatóvá tegye azokat a viselkedésmintákat, amelyek drog hatása alatt, pszichológiai manipulációval vagy kiszámíthatatlan módon veszélyeztetik a rendvédelmi beavatkozást.  
+A szimuláció biztonságos, auditálható és reprodukálható környezetet biztosít.
 
-## 📚 1. Támadási minták adatbázisa
+## 🧩 Modulok
 
-### Viselkedési típusok
-- Figyelemelterelés (pl. állathangok, színlelés)
-- Megtévesztés (pl. hamis segélykérés)
-- Agresszió (pl. hirtelen támadás)
-- Színlelés (pl. áldozat szerepének felvétele)
+1. **Támadási minták adatbázisa**  
+   Viselkedési típusok, drog hatások, előfordulási helyek, támadó profilok
 
-### Drog hatások
-- Paranoia
-- Hallucináció
-- Impulzivitás
-- Koordinációs zavarok
+2. **Szituációs tréning motor**  
+   Forgatókönyvek, döntési pontok, reakciómérés
 
-### Előfordulási helyek
-- Bár
-- Utca
-- Lakás
-- Tömegközlekedés
+3. **Érzelmi feldolgozás támogatása**  
+   Kiértékelés, PTSD-kockázat modellezése, mentálhigiénés ajánlások
 
-### Támadó profilok
-- Kor, nem
-- Pszichológiai állapot
-- Előélet és viselkedési minták
+## 🧠 Valós inspiráció
 
----
+A SEL egy valós eset alapján készült, ahol egy drogos támadó macskahangokkal vonta el két fiatal rendőr figyelmét, majd megkéselte az egyiküket.  
+A másik rendőr később részletesen beszámolt a pszichológiai manipulációról.
 
-## 🎮 2. Szituációs tréning modul
+A SEL célja, hogy az ilyen kiszámíthatatlan viselkedésmodellek felismerhetővé és szimulálhatóvá váljanak – biztonságosan, kockázatmentesen.
 
-### Forgatókönyvek
-- „Macskanyávogásos figyelemelterelés”
-- „Hamis segélykérés”
-- „Túszejtés színlelése”
-- „Drogos agresszió nyilvános helyen”
+## ⚙️ Fejlesztői információk
 
-### Döntési pontok
-- Kommunikáció vagy visszavonulás
-- Erősítés kérés vs. egyéni beavatkozás
-- Fegyverhasználat vs. tárgyalás
+- Java 21 alapú moduláris architektúra
+- PostgreSQL háttér
+- GitHub Actions CI validáció
+- Nincs GUI – csak CLI-alapú logika
 
-### Reakciók
-- Válaszidő mérése
-- Hatékonyság értékelése
-- Stressz-szint szimuláció
+## 📖 Licenc
 
----
-
-## 🧘 3. Érzelmi feldolgozás támogatása
-
-### Szimuláció utáni kiértékelés
-- Események elemzése
-- Alternatív megoldások keresése
-- Tanulási pontok kiemelése
-
-### Mentális terhelés modellezése
-- PTSD-kockázat szimuláció
-- Érzelmi reakciók leképezése
-
-### Tanácsadó modul
-- Pszichológiai ajánlások
-- Pihenési és regenerációs javaslatok
-- Mentálhigiénés támogatás
-
----
-
-## 🏷️ Modulnév: SocialEngineering Library (SEL)
-
-- **SEL**: könnyen megjegyezhető, szakmai rövidítés
-- **Library**: utal a tudásra, bővíthetőségre, moduláris felépítésre
-- **Social Engineering**: pontosan leírja a célját: emberi viselkedés manipulációjának felismerése és kezelése
-
----
-
-## 💡 Jövőkép
-
-A SEL modul a police-simulation rendszer szíveként működhet, és később más védelmi, oktatási vagy pszichológiai rendszerekbe is integrálható.  
-Célja nem csupán a technológiai fejlődés, hanem az **életvédelem, tanulás és mentális biztonság** támogatása.
-
+Kizárólag nem kereskedelmi célra.  
+Forkolás és tanulmányozás engedélyezett forrásmegjelöléssel.  
+Újracsomagolás vagy terjesztés tilos.
