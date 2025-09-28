@@ -1,4 +1,4 @@
-# Police Simulation Game Project – Infrastruktúraszimuláció rendvédelmi célokra
+# police-simulation-framework – Infrastruktúraszimuláció rendvédelmi célokra
 
 Ez a repository egy fejlesztői szintű szimulációs keretrendszert dokumentál, amely Java 21 és PostgreSQL alapokon épül.  
 A célja nem szórakoztatás vagy játék, hanem rendvédelmi infrastruktúra modellezése.  
@@ -10,9 +10,9 @@ A rendszer eljárási logikát, ügynökviselkedést és fenyegetési szcenári�
 - Fenyegetési szcenáriók szimulálása infrastruktúra-teszteléshez
 - Reprodukálható háttérrendszer biztosítása ügynökalapú szimulációkhoz
 - CI/CD validáció támogatása GitHub Actions segítségével
-
-Ez nem játszható játék, nem nyilvános tréningeszköz, és nem általános felhasználóknak készült.  
+ 
 Ez egy technikai keretrendszer olyan fejlesztők számára, akik biztonságos szimulációs logikán dolgoznak.
+
 
 ## ⚙️ Technikai jellemzők
 
