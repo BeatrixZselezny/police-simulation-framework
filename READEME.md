@@ -1,5 +1,13 @@
 # police-simulation-framework – Infrastruktúraszimuláció rendvédelmi célokra
 
+## Támogatás
+
+Támogasd az auditált infrastruktúrafejlesztést és a reprodukálható CI/CD munkafolyamatokat ha szimpatikus a projekt.
+
+[![Támogatás Ko-fi-n keresztül](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/beatrixzselezny)
+
+
+
 Ez a repository egy fejlesztői szintű szimulációs keretrendszert dokumentál, amely Java 21 és PostgreSQL alapokon épül.  
 A célja nem szórakoztatás vagy játék, hanem rendvédelmi infrastruktúra modellezése.  
 A rendszer eljárási logikát, ügynökviselkedést és fenyegetési szcenáriókat szimulál kontrollált környezetben.
