@@ -1,5 +1,12 @@
 # police-simulation-framework – Infrastructure Simulation for Law Enforcement
 
+## Support
+
+Support audit-driven infrastructure reform and reproducible CI/CD workflows if the project resonates with you.
+
+[![Support via Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/beatrixzselezny)
+
+
 This repository documents a developer-level simulation framework built with Java 21 and PostgreSQL.  
 It is designed for law enforcement infrastructure modeling, not for entertainment or gameplay.  
 The system simulates procedural logic, agent behavior, and threat scenarios in a controlled environment.
