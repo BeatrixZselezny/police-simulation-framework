@@ -1,1 +1,1 @@
- 
+Törléste került 
