@@ -12,7 +12,7 @@ public class DatabaseInitializer {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/policeproject";
         String user = "debiana";
-        String password = "Uv#9H!rF6?m#E1";
+        String password = "Ezviccvolt";
 
         try {
             Class.forName("org.postgresql.Driver");
