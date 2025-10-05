@@ -1,4 +1,4 @@
-package com.yourcompany.police;
+package com.police-simulation.police;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
