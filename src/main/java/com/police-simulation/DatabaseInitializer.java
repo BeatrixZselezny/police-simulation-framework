@@ -10,17 +10,11 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class DatabaseInitializer {
     public static void main(String[] args) {
-<<<<<<< HEAD:src/main/java/com/yourcompany/DatabaseInitializer.java
-        String url = "jdbc:postgresql://localhost:5432/policeproject";
-        String user = "debiana";
-        String password = "Ezviccvolt";
-=======
         Dotenv dotenv = Dotenv.load();
-
-        String url = dotenv.get("DB_URL");
+        String url = dotenv.get("DB_URL";
         String user = dotenv.get("DB_USER");
         String password = dotenv.get("DB_PASSWORD");
->>>>>>> 82d638a (I was doing PSQL Security audit):src/main/java/com/police-simulation/DatabaseInitializer.java
+        src/main/java/com/police-simulation/DatabaseInitializer.java
 
         try {
             Class.forName("org.postgresql.Driver");
