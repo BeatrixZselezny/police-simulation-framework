@@ -18,8 +18,17 @@ public class DatabaseInitializer {
 
         try {
             Class.forName("org.postgresql.Driver");
-            Connection conn = DriverManager.getConnection(url, user, password);
-            Statement stmt = conn.createStatement();
+        }   catch (ClassNotFoundException e) {
+            System.err.println("[AUDIT] PostgreSQL JDBC Driver not found. Terminating initialization.");
+            e.printStackTrace();
+            return;
+        }
+
+
+
+        try (Connection conn = DriverManager.getConnection(url, user, password);
+                Statement stmt = conn.createStatement()) {
+          
 
             String createPoliceOfficersSql = new String(Files.readAllBytes(Paths.get("database/sql/create_policeofficers.sql")));
             String insertPoliceOfficersSql = new String(Files.readAllBytes(Paths.get("database/sql/insert_policeofficers.sql")));
@@ -48,12 +57,8 @@ public class DatabaseInitializer {
             stmt.executeUpdate(insertPoliceRelationsSql);
 
             System.out.println("Tables created and data inserted successfully.");
-
-            stmt.close();
-            conn.close();
-        } catch (ClassNotFoundException e) {
             System.out.println("PostgreSQL JDBC Driver not found.");
-            e.printStackTrace();
+
         } catch (SQLException e) {
             System.out.println("Connection failure.");
             e.printStackTrace();
