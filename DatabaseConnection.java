@@ -4,9 +4,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     public static void main(String[] args) {
-        String url = "jdbc:postgresql://localhost:5432/policeproject";
-        String user = "debiana";
-        String password = "Mt|9#F2?6LsJ$x<N.";
+        String url = "DB_URL";
+        String user = "DB_USER";
+        String password = "DB_PASSWORD";
 
         try {
             // Töltsd be a PostgreSQL JDBC driver osztályt
