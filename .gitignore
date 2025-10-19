@@ -12,3 +12,4 @@ target/
 *.class
 *.tmp
 *.jar
+apache-maven-3.9.6-bin.tar.gz
