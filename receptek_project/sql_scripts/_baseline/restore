@@ -1,0 +1,2 @@
+sudo -u postgres psql -d receptek_utf8 -v ON_ERROR_STOP=1 \
+  -f /home/debiana/w3school/objexamples/police-simulation-framework/receptek_project/sql_scripts/_baseline/000_schema.sql
