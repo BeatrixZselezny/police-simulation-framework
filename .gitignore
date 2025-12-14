@@ -13,3 +13,4 @@ target/
 *.tmp
 *.jar
 apache-maven-3.9.6-bin.tar.gz
+receptek_project/sql_scripts/_baseline/*.tmp.*
