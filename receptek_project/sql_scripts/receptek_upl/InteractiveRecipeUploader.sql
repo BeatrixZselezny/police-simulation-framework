@@ -2,7 +2,7 @@
 \prompt 'Adja meg a recept nevét: ' recept_név
 \prompt 'Adja meg a elkészítés módját: ' elkészítés
 \prompt 'Adja meg a jegyzetet: ' jegyzet
-\prompt 'Adja meg a recept osztály ID-jét: ' recept_osztály_id
+\prompt 'Adja meg a recept osztály ID-jét: ' recept_osztaly_id
 \prompt 'Adja meg az alaplét: ' alaplé
 \prompt 'Adja meg a zsíradékot: ' zsíradék
 \prompt 'Adja meg a húst: ' hús
@@ -23,4 +23,4 @@
 \prompt 'Adja meg a fűszernövényt: ' fűszernövény
 \prompt 'Adja meg a kész krémet: ' kész_krém
 
-SELECT InteractiveRecipeUploader(:receptid, :recept_név, :elkészítés, :jegyzet, :recept_osztály_id, :alaplé, :zsíradék, :hús, :zöldség, :tejtermék, :gabonaféle, :szárazáru, :állati_termék, :gyümölcs, :fűszer, :magvak, :feldolgozott_élelmiszer, :pékáru, :ital, :konzervtermék, :édességek, :kész_szósz, :fűszernövény, :kész_krém);
+SELECT InteractiveRecipeUploader(:receptid, :recept_név, :elkészítés, :jegyzet, :recept_osztaly_id, :alaplé, :zsíradék, :hús, :zöldség, :tejtermék, :gabonaféle, :szárazáru, :állati_termék, :gyümölcs, :fűszer, :magvak, :feldolgozott_élelmiszer, :pékáru, :ital, :konzervtermék, :édességek, :kész_szósz, :fűszernövény, :kész_krém);

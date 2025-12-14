@@ -9,7 +9,7 @@ VALUES ('Weekly Backup', 'Started', 'System');
 
 -- MENTÉS: ÖSSZETEVŐK
 SAVEPOINT sp_osszetevok;
-INSERT INTO összetevők_backup SELECT * FROM összetevők;
+INSERT INTO osszetevok_backup SELECT * FROM osszetevok;
 
 -- MENTÉS: RECEPTEK
 SAVEPOINT sp_receptek;
@@ -17,11 +17,11 @@ INSERT INTO receptek_backup SELECT * FROM receptek;
 
 -- MENTÉS: ÖSSZETEVŐK_OSZTÁLY
 SAVEPOINT sp_osztaly;
-INSERT INTO összetevők_osztály_backup SELECT * FROM összetevők_osztály;
+INSERT INTO osszetevok_osztaly_backup SELECT * FROM osszetevok_osztaly;
 
 -- MENTÉS: RECEPT_ÖSSZETEVŐK
 SAVEPOINT sp_ro;
-INSERT INTO recept_összetevők_backup SELECT * FROM recept_összetevők;
+INSERT INTO recept_osszetevok_backup SELECT * FROM recept_osszetevok;
 
 -- NAPLÓ: Sikeres backup bejegyzése
 INSERT INTO backup_log (operation, status, initiated_by)

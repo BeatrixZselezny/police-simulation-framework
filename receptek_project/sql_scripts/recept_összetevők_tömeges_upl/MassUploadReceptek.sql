@@ -10,35 +10,35 @@ BEGIN
     SELECT param_value INTO csv_path FROM config WHERE param_name = 'csv_path';
 
     -- TEMP tábla létrehozása
-    DROP TABLE IF EXISTS temp_recept_összetevők;
-    CREATE TEMP TABLE temp_recept_összetevők (
+    DROP TABLE IF EXISTS temp_recept_osszetevok;
+    CREATE TEMP TABLE temp_recept_osszetevok (
        receptid INT,
-       recept_sorszám INT,
-       összetevő_id INT,
+       recept_sorszam INT,
+       osszetevo_id INT,
        mennyiség INT,
-       mérték_mennyiség_id INT,
-       összetevő_osztály_id INT,
-       recept_osztály_id INT
+       mertek_mennyiseg_id INT,
+       osszetevo_osztaly_id INT,
+       recept_osztaly_id INT
     ) ON COMMIT DROP;
 
     -- COPY utasítás végrehajtása dinamikusan
-    EXECUTE format('COPY temp_recept_összetevők FROM %L WITH CSV HEADER', csv_path);
+    EXECUTE format('COPY temp_recept_osszetevok FROM %L WITH CSV HEADER', csv_path);
 
     -- Adatellenőrzés
     IF EXISTS (
-       SELECT 1 FROM temp_recept_összetevők
-       WHERE receptid IS NULL OR összetevő_id IS NULL OR mennyiség IS NULL OR mennyiség <= 0
+       SELECT 1 FROM temp_recept_osszetevok
+       WHERE receptid IS NULL OR osszetevo_id IS NULL OR mennyiség IS NULL OR mennyiség <= 0
     ) THEN
         RAISE EXCEPTION 'Hiba: Az importált adatokban hiányzó vagy érvénytelen értékek találhatók!';
     END IF;
 
     -- Adatok beszúrása, ha még nem léteznek
-    INSERT INTO recept_összetevők (receptid, recept_sorszám, összetevő_id, mennyiség, mérték_mennyiség_id, összetevő_osztály_id, recept_osztály_id)
-    SELECT temp.receptid, temp.recept_sorszám, temp.összetevő_id, temp.mennyiség, temp.mérték_mennyiség_id, temp.összetevő_osztály_id, temp.recept_osztály_id
-    FROM temp_recept_összetevők temp
+    INSERT INTO recept_osszetevok (receptid, recept_sorszam, osszetevo_id, mennyiség, mertek_mennyiseg_id, osszetevo_osztaly_id, recept_osztaly_id)
+    SELECT temp.receptid, temp.recept_sorszam, temp.osszetevo_id, temp.mennyiség, temp.mertek_mennyiseg_id, temp.osszetevo_osztaly_id, temp.recept_osztaly_id
+    FROM temp_recept_osszetevok temp
     WHERE NOT EXISTS (
-       SELECT 1 FROM recept_összetevők r
-       WHERE r.receptid = temp.receptid AND r.recept_sorszám = temp.recept_sorszám
+       SELECT 1 FROM recept_osszetevok r
+       WHERE r.receptid = temp.receptid AND r.recept_sorszam = temp.recept_sorszam
     );
 
     RAISE NOTICE 'Adatok sikeresen importálva!';

@@ -5,43 +5,43 @@ SAVEPOINT full_rollback;
 \echo '-- Elindul a FOREIGN KEY megszorítások módosítása ON DELETE RESTRICT-re --';
 
 --------------------------------------------------------------
--- 1. recept_összetevők tábla megszorításainak módosítása
+-- 1. recept_osszetevok tábla megszorításainak módosítása
 -- Ez a kapcsoló tábla ami hivatkozik a legtöbb szülőtáblákra.
 --------------------------------------------------------------
 
--- fk_recept_osztály_id
+-- fk_recept_osztaly_id
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "recept_összetevők" tábla "fk_recept_osztály_id" megszorítását.';
+		RAISE NOTICE 'Módosítom a "recept_osszetevok" tábla "fk_recept_osztaly_id" megszorítását.';
 		SAVEPOINT recept_osztaly_id;
 
-		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT "fk_recept_osztály_id"';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT "fk_recept_osztály_id" FOREIGN KEY ("recept_osztály_id") REFERENCES recept_osztályok("recept_osztály_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE recept_osszetevok DROP CONSTRAINT "fk_recept_osztaly_id"';
+		EXECUTE 'ALTER TABLE recept_osszetevok ADD CONSTRAINT "fk_recept_osztaly_id" FOREIGN KEY ("recept_osztaly_id") REFERENCES recept_osztalyok("recept_osztaly_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A fk_recept_osztály_id megszorítás módosítva';
+		RAISE NOTICE 'A fk_recept_osztaly_id megszorítás módosítva';
 		RELEASE SAVEPOINT recept_osztaly_id;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_recept_osztály_id" megszorítás módosítása során. Visszaállítás mentési pontra';
+				RAISE NOTICE 'HIBA történt a "fk_recept_osztaly_id" megszorítás módosítása során. Visszaállítás mentési pontra';
 				ROLLBACK TO recept_osztaly_id;
 			END;
 			$$ LANGUAGE plpgsql;
 
 
--- fk_recept_összetevők_mértékek
+-- fk_recept_osszetevok_mertekek
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "recept_összetevők" tábla "fk_recept_összetevők_mértékek" megszorítását.';
+		RAISE NOTICE 'Módosítom a "recept_osszetevok" tábla "fk_recept_osszetevok_mertekek" megszorítását.';
 		SAVEPOINT modify_recept_osszetevok_fk_mertekek;
 
-		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT "fk_recept_összetevők_mértékek"';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT "fk_recept_összetevők_mértékek" FOREIGN KEY ("mérték_mennyiség_id") REFERENCES "mértékek"("mérték_mennyiség_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE recept_osszetevok DROP CONSTRAINT "fk_recept_osszetevok_mertekek"';
+		EXECUTE 'ALTER TABLE recept_osszetevok ADD CONSTRAINT "fk_recept_osszetevok_mertekek" FOREIGN KEY ("mertek_mennyiseg_id") REFERENCES "mertekek"("mertek_mennyiseg_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "fk_recept_összetevők_mértékek" megszorítás módosítva.';
+		RAISE NOTICE 'A "fk_recept_osszetevok_mertekek" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_recept_osszetevok_fk_mertekek;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_recept_összetevők_mértékek" megszorítás módosítása során. Visszaállítás mentési pontra.';
+				RAISE NOTICE 'HIBA történt a "fk_recept_osszetevok_mertekek" megszorítás módosítása során. Visszaállítás mentési pontra.';
 				ROLLBACK TO modify_recept_osszetevok_fk_mertekek;
 				RAISE;
 			END;
@@ -49,60 +49,60 @@ DO $$
 
 
 
--- kf_receptek_recept_összetevők
+-- kf_receptek_recept_osszetevok
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "recept_összetevők" tábla "fk_receptek_recept_összetevők" megszorítását.';
+		RAISE NOTICE 'Módosítom a "recept_osszetevok" tábla "fk_receptek_recept_osszetevok" megszorítását.';
 		SAVEPOINT modify_recept_osszetevok_fk_receptek;
 
-		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT "fk_receptek_recept_összetevők"';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT "fk_receptek_recept_összetevők" FOREIGN KEY (receptid) REFERENCES receptek(receptid) ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE recept_osszetevok DROP CONSTRAINT "fk_receptek_recept_osszetevok"';
+		EXECUTE 'ALTER TABLE recept_osszetevok ADD CONSTRAINT "fk_receptek_recept_osszetevok" FOREIGN KEY (receptid) REFERENCES receptek(receptid) ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "fk_receptek_recept_összetevők" megszorítás módosítva.';
+		RAISE NOTICE 'A "fk_receptek_recept_osszetevok" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_recept_osszetevok_fk_receptek;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_receptek_recept_összetevők" megszorítás módosítása során. Visszaállítás a mentési pontra.';
+				RAISE NOTICE 'HIBA történt a "fk_receptek_recept_osszetevok" megszorítás módosítása során. Visszaállítás a mentési pontra.';
 				ROLLBACK TO modify_recept_osszetevok_fk_receptek;
 				RAISE;
 			END;
 			$$ LANGUAGE plpgsql;
 
 
--- fk_összetevők_osztály_id
+-- fk_osszetevok_osztaly_id
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "recept_összetevők" tábla "fk_összetevők_osztály_id" megszorítását.';
+		RAISE NOTICE 'Módosítom a "recept_osszetevok" tábla "fk_osszetevok_osztaly_id" megszorítását.';
 		SAVEPOINT modify_recept_osszetevok_fk_osszetevok_osztaly;
 
-		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT "fk_összetevők_osztály_id"';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT "fk_összetevők_osztály_id" FOREIGN KEY ("összetevő_osztály_id") REFERENCES "összetevők_osztály"("összetevő_osztály_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE recept_osszetevok DROP CONSTRAINT "fk_osszetevok_osztaly_id"';
+		EXECUTE 'ALTER TABLE recept_osszetevok ADD CONSTRAINT "fk_osszetevok_osztaly_id" FOREIGN KEY ("osszetevo_osztaly_id") REFERENCES "osszetevok_osztaly"("osszetevo_osztaly_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "fk_összetevők_osztály_id" megszorítás módosítva.';
+		RAISE NOTICE 'A "fk_osszetevok_osztaly_id" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_recept_osszetevok_fk_osszetevok_osztaly;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_összetevők_osztály_id" módosítása során. Visszaállítás a mentési pontra.';
+				RAISE NOTICE 'HIBA történt a "fk_osszetevok_osztaly_id" módosítása során. Visszaállítás a mentési pontra.';
 				ROLLBACK TO modify_recept_osszetevok_fk_osszetevok_osztaly;
 				RAISE;
 			END;
 			$$ LANGUAGE plpgsql;
 
 
--- fk_összetevők_recept_összetevők
+-- fk_osszetevok_recept_osszetevok
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "recept_összetevők" tábla "fk_összetevők_recept_összetevők" megszorítását.';
+		RAISE NOTICE 'Módosítom a "recept_osszetevok" tábla "fk_osszetevok_recept_osszetevok" megszorítását.';
 		SAVEPOINT modify_recept_osszetevok_fk_osszetevok;
 
-		EXECUTE 'ALTER TABLE recept_összetevők DROP CONSTRAINT "fk_összetevők_recept_összetevők"';
-		EXECUTE 'ALTER TABLE recept_összetevők ADD CONSTRAINT "fk_összetevők_recept_összetevők" FOREIGN KEY ("összetevő_id") REFERENCES összetevők("összetevő_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE recept_osszetevok DROP CONSTRAINT "fk_osszetevok_recept_osszetevok"';
+		EXECUTE 'ALTER TABLE recept_osszetevok ADD CONSTRAINT "fk_osszetevok_recept_osszetevok" FOREIGN KEY ("osszetevo_id") REFERENCES osszetevok("osszetevo_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "fk_összetevők_recept_összetevők" megszorítás módosítva.';
+		RAISE NOTICE 'A "fk_osszetevok_recept_osszetevok" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_recept_osszetevok_fk_osszetevok;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "fk_összetevők_recept_összetevők" megszorítás módosítása során. Visszaállítás a mentési pontra';
+				RAISE NOTICE 'HIBA történt a "fk_osszetevok_recept_osszetevok" megszorítás módosítása során. Visszaállítás a mentési pontra';
 				ROLLBACK TO modify_recept_osszetevok_fk_osszetevok;
 				RAISE;
 			END;
@@ -111,27 +111,27 @@ DO $$
 
 
 -----------------------------------------------------------------------------------------------------
--- 2. összetevők tábla megszorításának módosítása
--- Az összetevők a következő szint, miután a recept_összetevőkön belüli rámutató FK-kat módosítottuk.
+-- 2. osszetevok tábla megszorításának módosítása
+-- Az osszetevok a következő szint, miután a recept_osszetevokön belüli rámutató FK-kat módosítottuk.
 -----------------------------------------------------------------------------------------------------
 
 
 
 
--- mértékekÖsszetevők
+-- mertekekÖsszetevők
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom az "összetevők" tébla "mértékekÖsszetevők" megszorítását';
+		RAISE NOTICE 'Módosítom az "osszetevok" tébla "mertekekÖsszetevők" megszorítását';
 		SAVEPOINT modify_osszetevok_fk_mertekek;
 
-		EXECUTE 'ALTER TABLE összetevők DROP CONSTRAINT "mértékekÖsszetevők"';
-		EXECUTE 'ALTER TABLE összetevők ADD CONSTRAINT "mértékekÖsszetevők" FOREIGN KEY ("mérték_mennyiség_id") REFERENCES mértékek("mérték_mennyiség_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE osszetevok DROP CONSTRAINT "mertekekÖsszetevők"';
+		EXECUTE 'ALTER TABLE osszetevok ADD CONSTRAINT "mertekekÖsszetevők" FOREIGN KEY ("mertek_mennyiseg_id") REFERENCES mertekek("mertek_mennyiseg_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "mértékekÖsszetevők" megszorítás módosítva.';
+		RAISE NOTICE 'A "mertekekÖsszetevők" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_osszetevok_fk_mertekek;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "mértékekÖsszetevők" megszorítás módosítása során. Visszaállítás a mentési pontra.';
+				RAISE NOTICE 'HIBA történt a "mertekekÖsszetevők" megszorítás módosítása során. Visszaállítás a mentési pontra.';
 				ROLLBACK TO modify_osszetevok_fk_mertekek;
 				RAISE;
 			END;
@@ -142,11 +142,11 @@ DO $$
 -- Összetevő_osztályokÖsszetevők
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom az "összetevők" tábla "Összetevő_osztályokÖsszetevők" megszorítását.';
+		RAISE NOTICE 'Módosítom az "osszetevok" tábla "Összetevő_osztályokÖsszetevők" megszorítását.';
 		SAVEPOINT modify_osszetevok_fk_osszetevok_osztaly;
 
-		EXECUTE 'ALTER TABLE összetevők DROP CONSTRAINT "Összetevő_osztályokÖsszetevők"';
-		EXECUTE 'ALTER TABLE összetevők ADD CONSTRAINT "Összetevő_osztályokÖsszetevők" FOREIGN KEY ("összetevő_osztály_id") REFERENCES "összetevők_osztály"("összetevő_osztály_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE osszetevok DROP CONSTRAINT "Összetevő_osztályokÖsszetevők"';
+		EXECUTE 'ALTER TABLE osszetevok ADD CONSTRAINT "Összetevő_osztályokÖsszetevők" FOREIGN KEY ("osszetevo_osztaly_id") REFERENCES "osszetevok_osztaly"("osszetevo_osztaly_id") ON DELETE RESTRICT';
 
 		RAISE NOTICE 'Az "Összetevő_osztályokÖsszetevők" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_osszetevok_fk_osszetevok_osztaly;
@@ -167,20 +167,20 @@ DO $$
 			
 
 
--- recept_osztályokreceptek
+-- recept_osztalyokreceptek
 DO $$
 	BEGIN
-		RAISE NOTICE 'Módosítom a "receptek" tábla "recept_osztályokreceptek" megszorítását.';
+		RAISE NOTICE 'Módosítom a "receptek" tábla "recept_osztalyokreceptek" megszorítását.';
 		SAVEPOINT modify_receptek_fk_recept_osztalyok;
 
-		EXECUTE 'ALTER TABLE receptek DROP CONSTRAINT "recept_osztályokreceptek"';
-		EXECUTE 'ALTER TABLE receptek ADD CONSTRAINT "recept_osztályokreceptek" FOREIGN KEY ("recept_osztály_id") REFERENCES recept_osztályok("recept_osztály_id") ON DELETE RESTRICT';
+		EXECUTE 'ALTER TABLE receptek DROP CONSTRAINT "recept_osztalyokreceptek"';
+		EXECUTE 'ALTER TABLE receptek ADD CONSTRAINT "recept_osztalyokreceptek" FOREIGN KEY ("recept_osztaly_id") REFERENCES recept_osztalyok("recept_osztaly_id") ON DELETE RESTRICT';
 
-		RAISE NOTICE 'A "recept_osztályokreceptek" megszorítás módosítva.';
+		RAISE NOTICE 'A "recept_osztalyokreceptek" megszorítás módosítva.';
 		RELEASE SAVEPOINT modify_receptek_fk_recept_osztalyok;
 		EXCEPTION
 			WHEN OTHERS THEN
-				RAISE NOTICE 'HIBA történt a "recept_osztályokreceptek" megszorítás módosítása során. Visszaállítás a mentési pontra.';
+				RAISE NOTICE 'HIBA történt a "recept_osztalyokreceptek" megszorítás módosítása során. Visszaállítás a mentési pontra.';
 				ROLLBACK TO modify_receptek_fk_recept_osztalyok;
 				RAISE;
 			END;
