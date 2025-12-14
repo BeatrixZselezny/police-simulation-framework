@@ -1,6 +1,13 @@
 \set ON_ERROR_STOP on
+\if :{?MODE}
+\else
 \set MODE validate
+\endif
+
+\if :{?EXACT}
+\else
 \set EXACT false
+\endif
 
 BEGIN;
 SET search_path TO public;
