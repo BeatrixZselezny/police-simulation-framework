@@ -1,9 +1,9 @@
 WITH recept_osszetevo_szamok AS (
     SELECT
         receptid,
-        COUNT(összetevő_id) AS osszetevok_szama
+        COUNT(osszetevo_id) AS osszetevok_szama
     FROM
-        recept_összetevők
+        recept_osszetevok
     GROUP BY
         receptid
 )

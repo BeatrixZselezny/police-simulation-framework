@@ -46,20 +46,20 @@ ELSE
     INSERT INTO backup_log (operation, status) VALUES ('Backup ConfigAudit', 'SUCCESS');
 END IF;
 
-SAVEPOINT backup_mértékek;
-INSERT INTO mértékek_backup (original_id, mérés_leírás, version, backup_timestamp)
-SELECT mérték_mennyiség_id, mérés_leírás, 1, CURRENT_TIMESTAMP FROM mértékek;
+SAVEPOINT backup_mertekek;
+INSERT INTO mertekek_backup (original_id, meres_leiras, version, backup_timestamp)
+SELECT mertek_mennyiseg_id, meres_leiras, 1, CURRENT_TIMESTAMP FROM mertekek;
 IF NOT FOUND THEN
     INSERT INTO backup_log (operation, status, error_message) VALUES ('Backup Mértékek', 'FAIL', 'Mértékek mentése sikertelen!');
-    ROLLBACK TO SAVEPOINT backup_mértékek;
+    ROLLBACK TO SAVEPOINT backup_mertekek;
     RAISE EXCEPTION 'Mértékek mentése sikertelen!';
 ELSE
     INSERT INTO backup_log (operation, status) VALUES ('Backup Mértékek', 'SUCCESS');
 END IF;
 
 SAVEPOINT backup_receptek;
-INSERT INTO receptek_backup (original_id, recept_név, elkészítés, jegyzet, recept_osztály_id, version, backup_timestamp)
-SELECT receptid, recept_név, elkészítés, jegyzet, recept_osztály_id, 1, CURRENT_TIMESTAMP FROM receptek;
+INSERT INTO receptek_backup (original_id, recept_név, elkészítés, jegyzet, recept_osztaly_id, version, backup_timestamp)
+SELECT receptid, recept_név, elkészítés, jegyzet, recept_osztaly_id, 1, CURRENT_TIMESTAMP FROM receptek;
 IF NOT FOUND THEN
     INSERT INTO backup_log (operation, status, error_message) VALUES ('Backup Receptek', 'FAIL', 'Receptek mentése sikertelen!');
     ROLLBACK TO SAVEPOINT backup_receptek;
@@ -68,12 +68,12 @@ ELSE
     INSERT INTO backup_log (operation, status) VALUES ('Backup Receptek', 'SUCCESS');
 END IF;
 
-SAVEPOINT backup_összetevők;
-INSERT INTO összetevők_backup (original_id, összetevő_név, összetevő_osztály_id, mérték_mennyiség_id, version, backup_timestamp)
-SELECT összetevő_id, összetevő_név, összetevő_osztály_id, mérték_mennyiség_id, 1, CURRENT_TIMESTAMP FROM összetevők;
+SAVEPOINT backup_osszetevok;
+INSERT INTO osszetevok_backup (original_id, osszetevo_nev, osszetevo_osztaly_id, mertek_mennyiseg_id, version, backup_timestamp)
+SELECT osszetevo_id, osszetevo_nev, osszetevo_osztaly_id, mertek_mennyiseg_id, 1, CURRENT_TIMESTAMP FROM osszetevok;
 IF NOT FOUND THEN
     INSERT INTO backup_log (operation, status, error_message) VALUES ('Backup Összetevők', 'FAIL', 'Összetevők mentése sikertelen!');
-    ROLLBACK TO SAVEPOINT backup_összetevők;
+    ROLLBACK TO SAVEPOINT backup_osszetevok;
     RAISE EXCEPTION 'Összetevők mentése sikertelen!';
 ELSE
     INSERT INTO backup_log (operation, status) VALUES ('Backup Összetevők', 'SUCCESS');

@@ -14,3 +14,7 @@ target/
 *.jar
 apache-maven-3.9.6-bin.tar.gz
 receptek_project/sql_scripts/_baseline/*.tmp.*
+
+# local SQL loader artifacts
+receptek_project/sql_scripts/**/skipped_ids.log
+receptek_project/sql_scripts/**/receptek_utf8_restore_test

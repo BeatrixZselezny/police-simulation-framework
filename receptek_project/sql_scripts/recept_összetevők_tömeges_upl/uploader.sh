@@ -1,23 +1,76 @@
-#!/bin/bash
-csv_file="/home/debiana/w3school/objexamples/police/receptek_project/sql_scripts/recept_összetevők_tömeges_upl/data.csv"
+#!/usr/bin/env bash
+set -euo pipefail
 
-db_name="receptek_utf8"
-db_user="postgres"
-log_file="skipped_ids.log"
-echo "" > "$log_file"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CSV_FILE="${CSV_FILE:-$SCRIPT_DIR/data.csv}"
 
-   while IFS=, read -r receptid recept_sorszám összetevő_id mennyiség mérték_mennyiség_id összetevő_osztály_id recept_osztály_id
-   do
-	   check_result=$(psql -U "$db_user" -d "$db_name" -t -c "SELECT EXISTS(SELECT 1 FROM recept_összetevők WHERE receptid = '$receptid' AND recept_sorszám = '$recept_sorszám');")
+DB_NAME="${DB_NAME:-receptek_utf8_restore_test}"
+LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/skipped_ids.log}"
+: > "$LOG_FILE"
 
-	   if [[ "$check_result" =~ t ]]; then
-		   echo "ReceptID már létezik: $receptid, kihagyva..." | tee -a "$log_file"
-		   continue
-	   fi
+if [[ "$(id -un)" == "postgres" ]]; then
+  PSQL=(psql -X -q -v ON_ERROR_STOP=1 -d "$DB_NAME")
+else
+  PSQL=(sudo -u postgres psql -X -q -v ON_ERROR_STOP=1 -d "$DB_NAME")
+fi
 
-	   psql -U "$db_user" -d "$db_name" -c "SELECT InteractiveRecipeMultiUploader('$receptid','$recept_sorszám','$összetevő_id','$mennyiség','$mérték_mennyiség_id','$összetevő_osztály_id','$recept_osztály_id');"
+clean_field() {
+  local s="$1"
+  s="${s//$'\r'/}"
+  s="${s#"${s%%[![:space:]]*}"}"
+  s="${s%"${s##*[![:space:]]}"}"
+  printf '%s' "$s"
+}
 
-	   echo "Sikeresen feldolgozva: $receptid"
-   done < $csv_file
-   echo "Feldolgozás befejezve! Kimaradt ID-k naplózva a $log_file fájlba."
-   
+is_int() { [[ "$1" =~ ^[0-9]+$ ]]; }
+is_num() { [[ "$1" =~ ^[0-9]+([.][0-9]+)?$ ]]; }
+
+# CSV: receptid,recept_sorszam,osszetevo_id,mennyiseg,mertek_mennyiseg_id,osszetevo_osztaly_id,recept_osztaly_id
+while IFS=, read -r receptid recept_sorszam osszetevo_id mennyiseg mertek_mennyiseg_id osszetevo_osztaly_id recept_osztaly_id; do
+  receptid="$(clean_field "${receptid:-}")"
+  recept_sorszam="$(clean_field "${recept_sorszam:-}")"
+  osszetevo_id="$(clean_field "${osszetevo_id:-}")"
+  mennyiseg="$(clean_field "${mennyiseg:-}")"
+  mertek_mennyiseg_id="$(clean_field "${mertek_mennyiseg_id:-}")"
+  osszetevo_osztaly_id="$(clean_field "${osszetevo_osztaly_id:-}")"
+  recept_osztaly_id="$(clean_field "${recept_osztaly_id:-}")"
+
+  [[ -z "${receptid// }" ]] && continue
+  [[ "${receptid,,}" == "receptid" ]] && continue
+
+  if ! is_int "$receptid" || ! is_int "$recept_sorszam"; then
+    echo "SKIP rossz PK: $receptid/$recept_sorszam" | tee -a "$LOG_FILE"
+    continue
+  fi
+
+  mennyiseg="${mennyiseg/,/.}"
+
+  SQL="
+    INSERT INTO recept_osszetevok
+      (receptid, recept_sorszam, osszetevo_id, mennyiseg,
+       mertek_mennyiseg_id, osszetevo_osztaly_id, recept_osztaly_id)
+    VALUES
+      ($receptid,
+       $recept_sorszam,
+       ${osszetevo_id:-NULL},
+       ${mennyiseg:-NULL},
+       ${mertek_mennyiseg_id:-NULL},
+       ${osszetevo_osztaly_id:-NULL},
+       ${recept_osztaly_id:-NULL})
+    ON CONFLICT (receptid, recept_sorszam) DO NOTHING
+    RETURNING 1;
+  "
+
+  if ! inserted="$("${PSQL[@]}" -At -c "$SQL" 2>/dev/null)"; then
+    echo "SKIP (FK hiba vagy adat hiba): $receptid/$recept_sorszam" | tee -a "$LOG_FILE"
+    continue
+  fi
+
+  if [[ -z "$inserted" ]]; then
+    echo "SKIP (PK ütközés): $receptid/$recept_sorszam" | tee -a "$LOG_FILE"
+  else
+    echo "OK: receptid=$receptid sorszám=$recept_sorszam"
+  fi
+done < "$CSV_FILE"
+
+echo "Kész. Kimaradások: $LOG_FILE"

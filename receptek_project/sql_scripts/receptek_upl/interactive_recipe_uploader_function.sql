@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION  InteractiveRecipeUploader(
       recept_név VARCHAR,
       elkészítés VARCHAR,
       jegyzet VARCHAR,
-      recept_osztály_id INT,
+      recept_osztaly_id INT,
       alaplé VARCHAR,
       zsíradék VARCHAR,
       hús VARCHAR,
@@ -30,7 +30,7 @@ BEGIN
          RAISE NOTICE 'Ez az ID már foglalt! Kérlek, válassz másikat!';
       ELSE
        -- Beszúrunk egy új rekordot
-        INSERT INTO receptek (receptid, recept_név, elkészítés, jegyzet, recept_osztály_id, alaplé, zsíradék, hús, zöldség, tejtermék,
+        INSERT INTO receptek (receptid, recept_név, elkészítés, jegyzet, recept_osztaly_id, alaplé, zsíradék, hús, zöldség, tejtermék,
  gabonaféle, szárazáru, állati_termék, gyümölcs, fűszer, magvak, feldolgozott_élelmiszer, pékáru, ital, konzervtermék, édességek,
  kész_szósz, fűszernövény, kész_krém)
         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24);

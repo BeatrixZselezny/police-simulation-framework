@@ -3,7 +3,7 @@ RETURNS VOID AS $$
 BEGIN
 	BEGIN
 		EXECUTE format(
-		'COPY recept_összetevők(receptid, recept_sorszám, összetevő_id, mennyiség, mérték_mennyiség_id, összetevő_osztály_id)
+		'COPY recept_osszetevok(receptid, recept_sorszam, osszetevo_id, mennyiség, mertek_mennyiseg_id, osszetevo_osztaly_id)
 	         FROM %L
 	         WITH (FORMAT csv, DELIMITER ",");',
 	         filepath
