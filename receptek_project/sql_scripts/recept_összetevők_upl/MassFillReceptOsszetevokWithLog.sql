@@ -27,20 +27,20 @@ BEGIN
             'SELECT receptid, %1$I AS ertek, %2$I AS sorszam FROM receptek WHERE %1$I IS NOT NULL', col, sorsz_col
         ) LOOP
 
-            SELECT összetevő_id
+            SELECT osszetevo_id
               INTO p_osszetevo_id
-              FROM összetevők
-             WHERE lower(trim(összetevő_név)) = lower(trim(rec.ertek));
+              FROM osszetevok
+             WHERE lower(trim(osszetevo_nev)) = lower(trim(rec.ertek));
 
             p_sorszam := rec.sorszam;
 
             IF p_osszetevo_id IS NOT NULL AND p_sorszam IS NOT NULL THEN
                 BEGIN
-                    INSERT INTO recept_összetevők (receptid, összetevő_id, recept_sorszám)
+                    INSERT INTO recept_osszetevok (receptid, osszetevo_id, recept_sorszam)
                     SELECT rec.receptid, p_osszetevo_id, p_sorszam
                     WHERE NOT EXISTS (
-                        SELECT 1 FROM recept_összetevők
-                        WHERE receptid = rec.receptid AND összetevő_id = p_osszetevo_id AND recept_sorszám = p_sorszam
+                        SELECT 1 FROM recept_osszetevok
+                        WHERE receptid = rec.receptid AND osszetevo_id = p_osszetevo_id AND recept_sorszam = p_sorszam
                     );
                     RAISE NOTICE 'Sikeres beszúrás: receptid=%, oszlop=%, érték=%, sorszám=%', rec.receptid, col, rec.ertek, p_sorszam;
                 EXCEPTION WHEN others THEN
@@ -50,7 +50,7 @@ BEGIN
                 END;
             ELSE
                 INSERT INTO recept_osszetevo_log (receptid, oszlop, ertek, hiba_szoveg)
-                VALUES (rec.receptid, col, rec.ertek, 'Nincs ilyen összetevő vagy sorszám az összetevők táblában');
+                VALUES (rec.receptid, col, rec.ertek, 'Nincs ilyen összetevő vagy sorszám az osszetevok táblában');
                 RAISE NOTICE 'Nem talált összetevő vagy sorszám: receptid=%, oszlop=%, érték=%, sorszám=%', rec.receptid, col, rec.ertek, p_sorszam;
             END IF;
 

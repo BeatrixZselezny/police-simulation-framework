@@ -1,5 +1,5 @@
 CREATE TRIGGER trg_recept_osszetevok_audit
-AFTER INSERT OR UPDATE ON recept_összetevők
+AFTER INSERT OR UPDATE ON recept_osszetevok
 FOR EACH ROW
 EXECUTE FUNCTION trg_audit_recept_osszetevok();
 
