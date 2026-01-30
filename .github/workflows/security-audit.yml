@@ -1,0 +1,70 @@
+name: 🛡️ Zero Trust Security Audit
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  schedule:
+    - cron: '0 3 * * *' # Minden hajnalban 3-kor fut (amíg alszol)
+
+jobs:
+  # 1. JOB: Függőség Audit (Java & General)
+  dependency-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Java környezet (ha Maven projekt)
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+
+      # Trivy Security Scanner (Ez a C++ és Java hibákat is fogja!)
+      - name: Run Trivy Vulnerability Scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'table'
+          exit-code: '1' # Eltöri a buildet, ha hibát talál!
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'
+
+  # 2. JOB: Maven Specifikus SQL Ellenőrzés (A te kérésedre)
+  maven-sql-check:
+    runs-on: ubuntu-latest
+    needs: dependency-audit
+    if: hashFiles('pom.xml') != '' # Csak ha van pom.xml
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+
+      - name: Check for Unwanted Transitive SQL Deps
+        run: |
+          echo "🔍 Checking for hidden SQL dependencies..."
+          mvn dependency:tree -Dincludes=*:*sql*,*:*jdbc*,*:*hibernate* > deps.txt
+          
+          # Itt definiálhatjuk, mi az elfogadott. 
+          # Ha találnánk olyat, ami NEM PostgreSQL, riasztanánk.
+          if grep -i "mysql" deps.txt; then
+            echo "❌ ERROR: MySQL dependency found! We are a Postgres shop!"
+            exit 1
+          fi
+          
+          if grep -i "h2" deps.txt; then
+            echo "⚠️ WARNING: H2 database found. Ensure scope is 'test' only!"
+            # Itt lehet szigorúbbnak lenni és exit 1-et nyomni
+          fi
+          
+          echo "✅ SQL Dependency Check Passed."
