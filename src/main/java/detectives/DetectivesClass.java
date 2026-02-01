@@ -1,20 +1,22 @@
- package detectives;
+package detectives;
 
 
-// This class is named DetectivesClass
+// Class representing multiple detectives with their details and methods to print them
 public class DetectivesClass {
 // This method is named main
 	 public static void main(String[] args) {
 		 System.out.println("We are Police Detectives!");
 
-	 
 
+         // Creating instances of DetectivesClass for each detective
          DetectivesClass peter = new DetectivesClass();
 	 DetectivesClass marc = new DetectivesClass();
 	 DetectivesClass marry = new DetectivesClass();
 	 DetectivesClass andy = new DetectivesClass();
 	 DetectivesClass phil = new DetectivesClass();
 	 DetectivesClass vicky = new DetectivesClass();
+
+         // Initializing and printing details for each detective
 	 peter.DetectivePeter();
 	 peter.printPeterDetails();
 	 marc.DetectiveMarc();
@@ -27,18 +29,17 @@ public class DetectivesClass {
 	 phil.printPhilDetails();
 	 vicky.DetectiveVicky();
 	 vicky.printVickyDetails();
-	 
-   }    
 
+   }
 
-// This method is named DetectivePeter
+         // Methods to print the introduction of each detective
 	 public void DetectivePeter() {
                  System.out.println("I'm, Police detective Peter! ");
 	 }
-         
+
 // This method is named DetectiveMarc
          public void DetectiveMarc() {
-	         System.out.println("I'm, Police detective Marc!");	 
+	         System.out.println("I'm, Police detective Marc!");
          }
 
 // This method is named DetectiveMarry
@@ -63,7 +64,7 @@ public class DetectivesClass {
 
 
 
-
+         // Details of each detective stored in 2D arrays
          String[][] peter = {
 		 {"Name:", "Peter Winston"},
 		 {"Age:", "46"},
@@ -108,8 +109,7 @@ public class DetectivesClass {
 
 
 
-
-// This method is named printPeterDetails
+         // Methods to print the details of each detective
 	 public void printPeterDetails() {
 		 for (int i = 0; i < peter.length; i++) {
 			 System.out.println(peter[i][0] + " " + peter[i][1]);
@@ -152,7 +152,7 @@ public class DetectivesClass {
 			 System.out.println(vicky[i][0] + " " + vicky[i][1]);
 		 }
 	 }
- 
+
 
 }
 
