@@ -1,0 +1,7 @@
+id,name,rank,age,loyalty,strength,intelligence,boss_id
+100,Don Vito,Boss,60,100,80,90,NULL
+101,Michael,Underboss,40,90,75,85,100
+102,Tom,Consigliere,40,95,60,95,100
+103,Sonny,Capo,35,85,70,80,101
+104,Paulie,Soldier,30,70,60,65,103
+105,Clemenza,Soldier,45,75,65,70,103
